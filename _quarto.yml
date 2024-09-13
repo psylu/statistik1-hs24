@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+  - index.qmd
+  - pages/admin/*.qmd
+  - pages/exercises/*.qmd
+
+website:
+  title: "Statistik 1"
+  site-url: https://psylu.github.io/statistik1-hs24/
+  #favicon: logo.jpg
+  reader-mode: true
+  navbar:
+    #logo: logo.jpg
+    background: primary
+    left:
+      - href: index.qmd
+#        text: Info
+      - pages/admin/page_1.qmd 
+  sidebar:
+    style: floating
+    search: true
+    contents:
+#    - section: Herzlich Willkommen
+#      contents:
+#       - pages/admin/page_1.qmd
+       
+    - section: Übungen
+      contents:
+       - pages/exercises/exercise_01.qmd
+       - pages/exercises/exercise_R.qmd
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - styles/light.scss
+      dark:
+      - darkly
+      - styles/dark.scss
+    css: styles.css
+    toc: true
+    link-external-newwindow: true
+    
+editor:
+  render-on-save: true

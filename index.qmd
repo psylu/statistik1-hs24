@@ -1,0 +1,19 @@
+---
+title: "Statistik 1"
+about:
+    template: jolla
+    image: pages/admin/img/adventurebegins.jpg
+    
+---
+
+__Herzlich Willkommen__ 
+
+Vorlesung Statistik 1 (Übungen) 
+
+Bachelorstudiengang Psychologie
+
+HS 2024
+
+
+
+

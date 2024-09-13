@@ -1,0 +1,206 @@
+---
+title: "Übung 1"
+description: "Messtheoretische Grundlagen und Skalenniveaus"
+date: "2024-09-16"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+license: CC BY
+citation: true
+---
+
+## Aufgaben
+
+Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab. 
+
+
+### Aufgabe 1.1
+
+Ordnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch:
+
+a.	Matrikelnummer
+b.	Wohnort
+c.	Körpergrösse einer Person (in cm)
+d.	Alter einer Person (in _Jahren_)
+e.	Anzahl Zimmerpflanzen 
+f.	Schulnoten
+g.	Rang beim letzten __Marathon__
+h.	Reaktionszeit 
+i.	IQ-Werte
+j.	Monatliche Ausgaben (in CHF)
+
+::: {.callout-caution collapse="true"}
+
+### Lösung Aufgabe 1.1
+
+a.	nominal
+b.	nominal
+c.	metrisch
+d.	metrisch
+e.	metrisch
+f.	ordinal
+g.	ordinal
+h.	metrisch
+i.	metrisch
+j.	metrisch
+
+:::
+
+
+### Aufgabe 1.2
+
+Ordnen Sie die angegebenen Beispielen je einem Skalenniveau zu.
+
+a.	Anzahl Tore des FC Mediana beim letzten Match
+b.	Trikotnummern der Fussballspielerinnen
+c.	Geburtstagsdaten der Teammitglieder
+d.	Lieblingsgetränke der Teammitglieder
+e.	Die Position des Teams in der Rangliste
+f.	Der Jahreslohn, den die Spielerinnen verdienen (wenn überhaupt)
+g.	Die Schuhgrösse der Fussballballschuhe der Teammitglieder
+h.	Die Laufkilometer beim letzten Match
+i.	Tageshöchsttemparatur der Trainingstage im letzten Monat
+j.	Uhrzeit der Fussballspiele über die ganzen Saison
+
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.2
+
+a.	Absolutskala 
+b.	Nominalskala
+c.	Intervallskala
+d.	Nominalskala
+e.	Oridnalskala
+f.	Verhältnisskala
+g.	Ordinalskala
+h.	Verhältnisskala
+i.	Intervallskala
+j.	Intervallskala
+
+Eine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (doppelt so viel) sind nicht sinnvoll. So ist 6 Uhr nicht doppelt so spät, wie 3 Uhr und 0:00 Uhr ist kein absoluter Nullpunkt. 
+
+:::
+
+
+### Aufgabe 1.3
+
+Ein bisschen Algebra. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.
+
+$$\frac{a}{c}+\frac{b}{d}$$
+$$\frac{e}{g}*\frac{f}{h}$$
+
+$$\frac{i}{k}:\frac{j}{l}$$
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.3
+
+$$\frac{ad+bc}{cd}$$
+$$\frac{ef}{gh}$$
+$$\frac{il}{kj}$$
+
+:::
+
+### Aufgabe 1.4
+
+Welche der folgenden Transformationen sind bei einer Nominalskala (z. B. Wohnort) zulässig (alle zulässigen angeben)?
+
+a.	eineindeutige Transformationen
+b.	streng monotone Transformationen
+c.	positiv lineare Transformationen
+d.	Ähnlichkeitstransformationen
+e.	Identitätstransformationen
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.4
+
+Korrekt sind: a, b, c, d, e
+
+:::
+
+### Aufgabe 1.5
+
+Welche der folgenden Transformationen sind bei einer Verhältnisskala (z. B. Herzrate) zulässig (alle zulässigen angeben)?
+
+a.	eineindeutige Transformationen
+b.	streng monotone Transformationen
+c.	positiv lineare Transformationen
+d.	Ähnlichkeitstransformationen
+e.	Identitätstransformationen
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.5
+
+Korrekt sind: d, e
+
+So sind etwa monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde. 
+
+:::
+
+### Aufgabe 1.6
+
+Weshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtigt?
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.6
+
+Eine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können. Es gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem Experiment nicht wirklich, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll. 
+
+:::
+
+### Aufgabe 1.7
+
+Ordnen Sie der Beschreibung das passende Skalenniveau zu.
+
+a.	Die Daten können geordnet werden und haben einen natürliche Nullpunkt.
+b.	Die Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.
+c.	Die Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.
+d.	Die Daten können geordnet und kategorisiert werden. 
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.7
+
+a.	Verhältnisskala (oder Absolutskala)
+b.	Nominalskala
+c.	Intervallskala
+d.	Ordinalskala (oder höher)
+
+:::
+
+### Aufgabe 1.8
+
+Überlegen Sie sich je drei Variablen die Merkmalsunterschiede beschreiben _zwischen Personen_ (wie Extraversion und Intraversion) und _innerhalb einer Person_ (wie das Stresslevel zu verschiedenen Tageszeiten),.
+
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.8
+
+Kontrollieren Sie für jede der 6 Variablen:
+
+- Können diese gemessen werden?
+
+- Wenn ja wie?
+
+- Welches Skalenniveau hätten die Messungen?
+
+:::
+
+### Aufgabe 1.9
+
+Suchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie mit anderen Studierenden.
+
+
+::: {.callout-caution collapse="true"}
+### Lösung Aufgabe 1.9
+
+![](img/batman-statistics.jpg)
+
+:::
+
+
+

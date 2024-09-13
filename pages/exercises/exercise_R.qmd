@@ -1,0 +1,55 @@
+---
+title: "Übung R"
+description: "Vorschau: Programmieren mit R"
+date: "2024-09-16"
+author:
+  - name: Mirjam Senn, Gerda Wyssen, Daniel Fitze
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+filters:
+  - webr
+license: CC BY
+citation: true
+---
+
+# Beispielsaufgabe R
+
+Füllen Sie zum Lösen der Aufgaben die `___`-Stellen aus. Drücken Sie dann auf den grünen Pfeil (`Run`). 
+
+
+1. Erstellen Sie mit der Funktion `c()` einen Vektor und speichern Sie diesen in der Variable `x`. Der Vektor soll die Werte `90, 111, 117, 84, 98 und 102` enthalten. 
+
+
+```{webr-r}
+x = ___
+```
+
+::: {.callout-caution collapse="true"}
+
+### Lösung
+
+```{webr-r}
+x = c(90, 111, 117, 84, 98, 102)
+```
+:::
+
+2. Berechnen Sie den Mittelwert und die Standardabweichung der Variable `x`. Verwenden sie dazu die Funktionen `mean()` und `sd()`.
+
+```{webr-r}
+mean(___)
+sd(___)
+```
+
+::: {.callout-caution collapse="true"}
+
+### Lösung
+
+```{webr-r}
+mean(x)
+sd(x)
+```
+:::
+
+### WebR
+
+Diese Seite wurde mit WebR erstellt: [webR documentation](https://quarto-webr.thecoatlessprofessor.com/qwebr-first-steps.html).

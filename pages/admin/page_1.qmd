@@ -1,0 +1,26 @@
+---
+title: "Informationen"
+---
+
+Hier finden Sie die wichtigsten Informationen.
+
+### Organisatorisches
+
+- Die Übungen werden jeweils nach der Vorlesung (spätestens um 23.59 Uhr) aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.
+
+- Die Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.
+
+- Falls Sie bei einer Übung nicht mehr weiterkommen: Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Wir empfehlen das Bilden von Lerngruppen.
+
+- Falls Sie einen Fehler entdecken, wenden Sie sich an Mirjam Senn. 
+
+
+### Format der Übungen
+
+- Die Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.
+
+- Die Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können. 
+
+- Zu allen Aufgaben gibt es Lösungen oder Musterlösungen. 
+
+- Am 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache _R_ und das Programm _R Studio_. Sie müssen dafür nichts installieren, sondern können daz diese Website nutzen. Ein Beispiel hierfür finden Sie in der _Übung R_.
