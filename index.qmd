@@ -1,16 +1,20 @@
 ---
-title: "Statistik 1"
+title: "Herzlich Willkommen"
 about:
     template: jolla
     image: pages/admin/img/adventurebegins.jpg
-    
+    links:
+    - text: Mirjam Senn
+      href: mailto:mirjam.senn@unilu.ch
+    - text: Gerda Wyssen
+      href: mailto:gerda.wyssen@unilu.ch
 ---
-
-__Herzlich Willkommen__ 
 
 Vorlesung Statistik 1 (Übungen) 
 
 Bachelorstudiengang Psychologie
+
+Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
 
 HS 2024
 

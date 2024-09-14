@@ -6,7 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Mirjam Senn, Gerda Wyssen, Daniel Fitze">
+<meta name="author" content="Mirjam Senn">
+<meta name="author" content="Gerda Wyssen">
+<meta name="author" content="Daniel Fitze">
 <meta name="dcterms.date" content="2024-09-16">
 <meta name="description" content="Vorschau: Programmieren mit R">
 
@@ -361,7 +363,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"x = ___","options":{"editor-quick-suggestions":"false","editor-max-height":"","fig-width":7,"editor-font-scale":"1","comment":"","output":"true","fig-height":5,"autorun":"false","out-height":"","message":"true","results":"markup","out-width":"700px","context":"interactive","label":"unnamed-chunk-1","classes":"","editor-word-wrap":"true","warning":"true","dpi":72,"fig-cap":"","read-only":"false"},"id":1},{"code":"x = c(90, 111, 117, 84, 98, 102)","options":{"editor-quick-suggestions":"false","editor-max-height":"","fig-width":7,"editor-font-scale":"1","comment":"","output":"true","fig-height":5,"autorun":"false","out-height":"","message":"true","results":"markup","out-width":"700px","context":"interactive","label":"unnamed-chunk-2","classes":"","editor-word-wrap":"true","warning":"true","dpi":72,"fig-cap":"","read-only":"false"},"id":2},{"code":"mean(___)\nsd(___)","options":{"editor-quick-suggestions":"false","editor-max-height":"","fig-width":7,"editor-font-scale":"1","comment":"","output":"true","fig-height":5,"autorun":"false","out-height":"","message":"true","results":"markup","out-width":"700px","context":"interactive","label":"unnamed-chunk-3","classes":"","editor-word-wrap":"true","warning":"true","dpi":72,"fig-cap":"","read-only":"false"},"id":3},{"code":"mean(x)\nsd(x)","options":{"editor-quick-suggestions":"false","editor-max-height":"","fig-width":7,"editor-font-scale":"1","comment":"","output":"true","fig-height":5,"autorun":"false","out-height":"","message":"true","results":"markup","out-width":"700px","context":"interactive","label":"unnamed-chunk-4","classes":"","editor-word-wrap":"true","warning":"true","dpi":72,"fig-cap":"","read-only":"false"},"id":4}];
+globalThis.qwebrCellDetails = [{"options":{"editor-quick-suggestions":"false","out-height":"","read-only":"false","editor-word-wrap":"true","message":"true","context":"interactive","label":"unnamed-chunk-1","warning":"true","fig-height":5,"results":"markup","classes":"","out-width":"700px","output":"true","editor-font-scale":"1","comment":"","editor-max-height":"","fig-cap":"","dpi":72,"autorun":"false","fig-width":7},"code":"x = ___","id":1},{"options":{"editor-quick-suggestions":"false","out-height":"","read-only":"false","editor-word-wrap":"true","message":"true","context":"interactive","label":"unnamed-chunk-2","warning":"true","fig-height":5,"results":"markup","classes":"","out-width":"700px","output":"true","editor-font-scale":"1","comment":"","editor-max-height":"","fig-cap":"","dpi":72,"autorun":"false","fig-width":7},"code":"x = c(90, 111, 117, 84, 98, 102)","id":2},{"options":{"editor-quick-suggestions":"false","out-height":"","read-only":"false","editor-word-wrap":"true","message":"true","context":"interactive","label":"unnamed-chunk-3","warning":"true","fig-height":5,"results":"markup","classes":"","out-width":"700px","output":"true","editor-font-scale":"1","comment":"","editor-max-height":"","fig-cap":"","dpi":72,"autorun":"false","fig-width":7},"code":"mean(___)\nsd(___)","id":3},{"options":{"editor-quick-suggestions":"false","out-height":"","read-only":"false","editor-word-wrap":"true","message":"true","context":"interactive","label":"unnamed-chunk-4","warning":"true","fig-height":5,"results":"markup","classes":"","out-width":"700px","output":"true","editor-font-scale":"1","comment":"","editor-max-height":"","fig-cap":"","dpi":72,"autorun":"false","fig-width":7},"code":"mean(x)\nsd(x)","id":4}];
 
 </script>
 <script type="module">
@@ -1582,7 +1584,7 @@ globalThis.qwebrExecuteCode = async function (
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Statistik 1</span></a>
+<span class="menu-text">Herzlich Willkommen</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../pages/admin/page_1.html"> 
@@ -1964,11 +1966,31 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </div>
 
 <div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Authors</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Mirjam Senn, Gerda Wyssen, Daniel Fitze </p>
+    <p class="author">Mirjam Senn </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.unilu.ch/fakultaeten/vpf">
+            Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+            </a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gerda Wyssen </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://www.unilu.ch/fakultaeten/vpf">
+            Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+            </a>
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Daniel Fitze </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
@@ -2052,16 +2074,16 @@ Lösung
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn,_gerda_wyssen,_daniel_fitze2024,
-  author = {Senn, Gerda Wyssen, Daniel Fitze, Mirjam},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn2024,
+  author = {Senn, Mirjam and Wyssen, Gerda and Fitze, Daniel},
   title = {Übung {R}},
   date = {2024-09-16},
   url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn,_gerda_wyssen,_daniel_fitze2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Senn, Gerda Wyssen, Daniel Fitze, Mirjam. 2024. <span>“Übung R.”</span>
-September 16, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Senn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. <span>“Übung
+R.”</span> September 16, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

@@ -6,7 +6,7 @@ Hier finden Sie die wichtigsten Informationen.
 
 ### Organisatorisches
 
-- Die Übungen werden jeweils nach der Vorlesung (spätestens um 23.59 Uhr) aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.
+- Die Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.
 
 - Die Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.
 
@@ -23,4 +23,4 @@ Hier finden Sie die wichtigsten Informationen.
 
 - Zu allen Aufgaben gibt es Lösungen oder Musterlösungen. 
 
-- Am 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache _R_ und das Programm _R Studio_. Sie müssen dafür nichts installieren, sondern können daz diese Website nutzen. Ein Beispiel hierfür finden Sie in der _Übung R_.
+- Am 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache [_R_](https://www.r-project.org/) und das Programm [_R Studio_](https://posit.co/). Sie müssen dafür in diesem Semester noch nichts installieren, sondern können diese Website nutzen. Ein Beispiel wie diese Übungen aussehen könnten finden Sie in der [_Übung R_](https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html).

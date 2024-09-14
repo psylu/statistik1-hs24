@@ -3,7 +3,13 @@ title: "Übung R"
 description: "Vorschau: Programmieren mit R"
 date: "2024-09-16"
 author:
-  - name: Mirjam Senn, Gerda Wyssen, Daniel Fitze
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Daniel Fitze
     affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
     affiliation-url: https://www.unilu.ch/fakultaeten/vpf
 filters:

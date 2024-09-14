@@ -6,6 +6,9 @@ author:
   - name: Mirjam Senn
     affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
     affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
 license: CC BY
 citation: true
 ---
