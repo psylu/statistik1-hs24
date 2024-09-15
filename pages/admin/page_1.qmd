@@ -2,17 +2,19 @@
 title: "Informationen"
 ---
 
-Hier finden Sie die wichtigsten Informationen.
+Hier finden Sie die wichtigsten Informationen zu den Übungen _Statistik 1_ im HS24.
 
 ### Organisatorisches
 
 - Die Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.
 
-- Die Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.
+- Die Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen. 
 
-- Falls Sie bei einer Übung nicht mehr weiterkommen: Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Wir empfehlen das Bilden von Lerngruppen.
+- Falls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.  
 
-- Falls Sie einen Fehler entdecken, wenden Sie sich an Mirjam Senn. 
+- Es ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben. 
+
+- Falls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn. 
 
 
 ### Format der Übungen
@@ -23,4 +25,4 @@ Hier finden Sie die wichtigsten Informationen.
 
 - Zu allen Aufgaben gibt es Lösungen oder Musterlösungen. 
 
-- Am 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache [_R_](https://www.r-project.org/) und das Programm [_R Studio_](https://posit.co/). Sie müssen dafür in diesem Semester noch nichts installieren, sondern können diese Website nutzen. Ein Beispiel wie diese Übungen aussehen könnten finden Sie in der [_Übung R_](https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html).
+- Am 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache [_R_](https://www.r-project.org/) und das Programm [_R Studio_](https://posit.co/). Sie müssen  in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der [_Übung R_](https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html).

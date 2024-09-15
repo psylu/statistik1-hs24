@@ -16,16 +16,11 @@ website:
     background: primary
     left:
       - href: index.qmd
-#        text: Info
       - pages/admin/page_1.qmd 
   sidebar:
     style: floating
     search: true
     contents:
-#    - section: Herzlich Willkommen
-#      contents:
-#       - pages/admin/page_1.qmd
-       
     - section: Übungen
       contents:
        - pages/exercises/exercise_01.qmd

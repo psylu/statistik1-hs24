@@ -20,15 +20,15 @@ Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen bes
 
 ### Aufgabe 1.1
 
-Ordnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch:
+Ordnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch.
 
 a.	Matrikelnummer
 b.	Wohnort
 c.	Körpergrösse einer Person (in cm)
-d.	Alter einer Person (in _Jahren_)
+d.	Alter einer Person (in Jahren)
 e.	Anzahl Zimmerpflanzen 
 f.	Schulnoten
-g.	Rang beim letzten __Marathon__
+g.	Rang beim letzten Marathon
 h.	Reaktionszeit 
 i.	IQ-Werte
 j.	Monatliche Ausgaben (in CHF)
@@ -60,11 +60,11 @@ b.	Trikotnummern der Fussballspielerinnen
 c.	Geburtstagsdaten der Teammitglieder
 d.	Lieblingsgetränke der Teammitglieder
 e.	Die Position des Teams in der Rangliste
-f.	Der Jahreslohn, den die Spielerinnen verdienen (wenn überhaupt)
-g.	Die Schuhgrösse der Fussballballschuhe der Teammitglieder
-h.	Die Laufkilometer beim letzten Match
-i.	Tageshöchsttemparatur der Trainingstage im letzten Monat
-j.	Uhrzeit der Fussballspiele über die ganzen Saison
+f.	Der Jahreslohn, den die Spielerinnen verdienen
+g.	Die Schuhgrösse der Fussballschuhe der Teammitglieder
+h.	Die Laufkilometer im letzten Match
+i.	Tageshöchsttemperaturen der Trainingstage im letzten Monat
+j.	Uhrzeiten der Fussballspiele über die ganzen Saison
 
 
 
@@ -75,24 +75,24 @@ a.	Absolutskala
 b.	Nominalskala
 c.	Intervallskala
 d.	Nominalskala
-e.	Oridnalskala
+e.	Ordinalskala
 f.	Verhältnisskala
 g.	Ordinalskala
 h.	Verhältnisskala
 i.	Intervallskala
 j.	Intervallskala
 
-Eine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (doppelt so viel) sind nicht sinnvoll. So ist 6 Uhr nicht doppelt so spät, wie 3 Uhr und 0:00 Uhr ist kein absoluter Nullpunkt. 
+Eine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (z.B. doppelt so viel) sind nicht sinnvoll. So ist 6.00 Uhr nicht doppelt so spät, wie 3.00 Uhr und 0.00 Uhr ist kein absoluter Nullpunkt. 
 
 :::
 
 
 ### Aufgabe 1.3
 
-Ein bisschen Algebra. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.
+Wie später noch klar wird, müssen Skalen in der Psychologie oft rechnerisch transformiert werden. Hier eine kleine Algebraaufgabe. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.
 
 $$\frac{a}{c}+\frac{b}{d}$$
-$$\frac{e}{g}*\frac{f}{h}$$
+$$\frac{e}{g}⋅\frac{f}{h}$$
 
 $$\frac{i}{k}:\frac{j}{l}$$
 
@@ -139,7 +139,7 @@ e.	Identitätstransformationen
 
 Korrekt sind: d, e
 
-So sind etwa monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde. 
+So sind etwa streng monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde. 
 
 :::
 
@@ -150,7 +150,9 @@ Weshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtig
 ::: {.callout-caution collapse="true"}
 ### Lösung Aufgabe 1.6
 
-Eine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können. Es gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem Experiment nicht wirklich, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll. 
+Eine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können und welchen Informationsgehalt die Werte haben. 
+
+Es gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem bestimmten Experiment vielleicht nicht, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll. 
 
 :::
 
@@ -158,7 +160,7 @@ Eine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, w
 
 Ordnen Sie der Beschreibung das passende Skalenniveau zu.
 
-a.	Die Daten können geordnet werden und haben einen natürliche Nullpunkt.
+a.	Die Daten können geordnet werden und haben einen natürlichen Nullpunkt.
 b.	Die Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.
 c.	Die Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.
 d.	Die Daten können geordnet und kategorisiert werden. 
@@ -176,30 +178,32 @@ d.	Ordinalskala (oder höher)
 
 ### Aufgabe 1.8
 
-Überlegen Sie sich je drei Variablen die Merkmalsunterschiede beschreiben _zwischen Personen_ (wie Extraversion und Intraversion) und _innerhalb einer Person_ (wie das Stresslevel zu verschiedenen Tageszeiten),.
+Überlegen Sie sich je drei Variablen die Merkmalsunterschiede _zwischen Personen_ (wie Extraversion und Intraversion) und _innerhalb einer Person_ (wie das Stresslevel zu verschiedenen Tageszeiten) beschreiben.
 
 
 
 ::: {.callout-caution collapse="true"}
 ### Lösung Aufgabe 1.8
 
-Kontrollieren Sie für jede der 6 Variablen:
+Kontrollieren Sie nun für jede der sechs Variablen:
 
 - Können diese gemessen werden?
 
-- Wenn ja wie?
+- Wenn ja, wie?
 
-- Welches Skalenniveau hätten die Messungen?
+- Welches Skalenniveau haben die Messwerte?
 
 :::
 
 ### Aufgabe 1.9
 
-Suchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie mit anderen Studierenden.
+Suchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie diese mit anderen Studierenden.
 
 
 ::: {.callout-caution collapse="true"}
 ### Lösung Aufgabe 1.9
+
+Herzliche Gratulation. Alle Aufgaben sind geschafft!
 
 ![](img/batman-statistics.jpg)
 
