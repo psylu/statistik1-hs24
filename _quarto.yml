@@ -24,6 +24,7 @@ website:
     - section: Übungen
       contents:
        - pages/exercises/exercise_01.qmd
+       - pages/exercises/exercise_02.qmd
        - pages/exercises/exercise_R.qmd
 format:
   html:
