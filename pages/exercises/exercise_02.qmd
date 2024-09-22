@@ -1,0 +1,250 @@
+---
+title: "Übung 2"
+description: "Univariate Deskriptivstatistik für nominale und ordinale Variablen"
+date: "2024-09-23"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+license: CC BY
+citation: true
+---
+
+Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.
+
+
+## Aufgabe 2.1
+
+Ein in der Statistik oft benötigtes Operationszeichen ist das Summenzeichen $Σ$. 
+
+
+$$\sum_{i=1}^{5}x_i=x_1+x_2+x_3+x_4+x_5$$
+Diese Formel bedeutet beispielsweise, dass hier die Summe aller $xi$-Werte für $i=1$ bis $5$ berechnet wird. Der Laufindex $i$ könnte auch durch einen beliebigen anderen Buchstaben ersetzt werden. Unterhalb des Summenzeichens wird die untere Grenze des Laufindex angegeben (hier $1$). Oberhalb des Summenzeichens findet man die obere Grenze. Weitere Beispiele sind:
+
+$$\sum_{i=3}^{5}x_i=x_3+x_4+x_5$$
+
+$$\sum_{i=1}^{3}x^2_i=x^2_1+x^2_2+x^2_3$$
+
+Gegeben sind die fünf Werte $x_1=1$, $x_2=4$, $x_3=5$, $x_4=8$, $x_5=10$.
+Berechnen Sie daraus folgende Summen:
+
+a. 
+$$\sum_{i=1}^{5}x_i$$
+
+b. 
+$$\sum_{i=1}^{5}x^2_i$$
+
+c. 
+$$(\sum_{i=1}^{3}x_i)^2$$
+
+d. 
+$$\sum_{i=1}^{5}x_i+5$$
+
+e. 
+$$\sum_{i=3}^{5}(2\cdot x_i)$$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.1
+
+a. 
+$$\sum_{i=1}^{5}x_i=1+4+5+8+10=28$$
+b.
+$$\sum_{i=1}^{5}x_i=1+16+25+64+1000=1106$$
+c.
+$$\sum_{i=1}^{3}x_i=(1+4+5)^2=(10)^2=100$$
+
+d.
+$$\sum_{i=1}^{5}x_i=6+9+10+13+15=53$$
+e.
+$$\sum_{i=3}^{5}x_i=10+16+20=46$$
+
+:::
+
+## Aufgabe 2.2
+
+Welches Mass sagt etwas über die Verteilung einer nominalskalierten Skala aus?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.2
+
+Mit Kennwerten der Dispersion soll angegeben werden, wie sehr sich die Merkmalsträger über die Kategorien verteilen, d.h., wie gleichmässig oder ungleichmässig die Werte der Skala vorkommen. Maximale Dispersion ist gegeben, wenn alle Kategorien gleich häufig besetzt sind, also eine Gleichverteilung der Messwerte vorliegt. Minimale Dispersion ist gegeben, wenn die Merkmalsträger sich überhaupt nicht unterscheiden, also alle den gleichen Messwert tragen. Zur Berechnung eignet sich dazu der relative Informationsgehalt _H_. Eine solche Berechnung müssen Sie in diesem Semester nicht durchführen können. 
+
+:::
+
+
+
+## Aufgabe 2.3
+
+Zwölf Studierende an der Universität Luzern wurden gefragt, welches Menü in der Mensa sie am liebsten mögen. Dies wurde auf einer Skala mit 1 = _MENÜ SOUL_, 2 = _MENÜ VEGVEG_ und 3 = _MENÜ BOWL_ erhoben. 
+
+Erstellen Sie mit den folgenden Messwerten eine Häufigkeitstabelle. Berechnen Sie die absolute Häufigkeit $n_j$, die relative Häufigkeit $h_j$ und die relative Häufigkeit in Anteilen von 100 ($\%_j$) der Merkmalsausprägungen. Überprüfen Sie Ihre Lösung bevor Sie zu Aufgabe 2.4 gehen. 
+
+<aside> Runden Sie die Ergebnisse auf zwei Stellen nach dem Komma.</aside>
+
+| ID  | Menü  |
+|---|---|
+| 01  | 1   |
+| 02   | 2   |
+| 03 | 3   |
+| 04  | 1   |
+| 05   | 3   |
+| 06 | 3   |
+| 07  | 1   |
+| 08  | 2   |
+| 09   | 3   |
+| 10 | 3   |
+| 11 | 3   |
+| 12 | 1   |
+
+
+
+
+#### Beispieltabelle
+
+| Menü ($a_j$)  | Absolute Häufigkeit $n_j$  | Relative Häufigkeit $h_j$ | Relative Häufigkeit in Anteilen von 100 $\%_j$ |
+|----|--------|--------|--------|
+| 1  |    |   |   | 
+| 2   |    |   |   |
+| 3 |   |   |   |
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.3
+
+| Menü ($a_j$)   | Absolute Häufigkeit $n_j$  | Relative Häufigkeit $h_j$ | Relative Häufigkeit in Anteilen von 100 $\%_j$ |
+|----|--------|--------|--------|
+| 1  |  4  | 0.33  | 33%  | 
+| 2   |  2  | 0.17  |  17% |
+| 3 | 6  |  0.50 | 50%  |
+
+:::
+
+
+## Aufgabe 2.4
+
+Zeichnen Sie nun ein Kuchendiagramm dieser Häufigkeitstabelle. Notieren die zu den entsprechenden Segmenten die Prozentwerte und erstellen Sie eine Legende.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.4
+
+![Abbildung Kuchendiagramm](img/piechart2.4.png){fig-alt="Kuchendiagramm."}
+So würde ein mögliches Säulendiagramm aussehen:
+![Abbildung Säulendiagramm](img/barplot2.4.png){fig-alt="Säulendiagramm"}
+
+:::
+
+
+
+## Aufgabe 2.5
+
+Hier sehen Sie die Häufigkeitsverteilung von 24 Klient:innen über  neun mögliche Persönlichkeitsstörungen hinweg. 
+
+a. Bestimmen Sie den Modalwert. 
+
+![Abbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)](img/table_modal.png){fig-alt="Säulendiagramm der Verteilung der absoluten Häufigkeiten."}
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.5a
+
+Im vorliegenden Fall ist der Modalwert _Dissozial_ oder _Dissoziale Persönlichkeitsstörung_: 
+
+$Mo=$ Dissoziale Persönlichkeitsstörung
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Tipp
+
+Es wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!
+
+Ausserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.
+:::
+
+b.
+Nehmen wir an, dass eine weitere Person mit der Persönlichkeitsstörung _Ängstliche Persönlichkeitsstörung_ dazukommt. Was verändert sich in Bezug auf den Modalwert?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.5b
+
+Es gibt nun zwei Antwortkategorien, die gleich häufig vorkommen (ängstliche Persönlichkeitsstörung und dissoziale Persönlichkeitsstörung). Der Modus ist durch die Gleichverteilungen (Verteilungen, bei denen alle Merkmalsausprägungen mit gleicher Häufigkeit vorkommen) nicht definiert.
+
+Der Modus reagiert sensibel auf leichte Veränderungen der Verteilung im Gipfelbereich (Gipfelverschiebungen bei ähnlich häufig besetzten Kategorien im Gipfelbereich).
+
+:::
+
+
+## Aufgabe 2.6
+Die Messwerte eines Merkmals sind 7, 2, 5, 1, 10, 2, 1, 2. Welche Antworten zum Modalwert und Median sind korrekt? 
+
+a.	Der Modalwert ist 2.
+b.	Der Median ist 5.
+c.	Der Modalwert ist 5.
+d.	Der Median ist 2.
+e.	Der Median ist 2.5.
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.6
+
+Korrekte Antworten: a, d
+
+:::
+
+
+## Aufgabe 2.7
+
+Bei einem Experiment wird gemessen, wie lange die Versuchspersonen mit geschlossenen Augen auf einem Bein stehen können. Nach 21 Personen liegen folgende Messwerte in Sekunden vor.  
+
+18, 36, 18, 22, 23, 24, 26, 29, 32, 34, 36, 16, 42, 22, 43, 46, 46, 49, 57, 34, 23
+
+a. Berechnen Sie den Median.
+b. Berechnen Sie das untere Quartil ($Q_1$) und das obere Quartil ($Q_3$).
+c. Berechnen Sie den Interquartilsabstand ($IQR$).
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.7a
+
+Zuerst ordnen wir die Messwerte nach ihrer Reihenfolge.
+
+16, 18, 18, 22, 22, 23, 23, 24, 26, 29, 32, 34, 34, 36, 36, 42, 43, 46, 46, 49, 57
+
+Der Median berechnet sich durch $(n+1)/2$. Da 21 Messwerte vorliegen, liegt der Median beim 11. Messwert (Berechnung: $22/2$). Der 11. Messwert in der geordneten Folge beträgt 32 Sekunden.
+
+$Md = 32$ Sekunden
+
+Hinweis zum Modalwert: Hier liegen mehrere Modalwerte vor (18, 22, 23, 34, 36, 46). Wir haben somit multimodale Daten, was zeigt, dass hier ein Modalwert nicht informativ ist.
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.7b
+
+__Das untere Quartil ($Q_1$)__: Wir teilen dazu den Stichprobenumfang durch 4 ($21/4=5.25$) oder multiplizieren den Stichprobenumfang mit 0.25 ($n\cdot 0.25 = 21\cdot0.25=5.25$) und runden dann auf die nächste ganze Zahl ($6$). $Q_1$ liegt also beim 6. Messwert, bei __23 Sekunden__.
+
+__Das obere Quartil ($Q_3$)__: Wir multiplizieren dazu den Stichprobenumfang mit 0.75 ($n\cdot 0.75 = 21\cdot0.75=15.75$)  und runden dann auf die nächste ganze Zahl ($16$). $Q3$ liegt also beim 16. Messwert, bei __42 Sekunden__.
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 2.7c
+
+$IQR = Q3 - Q1$
+
+$IQR = 42 - 23 = 19$
+
+Der Interquartilsabstand beträgt $19$.
+
+:::
+
+
+<br>
+<br>
+
+
+
+Herzliche Gratulation, alle Übungen sind geschafft!
+
+![](img/sheep.jpg)

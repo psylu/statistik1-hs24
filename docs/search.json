@@ -12,20 +12,6 @@
     ]
   },
   {
-    "objectID": "pages/admin/page_1.html",
-    "href": "pages/admin/page_1.html",
-    "title": "Informationen",
-    "section": "",
-    "text": "Hier finden Sie die wichtigsten Informationen zu den Übungen Statistik 1 im HS24.\n\nOrganisatorisches\n\nDie Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.\nDie Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.\nFalls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.\nEs ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben.\nFalls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn.\n\n\n\nFormat der Übungen\n\nDie Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.\nDie Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können.\nZu allen Aufgaben gibt es Lösungen oder Musterlösungen.\nAm 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache R und das Programm R Studio. Sie müssen in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der Übung R."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Herzlich Willkommen",
-    "section": "",
-    "text": "Vorlesung Statistik 1 (Übungen)\nBachelorstudiengang Psychologie\nFakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern\nHS 2024"
-  },
-  {
     "objectID": "pages/exercises/exercise_01.html",
     "href": "pages/exercises/exercise_01.html",
     "title": "Übung 1",
@@ -47,6 +33,116 @@
       "Herzlich Willkommen",
       "Übungen",
       "Übung 1"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Herzlich Willkommen",
+    "section": "",
+    "text": "Vorlesung Statistik 1 (Übungen)\nBachelorstudiengang Psychologie\nFakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern\nHS 2024"
+  },
+  {
+    "objectID": "pages/admin/page_1.html",
+    "href": "pages/admin/page_1.html",
+    "title": "Informationen",
+    "section": "",
+    "text": "Hier finden Sie die wichtigsten Informationen zu den Übungen Statistik 1 im HS24.\n\nOrganisatorisches\n\nDie Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.\nDie Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.\nFalls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.\nEs ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben.\nFalls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn.\n\n\n\nFormat der Übungen\n\nDie Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.\nDie Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können.\nZu allen Aufgaben gibt es Lösungen oder Musterlösungen.\nAm 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache R und das Programm R Studio. Sie müssen in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der Übung R."
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html",
+    "href": "pages/exercises/exercise_02.html",
+    "title": "Übung 2",
+    "section": "",
+    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.1",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.1",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.1",
+    "text": "Aufgabe 2.1\nEin in der Statistik oft benötigtes Operationszeichen ist das Summenzeichen \\(Σ\\).\n\\[\\sum_{i=1}^{5}x_i=x_1+x_2+x_3+x_4+x_5\\] Diese Formel bedeutet beispielsweise, dass hier die Summe aller \\(xi\\)-Werte für \\(i=1\\) bis \\(5\\) berechnet wird. Der Laufindex \\(i\\) könnte auch durch einen beliebigen anderen Buchstaben ersetzt werden. Unterhalb des Summenzeichens wird die untere Grenze des Laufindex angegeben (hier \\(1\\)). Oberhalb des Summenzeichens findet man die obere Grenze. Weitere Beispiele sind:\n\\[\\sum_{i=3}^{5}x_i=x_3+x_4+x_5\\]\n\\[\\sum_{i=1}^{3}x^2_i=x^2_1+x^2_2+x^2_3\\]\nGegeben sind die fünf Werte \\(x_1=1\\), \\(x_2=4\\), \\(x_3=5\\), \\(x_4=8\\), \\(x_5=10\\). Berechnen Sie daraus folgende Summen:\n\n\\[\\sum_{i=1}^{5}x_i\\]\n\\[\\sum_{i=1}^{5}x^2_i\\]\n\\[(\\sum_{i=1}^{3}x_i)^2\\]\n\\[\\sum_{i=1}^{5}x_i+5\\]\n\\[\\sum_{i=3}^{5}(2\\cdot x_i)\\]\n\n\n\n\n\n\n\nLösung Aufgabe 2.1\n\n\n\n\n\n\n\\[\\sum_{i=1}^{5}x_i=1+4+5+8+10=28\\]\n\\[\\sum_{i=1}^{5}x_i=1+16+25+64+1000=1106\\]\n\\[\\sum_{i=1}^{3}x_i=(1+4+5)^2=(10)^2=100\\]\n\\[\\sum_{i=1}^{5}x_i=6+9+10+13+15=53\\]\n\\[\\sum_{i=3}^{5}x_i=10+16+20=46\\]",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.2",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.2",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.2",
+    "text": "Aufgabe 2.2\nWelches Mass sagt etwas über die Verteilung einer nominalskalierten Skala aus?\n\n\n\n\n\n\nLösung Aufgabe 2.2\n\n\n\n\n\nMit Kennwerten der Dispersion soll angegeben werden, wie sehr sich die Merkmalsträger über die Kategorien verteilen, d.h., wie gleichmässig oder ungleichmässig die Werte der Skala vorkommen. Maximale Dispersion ist gegeben, wenn alle Kategorien gleich häufig besetzt sind, also eine Gleichverteilung der Messwerte vorliegt. Minimale Dispersion ist gegeben, wenn die Merkmalsträger sich überhaupt nicht unterscheiden, also alle den gleichen Messwert tragen. Zur Berechnung eignet sich dazu der relative Informationsgehalt H. Eine solche Berechnung müssen Sie in diesem Semester nicht durchführen können.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.3",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.3",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.3",
+    "text": "Aufgabe 2.3\nZwölf Studierende an der Universität Luzern wurden gefragt, welches Menü in der Mensa sie am liebsten mögen. Dies wurde auf einer Skala mit 1 = MENÜ SOUL, 2 = MENÜ VEGVEG und 3 = MENÜ BOWL erhoben.\nErstellen Sie mit den folgenden Messwerten eine Häufigkeitstabelle. Berechnen Sie die absolute Häufigkeit \\(n_j\\), die relative Häufigkeit \\(h_j\\) und die relative Häufigkeit in Anteilen von 100 (\\(\\%_j\\)) der Merkmalsausprägungen. Überprüfen Sie Ihre Lösung bevor Sie zu Aufgabe 2.4 gehen.\n\nRunden Sie die Ergebnisse auf zwei Stellen nach dem Komma.\n\n\n\n\nID\nMenü\n\n\n\n\n01\n1\n\n\n02\n2\n\n\n03\n3\n\n\n04\n1\n\n\n05\n3\n\n\n06\n3\n\n\n07\n1\n\n\n08\n2\n\n\n09\n3\n\n\n10\n3\n\n\n11\n3\n\n\n12\n1\n\n\n\n\nBeispieltabelle\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n4\n0.33\n33%\n\n\n2\n2\n0.17\n17%\n\n\n3\n6\n0.50\n50%",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.4",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.4",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.4",
+    "text": "Aufgabe 2.4\nZeichnen Sie nun ein Kuchendiagramm dieser Häufigkeitstabelle. Notieren die zu den entsprechenden Segmenten die Prozentwerte und erstellen Sie eine Legende.\n\n\n\n\n\n\nLösung Aufgabe 2.4\n\n\n\n\n\n So würde ein mögliches Säulendiagramm aussehen:",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.5",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.5",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.5",
+    "text": "Aufgabe 2.5\nHier sehen Sie die Häufigkeitsverteilung von 24 Klient:innen über neun mögliche Persönlichkeitsstörungen hinweg.\n\nBestimmen Sie den Modalwert.\n\n\n\n\nAbbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.5a\n\n\n\n\n\nIm vorliegenden Fall ist der Modalwert Dissozial oder Dissoziale Persönlichkeitsstörung:\n\\(Mo=\\) Dissoziale Persönlichkeitsstörung\n\n\n\n\n\n\n\n\n\nTipp\n\n\n\n\n\nEs wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!\nAusserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.\n\n\n\n\nNehmen wir an, dass eine weitere Person mit der Persönlichkeitsstörung Ängstliche Persönlichkeitsstörung dazukommt. Was verändert sich in Bezug auf den Modalwert?\n\n\n\n\n\n\n\nLösung Aufgabe 2.5b\n\n\n\n\n\nEs gibt nun zwei Antwortkategorien, die gleich häufig vorkommen (ängstliche Persönlichkeitsstörung und dissoziale Persönlichkeitsstörung). Der Modus ist durch die Gleichverteilungen (Verteilungen, bei denen alle Merkmalsausprägungen mit gleicher Häufigkeit vorkommen) nicht definiert.\nDer Modus reagiert sensibel auf leichte Veränderungen der Verteilung im Gipfelbereich (Gipfelverschiebungen bei ähnlich häufig besetzten Kategorien im Gipfelbereich).",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.6",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.6",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.6",
+    "text": "Aufgabe 2.6\nDie Messwerte eines Merkmals sind 7, 2, 5, 1, 10, 2, 1, 2. Welche Antworten zum Modalwert und Median sind korrekt?\n\nDer Modalwert ist 2.\nDer Median ist 5.\nDer Modalwert ist 5.\nDer Median ist 2.\nDer Median ist 2.5.\n\n\n\n\n\n\n\nLösung Aufgabe 2.6\n\n\n\n\n\nKorrekte Antworten: a, d",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.7",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.7",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.7",
+    "text": "Aufgabe 2.7\nBei einem Experiment wird gemessen, wie lange die Versuchspersonen mit geschlossenen Augen auf einem Bein stehen können. Nach 21 Personen liegen folgende Messwerte in Sekunden vor.\n18, 36, 18, 22, 23, 24, 26, 29, 32, 34, 36, 16, 42, 22, 43, 46, 46, 49, 57, 34, 23\n\nBerechnen Sie den Median.\nBerechnen Sie das untere Quartil (\\(Q_1\\)) und das obere Quartil (\\(Q_3\\)).\nBerechnen Sie den Interquartilsabstand (\\(IQR\\)).\n\n\n\n\n\n\n\nLösung Aufgabe 2.7a\n\n\n\n\n\nZuerst ordnen wir die Messwerte nach ihrer Reihenfolge.\n16, 18, 18, 22, 22, 23, 23, 24, 26, 29, 32, 34, 34, 36, 36, 42, 43, 46, 46, 49, 57\nDer Median berechnet sich durch \\((n+1)/2\\). Da 21 Messwerte vorliegen, liegt der Median beim 11. Messwert (Berechnung: \\(22/2\\)). Der 11. Messwert in der geordneten Folge beträgt 32 Sekunden.\n\\(Md = 32\\) Sekunden\nHinweis zum Modalwert: Hier liegen mehrere Modalwerte vor (18, 22, 23, 34, 36, 46). Wir haben somit multimodale Daten, was zeigt, dass hier ein Modalwert nicht informativ ist.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7b\n\n\n\n\n\nDas untere Quartil (\\(Q_1\\)): Wir teilen dazu den Stichprobenumfang durch 4 (\\(21/4=5.25\\)) oder multiplizieren den Stichprobenumfang mit 0.25 (\\(n\\cdot 0.25 = 21\\cdot0.25=5.25\\)) und runden dann auf die nächste ganze Zahl (\\(6\\)). \\(Q_1\\) liegt also beim 6. Messwert, bei 23 Sekunden.\nDas obere Quartil (\\(Q_3\\)): Wir multiplizieren dazu den Stichprobenumfang mit 0.75 (\\(n\\cdot 0.75 = 21\\cdot0.75=15.75\\)) und runden dann auf die nächste ganze Zahl (\\(16\\)). Das obere Quartil liegt also beim 16. Messwert, bei 42 Sekunden.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7c\n\n\n\n\n\n\\(IQR = Q3 - Q1\\)\n\\(IQR = 42 - 23 = 19\\)\nDer Interquartilsabstand beträgt \\(19\\).\n\n\n\n \nHerzliche Gratulation, alle Übungen sind geschafft!",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
     ]
   }
 ]
