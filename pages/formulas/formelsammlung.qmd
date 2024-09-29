@@ -1,0 +1,26 @@
+---
+title: "Download"
+date: "2024-09-16"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+license: CC BY
+---
+
+<br>
+
+**OLAT**
+
+Die aktuellste Formelsammlung finden Sie jeweils auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
+
+<br>
+
+**Direktdownload**
+
+[Formelsammlung zum herunterladen.](../../ressources/Formelsammlung_Statistik1_HS24_Seite2.pdf)
+
+ *(Achtung, diese Formelsammlung dient der schnellen Zugänglichkeit. Sie ist evtl. nicht immer die aktuellste!)*
