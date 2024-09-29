@@ -1,5 +1,125 @@
 [
   {
+    "objectID": "pages/exercises/exercise_03.html",
+    "href": "pages/exercises/exercise_03.html",
+    "title": "Übung 3",
+    "section": "",
+    "text": "Hinweis: Die Formelsammlung zu dieser Übung finden Sie auf OLAT oder hier. Benützen Sie sie, wann immer Sie möchten.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.1",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.1",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.1",
+    "text": "Aufgabe 3.1\nGeben Sie zu jedem Skalenniveau alle Berechnung(en) der zentralen Tendenz (Modalwert, Median, Mittelwert) an, welche grundsätzlich erlaubt sind:\n\nNominalskala\nOrdinalskala\nMetrische Skala\nVerhältnisskala\n\n\n\n\n\n\n\nLösung Aufgabe 3.1\n\n\n\n\n\n\nModalwert\nModalwert, Median\nModalwert, Median, Mittelwert\nModalwert, Median, Mittelwert",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.2",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.2",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.2",
+    "text": "Aufgabe 3.2\nUm zu entscheiden, welches Mass für die zentrale Tendenz geeignet ist, müssen Sie zunächst bestimmen, …\n\nwelche Diagramme passenderweise erstellt werden können.\nwie gross die Anzahl Messwerte (\\(n=\\) …) ist, die vorkommen.\nwelches Skalenniveau verwendet wurde und welche Form die Verteilung hat.\nmit welcher Erhebungsmethode die Messwerte gemessen wurde.\n\nWählen Sie die korrekte Antwort aus.\n\n\n\n\n\n\nLösung Aufgabe 3.2\n\n\n\n\n\nKorrekt ist: c.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.3",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.3",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.3",
+    "text": "Aufgabe 3.3\nMit 10 Personen wurde ein IQ-Test durchgeführt. In der folgenden Tabelle sind die Versuchspersonennummern (ID) und deren Testwerte notiert.\n\nIQ-Testwerte von 10 Personen\n\n\nID\nTestwert\n\n\n\n\n01\n102\n\n\n02\n98\n\n\n03\n112\n\n\n04\n128\n\n\n05\n79\n\n\n06\n111\n\n\n07\n89\n\n\n08\n81\n\n\n09\n92\n\n\n10\n108\n\n\n\n\n\nBerechnen Sie von Hand oder mit einem Taschenrechner den Mittelwert.\n\n\n\n\n\n\n\nLösung Aufgabe 3.3a\n\n\n\n\n\n\\(102+98+112+128+79+111+89+81+92+108=1000\\)\n\\(1000:10=100\\)\n\\(\\bar{x} = 100\\)\n\n\n\n\n\nWelche beiden Masse wurden hier berechnet? Was sagt der Wert \\(14.52\\) aus?\n\n\\(s^2_x=\\frac{(102-10)^2+(98-10)^2+(112-10)^2+(128-10)^2+(79-10)^2+(111-10)^2+(89-10)^2+(81-10)^2+(92-10)^2+(108-10)^2}{10}=210.8\\)\n\\(s_x=\\sqrt{210.8}=14.52\\)\n\n\n\n\n\n\nLösung Aufgabe 3.3b\n\n\n\n\n\nHier werden die Varianz \\(s^2_x\\) und die Standardabweichung (SD) \\(s_x\\) berechnet. Die Standardabweichung beträgt \\(14.52\\). Die Mehrheit der Messwerte liegen zwischen - 1 SD und + 1 SD um den Mittelwert herum. In unseren Daten liegen die Messwert also mehrheitlich zwischen \\(85.48\\) und \\(114.52\\). Durch dieses Mass erhalten wir Informationen, wie die Daten um den Mittelwert “streuen”.\n\n\n\n\n\nGeben Sie den Streubereich und den Range an.\n\n\n\n\n\n\n\nLösung Aufgabe 3.3c\n\n\n\n\n\nStreubereich (Wertebereich, in dem alle beobachteten Werte liegen):\n\\(SB=[79;128]\\)\nRange (Variationsbreite):\n\\(v=128-79=49\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.4",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.4",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.4",
+    "text": "Aufgabe 3.4\nHier finden Sie die wöchentliche sportliche Aktivität (in Stunden) der elf Spielerinnen des Fussballteams FC Mediana.\n\nWöchentliche sportliche Aktivität der Fussballspielerinnen des FC Mediana\n\n\nID\nh\n\n\n\n\n01\n3\n\n\n02\n12\n\n\n03\n1\n\n\n04\n2\n\n\n05\n20\n\n\n06\n8\n\n\n07\n10\n\n\n08\n13\n\n\n09\n9\n\n\n10\n3\n\n\n11\n7\n\n\n\n\n\nBerechnen Sie die durchschnittliche wöchentliche Aktivität der Spielerinnen in Stunden.\n\n\n\n\n\n\n\nLösung Aufgabe 3.4a\n\n\n\n\n\n\\[\\bar{x}=\\frac{3+12+1+2+20+8+10+13+9+3+7}{11}=\\frac{88}{11}=8\\]\n\n\n\n\n\nBerechnen Sie die Varianz und die Standardabweichung. Runden Sie, wo nötig, auf zwei Stellen nach dem Komma.\n\n\n\n\n\n\n\nLösung Aufgabe 3.4b\n\n\n\n\n\n\n\n\nID\nh\n\\(x_i-\\bar{x}\\)\n\\((x_i-\\bar{x})^2\\)\n\n\n\n\n01\n3\n-5\n25\n\n\n02\n12\n4\n16\n\n\n03\n1\n-7\n49\n\n\n04\n2\n-6\n36\n\n\n05\n20\n12\n144\n\n\n06\n8\n0\n0\n\n\n07\n10\n2\n4\n\n\n08\n13\n5\n25\n\n\n09\n9\n1\n1\n\n\n10\n3\n-5\n25\n\n\n11\n7\n-1\n1\n\n\n\\(\\sum\\)\n88\n0\n326\n\n\n\nFür die Varianz werden zuerst die Abweichungen vom Mittelwert notiert und diese dann quadriert. Nun wird die Quadratsumme \\(326\\) durch die Anzahl Messwerte geteilt.\n\\(s_x^2=\\frac{326}{11}=29.64\\)\nFür die Standardabweichung wird nun die Wurzel aus der Varianz berechnet.\n\\(s_x=\\sqrt{29.64}=5.44\\)\nDie Standardabweichung der wöchentlichen Aktivität liegt bei \\(5.44\\) Stunden. Das Mass gibt Auskunft darüber, wie stark die gemessenen Werte vom Mittelwert abweichen. Bei annähernd normalverteilten Daten liegen etwa \\(68\\)% aller Daten innerhalb einer Standardabweichung über und unter dem Mittelwert.\n\n\n\n\n\nBestimmen Sie den Median.\n\n\n\n\n\n\n\nLösung Aufgabe 3.4c\n\n\n\n\n\nDer Median liegt bei \\(Md=8\\).\n\n\n\n\n\nGeben Sie den Streubereich und den Range (Variationsbreite) an.\n\n\n\n\n\n\n\nLösung Aufgabe 3.4d\n\n\n\n\n\n\\(SB=[1;20]\\)\n\\(v=20-1=19\\)\n\n\n\n\n\nBerechnen Sie \\(Q_1\\), \\(Q_3\\) und den Interquartilsabstand (\\(IQR\\)).\n\n\n\n\n\n\n\nLösung Aufgabe 3.4e\n\n\n\n\n\n\\(Q_1=3\\)\n\\(Q_3=12\\)\n\\(IQR=9\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.5",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.5",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.5",
+    "text": "Aufgabe 3.5\nNehmen Sie nochmals die wöchentliche sportliche Aktivität der Spielerinnen des FC Mediana. Nun fällt leider Spielerin Nr. 05 verletzungsbedingt aus und wird durch eine neue Spielerin Nr. 12 ersetzt. Die neue Spielerin macht pro Woche 50 Stunden Sport.\nBestimmen Sie erneut den Mittelwert und den Median. Welche typischen Eigenschaften der beiden Lagemasse zeigen sich hierbei?\n\n\n\n\n\n\nLösung Aufgabe 3.5\n\n\n\n\n\n\\(\\overline{x}=\\frac{118}{11}=10.73\\)\n\\(Md=8\\)\nDer Mittelwert wird durch den Ausreisser nach oben verschoben, wohingegen der Median unverändert bleibt. Da sich der Mittelwert um mehr als 2 Stunden nach oben verschiebt, wäre es sinnvoll hier den Median zu berichten, da der Mittelwert die schiefe Verteilung nicht gut abbildet.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.6",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.6",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.6",
+    "text": "Aufgabe 3.6\nIn einer Untersuchung zu Sucht und Konsumverhalten von Jugendlichen wurde bei 12 Jugendlichen die Anzahl gekaufter Genuss- und Freizeitartikel pro Monat erhoben.\nEingekaufte Artikel: 3, 10, 25, 26, 29, 30, 32, 35, 35, 38, 45, 70\nStellen Sie die Daten mit einem Boxplot grafisch dar. Gehen Sie wie folgt vor:\n\nBestimmen Sie den Median.\nBestimmen Sie \\(Q_1\\), \\(Q_3\\) und \\(IQR\\).\nBerechnen Sie die Werte für die beiden Whiskers des Boxplots (\\(Q_1 - 1.5\\cdot IQR\\) und \\(Q_3 + 1.5\\cdot IQR\\)).\nZeichnen Sie nun mit den entsprechenden Werten einen Boxplot.\n\n\n\n\n\n\n\nLösung Aufgabe 3.6\n\n\n\n\n\n\\(Md=31\\)\n\\(Q_1=25\\)\n\\(Q_3=35\\)\n\\(IQR=10\\)\nWhisker unten: \\(Q_1-1.5\\cdot IQR=25-1.5\\cdot10=10\\)\nWhisker oben: \\(Q_3+1.5\\cdot IQR=35+1.5\\cdot10=50\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.7",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.7",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.7",
+    "text": "Aufgabe 3.7\nIn der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Sie folgenden Formen von Hand:\n\nNormalverteilung\nrechtsschiefe unimodale Verteilung\nlinksschiefe unimodale Verteilung\n\n\n\n\n\n\n\nLösung Aufgabe 3.7\n\n\n\n\n\n\n\n\n1. Normalverteilung, 2. rechtsschiefe Verteilung, 3. linksschiefe Verteilung",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.8",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.8",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.8",
+    "text": "Aufgabe 3.8\nZwei Personen lösen einen unterschiedlichen Test zu mathematischen Fähigkeiten. Person A löst einen Test ALPHA und Person B einen Test BETA. Beide Tests wurden an einer grossen Stichprobe getestet und validiert.\n\nALPHA hat einen Mittelwert von \\(\\bar x = 30\\) und eine Standardabweichung von \\(s_x = 10\\).\nBETA hat einen Mittelwert von \\(\\bar x = 100\\) und eine Standardabweichung von \\(s_x = 25\\).\nPerson A hat einen Testwert von \\(35\\) und Person B einen Testwert von \\(112\\) erreicht.\n\nVergleichen Sie die beiden Testwerte und geben Sie an, welche Aussage korrekt ist.\n\nPerson A hat einen leicht höheren Wert in mathematischen Fähigkeiten.\nPerson B hat einen leicht höheren Wert in mathematischen Fähigkeiten.\nPerson A hat einen deutlich höheren Wert in mathematischen Fähigkeiten.\nPerson B hat einen deutlich höheren Wert in mathematischen Fähigkeiten.\nBeide Personen haben denselben Wert in mathematischen Fähigkeiten.\nDarüber können wir keine Aussage machen, da wir die Verteilung nicht kennen.\n\n\n\n\n\n\n\nLösung Aufgabe 3.8\n\n\n\n\n\nLösung: a.\nDie beiden Testwerte können z-standardisiert werden, so dass sie verglichen werden können. Da wir bei ALPHA und BETA den Mittelwert und die Standardabweichung kennen, ist dies mit folgender Formel möglich.\n\\[z_m= \\frac{x_m-\\bar{x}}{s_X}\\]\nPerson A: \\((35–30)/10 = 0.50\\)\nPerson B: \\((112–100)/25 = 0.48\\)\nPerson A hat einen leicht höheren z-Wert. Dieser ist jedoch lediglich \\(0.02\\) Standardabweichungen höher, womit der Unterschied klein ist und inhaltlich kaum oder nicht relevant. Person A und Person B liegen beide etwa eine halbe Standardabweichung über dem Mittelwert.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_03.html#aufgabe-3.9",
+    "href": "pages/exercises/exercise_03.html#aufgabe-3.9",
+    "title": "Übung 3",
+    "section": "Aufgabe 3.9",
+    "text": "Aufgabe 3.9\nStandardisieren Sie diese Messwerte mit Hilfe der z-Transformation:\n\\(x_1=0\\), \\(x_2=1\\), \\(x_3=2\\), \\(x_4=2\\), \\(x_5=5\\)\n\n\n\n\n\n\nTipp\n\n\n\n\n\nBerechnen Sie zuerst Mittelwert und Standardabweichung. Wenn Sie diese kennen, können Sie die Formel zur z-Transformation nehmen und die Werte umrechnen.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 3.9\n\n\n\n\n\nMittelwert: \\(\\bar{x}=2\\)\nStandardabweichung: Zuerst berechnen wir die Differenz jedes Wertes zum Mittelwert, quadrieren die Werte und summieren sie auf. Dann teilen wir die Summe durch die Anzahl Messwerte. Das ergibt die Varianz. Anschliessend ziehen wir die Wurzel daraus.\n\\((0-2)^2+(1-2)^2+(2-2)^2+(2-2)^2+(5-2)^2=4+1+0+0+9=14\\)\n\\(\\frac{14}{5}=2.8\\)\n\\(\\sqrt{2.8}=1.67\\)\nNun können die Werte transformiert werden.\nBeispiel für \\(x_1\\):\n\\(z_1=\\frac{0-2}{1.67}=-1.20\\)\nIn z-Werte transformiert lautet die Messwertreihe also {\\({–1.20; –0.60; 0; 0; 1.80}\\)}.\nHinweis: Zur Vereinfachung wurden die Werte jeweils auf zwei Stellen nach dem Komma gerundet.\n\n\n\n\nWell done! Die Übungen für diese Woche sind geschafft.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 3"
+    ]
+  },
+  {
     "objectID": "pages/exercises/exercise_R.html",
     "href": "pages/exercises/exercise_R.html",
     "title": "Übung R",
@@ -143,6 +263,18 @@
       "Herzlich Willkommen",
       "Übungen",
       "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/formulas/formelsammlung.html",
+    "href": "pages/formulas/formelsammlung.html",
+    "title": "Download",
+    "section": "",
+    "text": "OLAT\nDie aktuellste Formelsammlung finden Sie jeweils auf OLAT.\n\nDirektdownload\nFormelsammlung zum herunterladen.\n(Achtung, diese Formelsammlung dient der schnellen Zugänglichkeit. Sie ist evtl. nicht immer die aktuellste!)\n\n\n\nReuseCC BY 4.0",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Formelsammlung",
+      "Download"
     ]
   }
 ]

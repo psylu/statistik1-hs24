@@ -5,6 +5,7 @@ project:
   - index.qmd
   - pages/admin/*.qmd
   - pages/exercises/*.qmd
+  - pages/formulas/*.qmd
 
 website:
   title: "Statistik 1"
@@ -25,7 +26,11 @@ website:
       contents:
        - pages/exercises/exercise_01.qmd
        - pages/exercises/exercise_02.qmd
+       - pages/exercises/exercise_03.qmd
        - pages/exercises/exercise_R.qmd
+    - section: Formelsammlung
+      contents:
+       - pages/formulas/formelsammlung.qmd
 format:
   html:
     theme:
