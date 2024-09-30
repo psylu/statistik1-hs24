@@ -1,5 +1,17 @@
 [
   {
+    "objectID": "pages/formulas/formelsammlung.html",
+    "href": "pages/formulas/formelsammlung.html",
+    "title": "Download",
+    "section": "",
+    "text": "OLAT\nDie aktuellste Formelsammlung finden Sie jeweils auf OLAT.\n\nDirektdownload\nFormelsammlung zum herunterladen.\n(Achtung, diese Formelsammlung dient der schnellen Zugänglichkeit. Sie ist evtl. nicht immer die aktuellste!)\n\n\n\nReuseCC BY 4.0",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Formelsammlung",
+      "Download"
+    ]
+  },
+  {
     "objectID": "pages/exercises/exercise_03.html",
     "href": "pages/exercises/exercise_03.html",
     "title": "Übung 3",
@@ -88,7 +100,7 @@
     "href": "pages/exercises/exercise_03.html#aufgabe-3.7",
     "title": "Übung 3",
     "section": "Aufgabe 3.7",
-    "text": "Aufgabe 3.7\nIn der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Sie folgenden Formen von Hand:\n\nNormalverteilung\nrechtsschiefe unimodale Verteilung\nlinksschiefe unimodale Verteilung\n\n\n\n\n\n\n\nLösung Aufgabe 3.7\n\n\n\n\n\n\n\n\n1. Normalverteilung, 2. rechtsschiefe Verteilung, 3. linksschiefe Verteilung",
+    "text": "Aufgabe 3.7\nIn der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Sie die folgenden Formen von Hand:\n\nNormalverteilung\nrechtsschiefe unimodale Verteilung\nlinksschiefe unimodale Verteilung\n\n\n\n\n\n\n\nLösung Aufgabe 3.7\n\n\n\n\n\n\n\n\n1. Normalverteilung, 2. rechtsschiefe Verteilung, 3. linksschiefe Verteilung",
     "crumbs": [
       "Herzlich Willkommen",
       "Übungen",
@@ -117,18 +129,6 @@
       "Herzlich Willkommen",
       "Übungen",
       "Übung 3"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_R.html",
-    "href": "pages/exercises/exercise_R.html",
-    "title": "Übung R",
-    "section": "",
-    "text": "Beispielsaufgabe R\nFüllen Sie zum Lösen der Aufgaben die ___-Stellen aus. Drücken Sie dann auf den grünen Pfeil (Run).\n\nErstellen Sie mit der Funktion c() einen Vektor und speichern Sie diesen in der Variable x. Der Vektor soll die Werte 90, 111, 117, 84, 98 und 102 enthalten.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nBerechnen Sie den Mittelwert und die Standardabweichung der Variable x. Verwenden sie dazu die Funktionen mean() und sd().\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nWebR\nDiese Seite wurde mit WebR erstellt: webR documentation.\n\n\n\n\n\nReuseCC BY 4.0CitationBibTeX citation:@online{senn2024,\n  author = {Senn, Mirjam and Wyssen, Gerda and Fitze, Daniel},\n  title = {Übung {R}},\n  date = {2024-09-16},\n  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nSenn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. “Übung\nR.” September 16, 2024. https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html.",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung R"
     ]
   },
   {
@@ -266,15 +266,15 @@
     ]
   },
   {
-    "objectID": "pages/formulas/formelsammlung.html",
-    "href": "pages/formulas/formelsammlung.html",
-    "title": "Download",
+    "objectID": "pages/exercises/exercise_R.html",
+    "href": "pages/exercises/exercise_R.html",
+    "title": "Übung R",
     "section": "",
-    "text": "OLAT\nDie aktuellste Formelsammlung finden Sie jeweils auf OLAT.\n\nDirektdownload\nFormelsammlung zum herunterladen.\n(Achtung, diese Formelsammlung dient der schnellen Zugänglichkeit. Sie ist evtl. nicht immer die aktuellste!)\n\n\n\nReuseCC BY 4.0",
+    "text": "Beispielsaufgabe R\nFüllen Sie zum Lösen der Aufgaben die ___-Stellen aus. Drücken Sie dann auf den grünen Pfeil (Run).\n\nErstellen Sie mit der Funktion c() einen Vektor und speichern Sie diesen in der Variable x. Der Vektor soll die Werte 90, 111, 117, 84, 98 und 102 enthalten.\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nBerechnen Sie den Mittelwert und die Standardabweichung der Variable x. Verwenden sie dazu die Funktionen mean() und sd().\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\nWebR\nDiese Seite wurde mit WebR erstellt: webR documentation.\n\n\n\n\n\nReuseCC BY 4.0CitationBibTeX citation:@online{senn2024,\n  author = {Senn, Mirjam and Wyssen, Gerda and Fitze, Daniel},\n  title = {Übung {R}},\n  date = {2024-09-16},\n  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nSenn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. “Übung\nR.” September 16, 2024. https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html.",
     "crumbs": [
       "Herzlich Willkommen",
-      "Formelsammlung",
-      "Download"
+      "Übungen",
+      "Übung R"
     ]
   }
 ]

@@ -11,8 +11,6 @@ author:
     affiliation-url: https://www.unilu.ch/fakultaeten/vpf
 license: CC BY
 citation: true
-execute:
-  echo: false
 ---
 
 Hinweis: Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913) oder [hier](../../ressources/Formelsammlung_Statistik1_HS24_Seite2.pdf). Benützen Sie sie, wann immer Sie möchten.
@@ -277,34 +275,15 @@ $IQR=10$
 
 <br>
 
-```{r}
-#| echo: false
-#| warning: false
+![](img/ue3.6_boxplot.jpg)
 
-# plot boxplot
-library(ggplot2)
-
-  d <- data.frame(bought_items = c(3, 10, 25, 26, 29, 30, 32, 35, 35, 38, 45, 50))
-
-d |> ggplot(aes(y = bought_items)) +
-  geom_boxplot(width = 0.5,
-               coef = 1.6,
-               outliers = FALSE) +
-  theme_minimal()+
-  xlim(-1,1) +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank()) +
-  ggtitle("Boxplot: Median, Q1, Q3 und Whiskers")
-
-```
 :::
 
 <br>
 
 ## Aufgabe 3.7
 
-In der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Sie folgenden Formen von Hand: 
+In der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Sie die folgenden Formen von Hand: 
 
 - Normalverteilung
 - rechtsschiefe unimodale Verteilung
@@ -313,7 +292,7 @@ In der Vorlesung wurden verschiedene Verteilungsformen besprochen. Skizzieren Si
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 3.7
 
-![1. Normalverteilung, 2. rechtsschiefe Verteilung, 3. linksschiefe Verteilung](img/dist3.6.jpg)
+![1. Normalverteilung, 2. rechtsschiefe Verteilung, 3. linksschiefe Verteilung](img/ue3.7_distributions.jpg)
 :::
 
 <br>
