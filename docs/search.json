@@ -12,6 +12,272 @@
     ]
   },
   {
+    "objectID": "pages/exercises/exercise_04.html",
+    "href": "pages/exercises/exercise_04.html",
+    "title": "Übung 4",
+    "section": "",
+    "text": "Hinweis: Die Formelsammlung zu dieser Übung finden Sie auf OLAT. Benützen Sie sie, wann immer Sie möchten.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.1",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.1",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.1",
+    "text": "Aufgabe 4.1\nWie gross ist die Wahrscheinlichkeit für \\({\\overline{A}}\\), wenn \\(P(A)=.25\\) ist? Geben Sie an, welche Antwort korrekt ist.\n\nDie Wahrscheinlichkeit ist \\(P\\left(\\overline{A}\\right)=.25\\).\nDie Wahrscheinlichkeit ist \\(P\\left(\\overline{A}\\right)=.75\\).\nDie Wahrscheinlichkeit ist \\(P\\left(\\overline{A}\\right)=.50\\).\nDie Wahrscheinlichkeit für \\(\\overline{A}\\) kann nicht bestimmt werden.\n\n\n\n\n\n\n\nLösung Aufgabe 4.1\n\n\n\n\n\nKorrekt ist: b",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.2",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.2",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.2",
+    "text": "Aufgabe 4.2\nWas sagt die folgende Formel aus und welche Begriffe passen in die Lücken?\nWenn beide ________ A und B stochastisch ___________ sind, gilt für die Wahrscheinlichkeiten des gemeinsamen Auftretens der Ereignisse:\n\\[P\\left(A\\cap B\\right)=P\\left(A\\right)\\cdot P\\left(B\\right)\\]\n\n\n\n\n\n\nLösung Aufgabe 4.2\n\n\n\n\n\nMultiplikationstheorem:\nWenn beide Ereignisse A und B stochastisch unabhängig sind, gilt für die Wahrscheinlichkeiten des gemeinsamen Auftretens der Ereignisse, dass das gemeinsame Auftreten der Ereignisse gleich wahrscheinlich ist, wie das Produkt der einzelnen Ereignisse.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.3",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.3",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.3",
+    "text": "Aufgabe 4.3\nWie gross sind folgende Wahrscheinlichkeiten?\n\nMit einem fairen Würfel dreimal hintereinander eine 5 zu würfeln?\n\n\n\n\n\n\n\nLösung Aufgabe 4.3a\n\n\n\n\n\n\\(P\\left(W\\right)=\\frac{1}{6}\\cdot\\frac{1}{6}\\cdot\\frac{1}{6}=(\\frac{1}{6})^3=\\frac{1}{216}=0.046\\)\n\n\n\n\n\nIn einem Kartenspiel mit 36 Karten gibt es vier Karten mit dem Wert 10. Nun werden nacheinander drei Karte gezogen. Wie gross ist die Wahrscheinlichkeit nacheinander dreimal eine 10-er Karten zu ziehen?\n\n\n\n\n\n\n\nLösung Aufgabe 4.3b\n\n\n\n\n\n\\(P\\left(K\\right)=\\frac{4}{36}\\cdot\\frac{3}{35}\\cdot\\frac{2}{34}=\\frac{24}{42840}=0.00056\\)\n\n\n\n\n\nWie gross ist die Wahrscheinlichkeit, wenn die jeweils verbleibenden Karten aus Aufgabe b. nach jeder gezogenen Karte neu gemischt werden?\n\n\n\n\n\n\n\nLösung Aufgabe 4.3c\n\n\n\n\n\nDie Wahrscheinlichkeit verändert sich durch das Mischen nicht.\n\n\n\n\n\nWie gross ist die Wahrscheinlichkeit, wenn die Karten nach jedem Zug wieder zurück in den Stapel gemischt werden und erst dann wieder gezogen wird?\n\n\n\n\n\n\n\nLösung Aufgabe 4.3d\n\n\n\n\n\n\\(P\\left(K\\right)=(\\frac{4}{36})^3=(\\frac{64}{46656})^3=0.0014\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.4",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.4",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.4",
+    "text": "Aufgabe 4.4\nEin Fragebogen zu depressiver Symptomatik enthält 10 Items mit je den Antwortmöglichkeiten «trifft zu» und «trifft nicht zu». Wie viele verschiedene Möglichkeiten gibt es, den Fragebogen auszufüllen, wenn pro Frage immer eine Antwort ausgewählt wird?\n\n\n\n\n\n\nLösung Aufgabe 4.4\n\n\n\n\n\n\\(P\\left(FB\\right)=2^{10}=1024\\) Möglichkeiten",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.5",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.5",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.5",
+    "text": "Aufgabe 4.5\nIm Untertest „Bilderordnen“ des Hamburg-Wechsler-Intelligenztests (HAWIK) werden die Versuchspersonen aufgefordert, verschiedene grafisch dargestellte Szenen so in eine Reihenfolge zu bringen, dass sie eine sinnvolle Geschichte ergeben. Wie gross ist die Wahrscheinlichkeit, dass die richtige Reihenfolge von sechs Einzelbildern zufällig erraten wird (Aufgabe aus Bortz & Schuster, 2010)?\n\n\n\n\n\n\nLösung Aufgabe 4.5\n\n\n\n\n\nDas erste Bild muss aus sechs Bildern gewählt werden, das zweite nur noch aus fünf usw.. Mit jedem Ereignis (Bildwahl) ändert sich die Menge der Elementarereignisse des nächsten Zufallsexperiments. Somit ergibt sich:\n\\(P\\left(B\\right)=\\frac{1}{6}\\cdot\\frac{1}{5}\\cdot\\frac{1}{4}\\cdot\\frac{1}{3}\\cdot\\frac{1}{2}\\cdot\\frac{1}{1}=\\frac{1}{6!}=\\frac{1}{720}=0.0014\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.6",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.6",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.6",
+    "text": "Aufgabe 4.6\nEine Professorin behauptet hellsehen zu können. Wie gross ist die Wahrscheinlichkeit, dass die Professorin die Geburtsmonate von fünf Studierenden richtig «vorhersagen» kann? Wir wissen bereits, dass alle fünf Studierende in verschiedenen Monaten Geburtstag haben. Wir nehmen ausserdem an, dass alle Geburtsmonate die gleiche Auftretenswahrscheinlichkeit haben.\n\n\n\n\n\n\nLösung Aufgabe 4.6\n\n\n\n\n\n\\(P\\left(M\\right)=\\frac{5}{12}\\cdot\\frac{4}{11}\\cdot\\frac{3}{10}\\cdot\\frac{2}{9}\\cdot\\frac{1}{8}=\\frac{120}{95040}=0.0013\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.7",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.7",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.7",
+    "text": "Aufgabe 4.7\nAm Bahnhof werden n = 100 Personen gefragt, ob sie einen Schirm dabei haben und ob es auf dem Weg zum Bahnhof geregnet hat. Nun wird zufällig eine Person ausgewählt und wir notieren, ob sie einen Schirm dabei hat und ob es auf dem Weg zum Bahnhof geregnet hat.\n\n\nWie hoch ist die Wahrscheinlichkeit, dass die ausgewählte Person einen Regenschirm dabei hat?\n\n\n\n\n\n\n\nLösung Aufgabe 4.7a\n\n\n\n\n\n\\(P\\left(Schirm\\right)=\\frac{30}{100}=0.3\\)\n\n\n\n\nWie hoch ist die Wahrscheinlichkeit, dass die ausgewählte Person bei Regen zum Bahnhof kam?\n\n\n\n\n\n\n\nLösung Aufgabe 4.7b\n\n\n\n\n\n\\(P\\left(Regen\\right)=\\frac{50}{100}=0.5\\)\n\n\n\n\nWie hoch ist die Wahrscheinlichkeit, dass die ausgewählte Person keinen Regenschirm dabei hat?\n\n\n\n\n\n\n\nLösung Aufgabe 4.7c\n\n\n\n\n\n\\(P\\left(\\overline {Schirm}\\right)=\\frac{70}{100}=0.7\\) (oder \\(1-0.3\\))\n\n\n\n\nWie hoch ist die Wahrscheinlichkeit, dass die Person ohne Regen zum Bahnhof kam?\n\n\n\n\n\n\n\nLösung Aufgabe 4.7d\n\n\n\n\n\n\\(P\\left(\\overline {Regen}\\right)=\\frac{50}{100}=0.5\\) (oder \\(1-0.5\\))\n\n\n\n\nPrüfen Sie anhand des Multiplikationstheorems, ob das Mitbringen eines Regenschirms und dass es auf dem Weg zum Bahnhof geregnet hat, unabhängige Ereignisse sind.\n\n\n\n\n\n\n\nLösung Aufgabe 4.7e\n\n\n\n\n\n\\(P\\left(A\\cap B\\right)=P\\left(A\\right)\\cdot P\\left(B\\right)\\)\n\\(P\\left(Schirm\\cap Regen\\right)=\\frac{20}{100}=0.2\\)\n\\(P\\left(Schirm\\right)\\cdot P\\left(Regen\\right)=0.3\\cdot 0.5=0.15\\)\nDie beiden Ereignisse sind stochastisch nicht unabhängig (d.h. abhängig).",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.8",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.8",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.8",
+    "text": "Aufgabe 4.8\nBedingte Wahrscheinlichkeit: Bleiben wir beim Regenschirm-Beispiel.\n\nWie hoch ist die bedingte Wahrscheinlichkeit, dass die Person einen Schirm dabei hat, wenn man weiss, dass sie bei Regen zum Bahnhof gekommen ist?\n\n\n\n\n\n\n\nLösung Aufgabe 4.8a\n\n\n\n\n\n\\(P\\left(\\left.Schirm\\right|Regen\\right)=\\frac{20}{30}=0.67\\)\n\n\n\n\nWie hoch ist die bedingte Wahrscheinlichkeit, dass eine Person einen Schirm dabei hat, wenn man weiss, dass sie ohne Regen zum Bahnhof gekommen ist?\n\n\n\n\n\n\n\nLösung Aufgabe 4.8b\n\n\n\n\n\n\\(P\\left(\\left.Schirm\\right|\\overline{Regen}\\right)=\\frac{10}{30}=0.33\\)\n\n\n\n\nPrüfen Sie auch mit der Formel der stochastischen Unabhängigkeit, ob die drei Eregnisse unabhängig sind: \\(P\\left(\\left.B\\right|{A}\\right)=P\\left(\\left.B\\right|\\overline{A}\\right)=P\\left(B\\right)\\).\n\n\n\n\n\n\n\nLösung Aufgabe 4.8c\n\n\n\n\n\n\\(P\\left(\\left.B\\right|{A}\\right)=P\\left(\\left.B\\right|\\overline{A}\\right)=P\\left(B\\right)\\)\n\\(P\\left(\\left.Schirm\\right|{Regen}\\right)=\\frac{20}{100}=0.2\\)\n\\(P\\left(\\left.Schirm\\right|\\overline{Regen}\\right)=\\frac{30}{100}=0.3\\)\n\\(P\\left(Schirm\\right)=\\frac{30}{100}=0.3\\)\nSomit ist gezeigt, dass in diesem Beispiel die Wahrscheinlichkeit einen Schirm dabei zu haben nicht unabhängig davon ist, ob es auf dem Weg zum Bahnhof geregnet hat.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.9",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.9",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.9",
+    "text": "Aufgabe 4.9\nBayes-Theorem: Die Verbreitung einer Erkrankung in der Population beträgt \\(1\\)%. Beim Vorliegen der Erkrankung ist die Wahrscheinlichkeit \\(0.90\\), dass eine positive Diagnose erfolgt. Liegt dagegen die Erkrankung nicht vor, so wird mit einer Wahrscheinlichkeit von \\(0.95\\) eine negative Diagnose gestellt (Aufgabe aus Bortz & Schuster, 2010).\n\nBestimmen Sie die Prävalenz, Sensitivität und Spezifität.\nWie hoch ist die Wahrscheinlichkeit von „falsch Negativen“ \\(P\\left(\\left.\\overline{D}\\right|{K}\\right)\\), d.h. erkrankten Personen mit negativer Diagnose?\nWie hoch ist die Wahrscheinlichkeit von „falsch Positiven“ \\(P\\left(\\left.D\\right|\\overline{K}\\right)\\), d.h. nicht-erkrankten Personen mit positiver Diagnose?\nWie hoch ist die bedingte Wahrscheinlichkeit, dass die getestete Person auch wirklich krank ist, wenn der Test positiv ausfällt \\(P\\left(\\left.K\\right|D\\right)\\)?\n\n\n\n\n\n\n\nLösung Aufgabe 4.9a\n\n\n\n\n\nPrävalenz \\(P\\left(K\\right)=0.01\\)\nSensitivität \\(P\\left(\\left.D\\right|{K}\\right)=0.90\\)\nSpezifität \\(P\\left(\\left.\\overline{D}\\right|\\overline{K}\\right)= 0.95\\)\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 4.9b\n\n\n\n\n\n\\(P\\left(\\left.\\overline{D}\\right|{K}\\right)=1-P\\left(\\left.D\\right|{K}\\right)=1-0.9=0.1\\)\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 4.9c\n\n\n\n\n\n\\(P\\left(\\left.D\\right|\\overline{K}\\right)=1-P\\left(\\left.\\overline{D}\\right|\\overline{K}\\right)=1-0.95=0.05\\)\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 4.9d\n\n\n\n\n\n\\(P\\left(\\left.K\\right|{D}\\right)=\\frac{P\\left(\\left.D\\right|K\\right)\\cdot P\\left(K\\right)}{P\\left(\\left.D\\right|K\\right)\\cdot P\\left(K\\right)+P\\left(\\left.D\\right|\\overline{K}\\right)\\cdot P\\left(\\overline{K}\\right)}\\)\n\\(P\\left(\\left.K\\right|{D}\\right)=\\frac{0.90\\cdot 0.01}{0.90 \\cdot 0.01+0.05 \\cdot 0.99}=0.154\\), das entspricht \\(15.4\\)%",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_04.html#aufgabe-4.10",
+    "href": "pages/exercises/exercise_04.html#aufgabe-4.10",
+    "title": "Übung 4",
+    "section": "Aufgabe 4.10",
+    "text": "Aufgabe 4.10\n\nKnobelaufgabe\nIm Studiengang Psychologie an der Universität Luzern sind 160 Studierende im ersten Semester eingeschrieben, davon 120 Frauen. Von allen Studierenden haben 30 Frauen keinen Kurs im Nebenfach gebucht. 30 Männer haben einen Kurs im Nebenfach gebucht.\nWie gross ist die Wahrscheinlichkeit, dass ein beliebiger Psychologiestudent keinen Kurs im Nebenfach gebucht hat?\nGesucht ist also die bedingte Wahrscheinlichkeit, keinen Kurs im Nebenfach gebucht zu haben («nein»), unter der Bedingung, dass es sich um einen Mann handelt (Gender «m»): \\(P\\left(\\left.nein\\right|{m}\\right)\\)\nDie Angaben sind erfunden und entsprechen nicht unbedingt der Realität.\n\n\n\n\n\n\n\nLösung Aufgabe 4.10\n\n\n\n\n\n\\(P\\left(\\left.nein\\right|{m}\\right)=\\frac{10}{160}=0.0625\\)\n\n\n\n\n\nSie haben die Übungen für diese Woche geschafft. Bravo!",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 4"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html",
+    "href": "pages/exercises/exercise_02.html",
+    "title": "Übung 2",
+    "section": "",
+    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.1",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.1",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.1",
+    "text": "Aufgabe 2.1\nEin in der Statistik oft benötigtes Operationszeichen ist das Summenzeichen \\(Σ\\).\n\\[\\sum_{i=1}^{5}x_i=x_1+x_2+x_3+x_4+x_5\\] Diese Formel bedeutet beispielsweise, dass hier die Summe aller \\(xi\\)-Werte für \\(i=1\\) bis \\(5\\) berechnet wird. Der Laufindex \\(i\\) könnte auch durch einen beliebigen anderen Buchstaben ersetzt werden. Unterhalb des Summenzeichens wird die untere Grenze des Laufindex angegeben (hier \\(1\\)). Oberhalb des Summenzeichens findet man die obere Grenze. Weitere Beispiele sind:\n\\[\\sum_{i=3}^{5}x_i=x_3+x_4+x_5\\]\n\\[\\sum_{i=1}^{3}x^2_i=x^2_1+x^2_2+x^2_3\\]\nGegeben sind die fünf Werte \\(x_1=1\\), \\(x_2=4\\), \\(x_3=5\\), \\(x_4=8\\), \\(x_5=10\\). Berechnen Sie daraus folgende Summen:\n\n\\[\\sum_{i=1}^{5}x_i\\]\n\\[\\sum_{i=1}^{5}x^2_i\\]\n\\[(\\sum_{i=1}^{3}x_i)^2\\]\n\\[\\sum_{i=1}^{5}x_i+5\\]\n\\[\\sum_{i=3}^{5}(2\\cdot x_i)\\]\n\n\n\n\n\n\n\nLösung Aufgabe 2.1\n\n\n\n\n\n\n\\[\\sum_{i=1}^{5}x_i=1+4+5+8+10=28\\]\n\\[\\sum_{i=1}^{5}x_i=1+16+25+64+100=206\\]\n\\[\\sum_{i=1}^{3}x_i=(1+4+5)^2=(10)^2=100\\]\n\\[\\sum_{i=1}^{5}x_i=6+9+10+13+15=53\\]\n\\[\\sum_{i=3}^{5}x_i=10+16+20=46\\]",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.2",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.2",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.2",
+    "text": "Aufgabe 2.2\nWelches Mass sagt etwas über die Verteilung einer nominalskalierten Skala aus?\n\n\n\n\n\n\nLösung Aufgabe 2.2\n\n\n\n\n\nMit Kennwerten der Dispersion soll angegeben werden, wie sehr sich die Merkmalsträger über die Kategorien verteilen, d.h., wie gleichmässig oder ungleichmässig die Werte der Skala vorkommen. Maximale Dispersion ist gegeben, wenn alle Kategorien gleich häufig besetzt sind, also eine Gleichverteilung der Messwerte vorliegt. Minimale Dispersion ist gegeben, wenn die Merkmalsträger sich überhaupt nicht unterscheiden, also alle den gleichen Messwert tragen. Zur Berechnung eignet sich dazu der relative Informationsgehalt H. Eine solche Berechnung müssen Sie in diesem Semester nicht durchführen können.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.3",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.3",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.3",
+    "text": "Aufgabe 2.3\nZwölf Studierende an der Universität Luzern wurden gefragt, welches Menü in der Mensa sie am liebsten mögen. Dies wurde auf einer Skala mit 1 = MENÜ SOUL, 2 = MENÜ VEGVEG und 3 = MENÜ BOWL erhoben.\nErstellen Sie mit den folgenden Messwerten eine Häufigkeitstabelle. Berechnen Sie die absolute Häufigkeit \\(n_j\\), die relative Häufigkeit \\(h_j\\) und die relative Häufigkeit in Anteilen von 100 (\\(\\%_j\\)) der Merkmalsausprägungen. Überprüfen Sie Ihre Lösung bevor Sie zu Aufgabe 2.4 gehen.\n\nRunden Sie die Ergebnisse auf zwei Stellen nach dem Komma.\n\n\n\n\nID\nMenü\n\n\n\n\n01\n1\n\n\n02\n2\n\n\n03\n3\n\n\n04\n1\n\n\n05\n3\n\n\n06\n3\n\n\n07\n1\n\n\n08\n2\n\n\n09\n3\n\n\n10\n3\n\n\n11\n3\n\n\n12\n1\n\n\n\n\nBeispieltabelle\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n4\n0.33\n33%\n\n\n2\n2\n0.17\n17%\n\n\n3\n6\n0.50\n50%",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.4",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.4",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.4",
+    "text": "Aufgabe 2.4\nZeichnen Sie nun ein Kuchendiagramm dieser Häufigkeitstabelle. Notieren die zu den entsprechenden Segmenten die Prozentwerte und erstellen Sie eine Legende.\n\n\n\n\n\n\nLösung Aufgabe 2.4\n\n\n\n\n\n So würde ein mögliches Säulendiagramm aussehen:",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.5",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.5",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.5",
+    "text": "Aufgabe 2.5\nHier sehen Sie die Häufigkeitsverteilung von 24 Klient:innen über neun mögliche Persönlichkeitsstörungen hinweg.\n\nBestimmen Sie den Modalwert.\n\n\n\n\nAbbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.5a\n\n\n\n\n\nIm vorliegenden Fall ist der Modalwert Dissozial oder Dissoziale Persönlichkeitsstörung:\n\\(Mo=\\) Dissoziale Persönlichkeitsstörung\n\n\n\n\n\n\n\n\n\nTipp\n\n\n\n\n\nEs wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!\nAusserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.\n\n\n\n\nNehmen wir an, dass eine weitere Person mit der Persönlichkeitsstörung Ängstliche Persönlichkeitsstörung dazukommt. Was verändert sich in Bezug auf den Modalwert?\n\n\n\n\n\n\n\nLösung Aufgabe 2.5b\n\n\n\n\n\nEs gibt nun zwei Antwortkategorien, die gleich häufig vorkommen (ängstliche Persönlichkeitsstörung und dissoziale Persönlichkeitsstörung). Der Modus ist durch die Gleichverteilungen (Verteilungen, bei denen alle Merkmalsausprägungen mit gleicher Häufigkeit vorkommen) nicht definiert.\nDer Modus reagiert sensibel auf leichte Veränderungen der Verteilung im Gipfelbereich (Gipfelverschiebungen bei ähnlich häufig besetzten Kategorien im Gipfelbereich).",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.6",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.6",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.6",
+    "text": "Aufgabe 2.6\nDie Messwerte eines Merkmals sind 7, 2, 5, 1, 10, 2, 1, 2. Welche Antworten zum Modalwert und Median sind korrekt?\n\nDer Modalwert ist 2.\nDer Median ist 5.\nDer Modalwert ist 5.\nDer Median ist 2.\nDer Median ist 2.5.\n\n\n\n\n\n\n\nLösung Aufgabe 2.6\n\n\n\n\n\nKorrekte Antworten: a, d",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.7",
+    "href": "pages/exercises/exercise_02.html#aufgabe-2.7",
+    "title": "Übung 2",
+    "section": "Aufgabe 2.7",
+    "text": "Aufgabe 2.7\nBei einem Experiment wird gemessen, wie lange die Versuchspersonen mit geschlossenen Augen auf einem Bein stehen können. Nach 21 Personen liegen folgende Messwerte in Sekunden vor.\n18, 36, 18, 22, 23, 24, 26, 29, 32, 34, 36, 16, 42, 22, 43, 46, 46, 49, 57, 34, 23\n\nBerechnen Sie den Median.\nBerechnen Sie das untere Quartil (\\(Q_1\\)) und das obere Quartil (\\(Q_3\\)).\nBerechnen Sie den Interquartilsabstand (\\(IQR\\)).\n\n\n\n\n\n\n\nLösung Aufgabe 2.7a\n\n\n\n\n\nZuerst ordnen wir die Messwerte nach ihrer Reihenfolge.\n16, 18, 18, 22, 22, 23, 23, 24, 26, 29, 32, 34, 34, 36, 36, 42, 43, 46, 46, 49, 57\nDer Median berechnet sich durch \\((n+1)/2\\). Da 21 Messwerte vorliegen, liegt der Median beim 11. Messwert (Berechnung: \\(22/2\\)). Der 11. Messwert in der geordneten Folge beträgt 32 Sekunden.\n\\(Md = 32\\) Sekunden\nHinweis zum Modalwert: Hier liegen mehrere Modalwerte vor (18, 22, 23, 34, 36, 46). Wir haben somit multimodale Daten, was zeigt, dass hier ein Modalwert nicht informativ ist.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7b\n\n\n\n\n\nDas untere Quartil (\\(Q_1\\)): Wir teilen dazu den Stichprobenumfang durch 4 (\\(21/4=5.25\\)) oder multiplizieren den Stichprobenumfang mit 0.25 (\\(n\\cdot 0.25 = 21\\cdot0.25=5.25\\)) und runden dann auf die nächste ganze Zahl (\\(6\\)). \\(Q_1\\) liegt also beim 6. Messwert, bei 23 Sekunden.\nDas obere Quartil (\\(Q_3\\)): Wir multiplizieren dazu den Stichprobenumfang mit 0.75 (\\(n\\cdot 0.75 = 21\\cdot0.75=15.75\\)) und runden dann auf die nächste ganze Zahl (\\(16\\)). \\(Q3\\) liegt also beim 16. Messwert, bei 42 Sekunden.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7c\n\n\n\n\n\n\\(IQR = Q3 - Q1\\)\n\\(IQR = 42 - 23 = 19\\)\nDer Interquartilsabstand beträgt \\(19\\).\n\n\n\n \nHerzliche Gratulation, alle Übungen sind geschafft!",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 2"
+    ]
+  },
+  {
+    "objectID": "pages/admin/page_1.html",
+    "href": "pages/admin/page_1.html",
+    "title": "Informationen",
+    "section": "",
+    "text": "Hier finden Sie die wichtigsten Informationen zu den Übungen Statistik 1 im HS24.\n\nOrganisatorisches\n\nDie Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.\nDie Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.\nFalls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.\nEs ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben.\nFalls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn.\n\n\n\nFormat der Übungen\n\nDie Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.\nDie Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können.\nZu allen Aufgaben gibt es Lösungen oder Musterlösungen.\nAm 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache R und das Programm R Studio. Sie müssen in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der Übung R."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Herzlich Willkommen",
+    "section": "",
+    "text": "Vorlesung Statistik 1 (Übungen)\nBachelorstudiengang Psychologie\nFakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern\nHS 2024"
+  },
+  {
+    "objectID": "pages/exercises/exercise_01.html",
+    "href": "pages/exercises/exercise_01.html",
+    "title": "Übung 1",
+    "section": "",
+    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.\n\n\nOrdnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch.\n\nMatrikelnummer\nWohnort\nKörpergrösse einer Person (in cm)\nAlter einer Person (in Jahren)\nAnzahl Zimmerpflanzen\nSchulnoten\nRang beim letzten Marathon\nReaktionszeit\nIQ-Werte\nMonatliche Ausgaben (in CHF)\n\n\n\n\n\n\n\nLösung Aufgabe 1.1\n\n\n\n\n\n\nnominal\nnominal\nmetrisch\nmetrisch\nmetrisch\nordinal\nordinal\nmetrisch\nmetrisch\nmetrisch\n\n\n\n\n\n\n\nOrdnen Sie die angegebenen Beispielen je einem Skalenniveau zu.\n\nAnzahl Tore des FC Mediana beim letzten Match\nTrikotnummern der Fussballspielerinnen\nGeburtstagsdaten der Teammitglieder\nLieblingsgetränke der Teammitglieder\nDie Position des Teams in der Rangliste\nDer Jahreslohn, den die Spielerinnen verdienen\nDie Schuhgrösse der Fussballschuhe der Teammitglieder\nDie Laufkilometer im letzten Match\nTageshöchsttemperaturen der Trainingstage im letzten Monat\nUhrzeiten der Fussballspiele über die ganzen Saison\n\n\n\n\n\n\n\nLösung Aufgabe 1.2\n\n\n\n\n\n\nAbsolutskala\nNominalskala\nIntervallskala\nNominalskala\nOrdinalskala\nVerhältnisskala\nOrdinalskala\nVerhältnisskala\nIntervallskala\nIntervallskala\n\nEine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (z.B. doppelt so viel) sind nicht sinnvoll. So ist 6.00 Uhr nicht doppelt so spät, wie 3.00 Uhr und 0.00 Uhr ist kein absoluter Nullpunkt.\n\n\n\n\n\n\nWie später noch klar wird, müssen Skalen in der Psychologie oft rechnerisch transformiert werden. Hier eine kleine Algebraaufgabe. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.\n\\[\\frac{a}{c}+\\frac{b}{d}\\] \\[\\frac{e}{g}⋅\\frac{f}{h}\\]\n\\[\\frac{i}{k}:\\frac{j}{l}\\]\n\n\n\n\n\n\nLösung Aufgabe 1.3\n\n\n\n\n\n\\[\\frac{ad+bc}{cd}\\] \\[\\frac{ef}{gh}\\] \\[\\frac{il}{kj}\\]\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Nominalskala (z. B. Wohnort) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.4\n\n\n\n\n\nKorrekt sind: a, b, c, d, e\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Verhältnisskala (z. B. Herzrate) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.5\n\n\n\n\n\nKorrekt sind: d, e\nSo sind etwa streng monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde.\n\n\n\n\n\n\nWeshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtigt?\n\n\n\n\n\n\nLösung Aufgabe 1.6\n\n\n\n\n\nEine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können und welchen Informationsgehalt die Werte haben.\nEs gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem bestimmten Experiment vielleicht nicht, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll.\n\n\n\n\n\n\nOrdnen Sie der Beschreibung das passende Skalenniveau zu.\n\nDie Daten können geordnet werden und haben einen natürlichen Nullpunkt.\nDie Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.\nDie Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.\nDie Daten können geordnet und kategorisiert werden.\n\n\n\n\n\n\n\nLösung Aufgabe 1.7\n\n\n\n\n\n\nVerhältnisskala (oder Absolutskala)\nNominalskala\nIntervallskala\nOrdinalskala (oder höher)\n\n\n\n\n\n\n\nÜberlegen Sie sich je drei Variablen die Merkmalsunterschiede zwischen Personen (wie Extraversion und Intraversion) und innerhalb einer Person (wie das Stresslevel zu verschiedenen Tageszeiten) beschreiben.\n\n\n\n\n\n\nLösung Aufgabe 1.8\n\n\n\n\n\nKontrollieren Sie nun für jede der sechs Variablen:\n\nKönnen diese gemessen werden?\nWenn ja, wie?\nWelches Skalenniveau haben die Messwerte?\n\n\n\n\n\n\n\nSuchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie diese mit anderen Studierenden.\n\n\n\n\n\n\nLösung Aufgabe 1.9\n\n\n\n\n\nHerzliche Gratulation. Alle Aufgaben sind geschafft!",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 1"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_01.html#aufgaben",
+    "href": "pages/exercises/exercise_01.html#aufgaben",
+    "title": "Übung 1",
+    "section": "",
+    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.\n\n\nOrdnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch.\n\nMatrikelnummer\nWohnort\nKörpergrösse einer Person (in cm)\nAlter einer Person (in Jahren)\nAnzahl Zimmerpflanzen\nSchulnoten\nRang beim letzten Marathon\nReaktionszeit\nIQ-Werte\nMonatliche Ausgaben (in CHF)\n\n\n\n\n\n\n\nLösung Aufgabe 1.1\n\n\n\n\n\n\nnominal\nnominal\nmetrisch\nmetrisch\nmetrisch\nordinal\nordinal\nmetrisch\nmetrisch\nmetrisch\n\n\n\n\n\n\n\nOrdnen Sie die angegebenen Beispielen je einem Skalenniveau zu.\n\nAnzahl Tore des FC Mediana beim letzten Match\nTrikotnummern der Fussballspielerinnen\nGeburtstagsdaten der Teammitglieder\nLieblingsgetränke der Teammitglieder\nDie Position des Teams in der Rangliste\nDer Jahreslohn, den die Spielerinnen verdienen\nDie Schuhgrösse der Fussballschuhe der Teammitglieder\nDie Laufkilometer im letzten Match\nTageshöchsttemperaturen der Trainingstage im letzten Monat\nUhrzeiten der Fussballspiele über die ganzen Saison\n\n\n\n\n\n\n\nLösung Aufgabe 1.2\n\n\n\n\n\n\nAbsolutskala\nNominalskala\nIntervallskala\nNominalskala\nOrdinalskala\nVerhältnisskala\nOrdinalskala\nVerhältnisskala\nIntervallskala\nIntervallskala\n\nEine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (z.B. doppelt so viel) sind nicht sinnvoll. So ist 6.00 Uhr nicht doppelt so spät, wie 3.00 Uhr und 0.00 Uhr ist kein absoluter Nullpunkt.\n\n\n\n\n\n\nWie später noch klar wird, müssen Skalen in der Psychologie oft rechnerisch transformiert werden. Hier eine kleine Algebraaufgabe. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.\n\\[\\frac{a}{c}+\\frac{b}{d}\\] \\[\\frac{e}{g}⋅\\frac{f}{h}\\]\n\\[\\frac{i}{k}:\\frac{j}{l}\\]\n\n\n\n\n\n\nLösung Aufgabe 1.3\n\n\n\n\n\n\\[\\frac{ad+bc}{cd}\\] \\[\\frac{ef}{gh}\\] \\[\\frac{il}{kj}\\]\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Nominalskala (z. B. Wohnort) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.4\n\n\n\n\n\nKorrekt sind: a, b, c, d, e\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Verhältnisskala (z. B. Herzrate) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.5\n\n\n\n\n\nKorrekt sind: d, e\nSo sind etwa streng monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde.\n\n\n\n\n\n\nWeshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtigt?\n\n\n\n\n\n\nLösung Aufgabe 1.6\n\n\n\n\n\nEine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können und welchen Informationsgehalt die Werte haben.\nEs gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem bestimmten Experiment vielleicht nicht, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll.\n\n\n\n\n\n\nOrdnen Sie der Beschreibung das passende Skalenniveau zu.\n\nDie Daten können geordnet werden und haben einen natürlichen Nullpunkt.\nDie Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.\nDie Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.\nDie Daten können geordnet und kategorisiert werden.\n\n\n\n\n\n\n\nLösung Aufgabe 1.7\n\n\n\n\n\n\nVerhältnisskala (oder Absolutskala)\nNominalskala\nIntervallskala\nOrdinalskala (oder höher)\n\n\n\n\n\n\n\nÜberlegen Sie sich je drei Variablen die Merkmalsunterschiede zwischen Personen (wie Extraversion und Intraversion) und innerhalb einer Person (wie das Stresslevel zu verschiedenen Tageszeiten) beschreiben.\n\n\n\n\n\n\nLösung Aufgabe 1.8\n\n\n\n\n\nKontrollieren Sie nun für jede der sechs Variablen:\n\nKönnen diese gemessen werden?\nWenn ja, wie?\nWelches Skalenniveau haben die Messwerte?\n\n\n\n\n\n\n\nSuchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie diese mit anderen Studierenden.\n\n\n\n\n\n\nLösung Aufgabe 1.9\n\n\n\n\n\nHerzliche Gratulation. Alle Aufgaben sind geschafft!",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 1"
+    ]
+  },
+  {
     "objectID": "pages/exercises/exercise_03.html",
     "href": "pages/exercises/exercise_03.html",
     "title": "Übung 3",
@@ -129,140 +395,6 @@
       "Herzlich Willkommen",
       "Übungen",
       "Übung 3"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_01.html",
-    "href": "pages/exercises/exercise_01.html",
-    "title": "Übung 1",
-    "section": "",
-    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.\n\n\nOrdnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch.\n\nMatrikelnummer\nWohnort\nKörpergrösse einer Person (in cm)\nAlter einer Person (in Jahren)\nAnzahl Zimmerpflanzen\nSchulnoten\nRang beim letzten Marathon\nReaktionszeit\nIQ-Werte\nMonatliche Ausgaben (in CHF)\n\n\n\n\n\n\n\nLösung Aufgabe 1.1\n\n\n\n\n\n\nnominal\nnominal\nmetrisch\nmetrisch\nmetrisch\nordinal\nordinal\nmetrisch\nmetrisch\nmetrisch\n\n\n\n\n\n\n\nOrdnen Sie die angegebenen Beispielen je einem Skalenniveau zu.\n\nAnzahl Tore des FC Mediana beim letzten Match\nTrikotnummern der Fussballspielerinnen\nGeburtstagsdaten der Teammitglieder\nLieblingsgetränke der Teammitglieder\nDie Position des Teams in der Rangliste\nDer Jahreslohn, den die Spielerinnen verdienen\nDie Schuhgrösse der Fussballschuhe der Teammitglieder\nDie Laufkilometer im letzten Match\nTageshöchsttemperaturen der Trainingstage im letzten Monat\nUhrzeiten der Fussballspiele über die ganzen Saison\n\n\n\n\n\n\n\nLösung Aufgabe 1.2\n\n\n\n\n\n\nAbsolutskala\nNominalskala\nIntervallskala\nNominalskala\nOrdinalskala\nVerhältnisskala\nOrdinalskala\nVerhältnisskala\nIntervallskala\nIntervallskala\n\nEine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (z.B. doppelt so viel) sind nicht sinnvoll. So ist 6.00 Uhr nicht doppelt so spät, wie 3.00 Uhr und 0.00 Uhr ist kein absoluter Nullpunkt.\n\n\n\n\n\n\nWie später noch klar wird, müssen Skalen in der Psychologie oft rechnerisch transformiert werden. Hier eine kleine Algebraaufgabe. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.\n\\[\\frac{a}{c}+\\frac{b}{d}\\] \\[\\frac{e}{g}⋅\\frac{f}{h}\\]\n\\[\\frac{i}{k}:\\frac{j}{l}\\]\n\n\n\n\n\n\nLösung Aufgabe 1.3\n\n\n\n\n\n\\[\\frac{ad+bc}{cd}\\] \\[\\frac{ef}{gh}\\] \\[\\frac{il}{kj}\\]\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Nominalskala (z. B. Wohnort) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.4\n\n\n\n\n\nKorrekt sind: a, b, c, d, e\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Verhältnisskala (z. B. Herzrate) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.5\n\n\n\n\n\nKorrekt sind: d, e\nSo sind etwa streng monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde.\n\n\n\n\n\n\nWeshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtigt?\n\n\n\n\n\n\nLösung Aufgabe 1.6\n\n\n\n\n\nEine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können und welchen Informationsgehalt die Werte haben.\nEs gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem bestimmten Experiment vielleicht nicht, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll.\n\n\n\n\n\n\nOrdnen Sie der Beschreibung das passende Skalenniveau zu.\n\nDie Daten können geordnet werden und haben einen natürlichen Nullpunkt.\nDie Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.\nDie Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.\nDie Daten können geordnet und kategorisiert werden.\n\n\n\n\n\n\n\nLösung Aufgabe 1.7\n\n\n\n\n\n\nVerhältnisskala (oder Absolutskala)\nNominalskala\nIntervallskala\nOrdinalskala (oder höher)\n\n\n\n\n\n\n\nÜberlegen Sie sich je drei Variablen die Merkmalsunterschiede zwischen Personen (wie Extraversion und Intraversion) und innerhalb einer Person (wie das Stresslevel zu verschiedenen Tageszeiten) beschreiben.\n\n\n\n\n\n\nLösung Aufgabe 1.8\n\n\n\n\n\nKontrollieren Sie nun für jede der sechs Variablen:\n\nKönnen diese gemessen werden?\nWenn ja, wie?\nWelches Skalenniveau haben die Messwerte?\n\n\n\n\n\n\n\nSuchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie diese mit anderen Studierenden.\n\n\n\n\n\n\nLösung Aufgabe 1.9\n\n\n\n\n\nHerzliche Gratulation. Alle Aufgaben sind geschafft!",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 1"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_01.html#aufgaben",
-    "href": "pages/exercises/exercise_01.html#aufgaben",
-    "title": "Übung 1",
-    "section": "",
-    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.\n\n\nOrdnen Sie die Variablen je einer Katgeorie zu: nominal, ordinal oder metrisch.\n\nMatrikelnummer\nWohnort\nKörpergrösse einer Person (in cm)\nAlter einer Person (in Jahren)\nAnzahl Zimmerpflanzen\nSchulnoten\nRang beim letzten Marathon\nReaktionszeit\nIQ-Werte\nMonatliche Ausgaben (in CHF)\n\n\n\n\n\n\n\nLösung Aufgabe 1.1\n\n\n\n\n\n\nnominal\nnominal\nmetrisch\nmetrisch\nmetrisch\nordinal\nordinal\nmetrisch\nmetrisch\nmetrisch\n\n\n\n\n\n\n\nOrdnen Sie die angegebenen Beispielen je einem Skalenniveau zu.\n\nAnzahl Tore des FC Mediana beim letzten Match\nTrikotnummern der Fussballspielerinnen\nGeburtstagsdaten der Teammitglieder\nLieblingsgetränke der Teammitglieder\nDie Position des Teams in der Rangliste\nDer Jahreslohn, den die Spielerinnen verdienen\nDie Schuhgrösse der Fussballschuhe der Teammitglieder\nDie Laufkilometer im letzten Match\nTageshöchsttemperaturen der Trainingstage im letzten Monat\nUhrzeiten der Fussballspiele über die ganzen Saison\n\n\n\n\n\n\n\nLösung Aufgabe 1.2\n\n\n\n\n\n\nAbsolutskala\nNominalskala\nIntervallskala\nNominalskala\nOrdinalskala\nVerhältnisskala\nOrdinalskala\nVerhältnisskala\nIntervallskala\nIntervallskala\n\nEine Intervallskala hat keinen sinnvollen Nullpunkt und auch Verhältnisse (z.B. doppelt so viel) sind nicht sinnvoll. So ist 6.00 Uhr nicht doppelt so spät, wie 3.00 Uhr und 0.00 Uhr ist kein absoluter Nullpunkt.\n\n\n\n\n\n\nWie später noch klar wird, müssen Skalen in der Psychologie oft rechnerisch transformiert werden. Hier eine kleine Algebraaufgabe. Formen Sie die folgenden Brüche um, in dem Sie die Ausdrücke auf einen Bruchstrich bringen.\n\\[\\frac{a}{c}+\\frac{b}{d}\\] \\[\\frac{e}{g}⋅\\frac{f}{h}\\]\n\\[\\frac{i}{k}:\\frac{j}{l}\\]\n\n\n\n\n\n\nLösung Aufgabe 1.3\n\n\n\n\n\n\\[\\frac{ad+bc}{cd}\\] \\[\\frac{ef}{gh}\\] \\[\\frac{il}{kj}\\]\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Nominalskala (z. B. Wohnort) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.4\n\n\n\n\n\nKorrekt sind: a, b, c, d, e\n\n\n\n\n\n\nWelche der folgenden Transformationen sind bei einer Verhältnisskala (z. B. Herzrate) zulässig (alle zulässigen angeben)?\n\neineindeutige Transformationen\nstreng monotone Transformationen\npositiv lineare Transformationen\nÄhnlichkeitstransformationen\nIdentitätstransformationen\n\n\n\n\n\n\n\nLösung Aufgabe 1.5\n\n\n\n\n\nKorrekt sind: d, e\nSo sind etwa streng monotone Transformationen, da sie nicht linear sind, bei Intervall-, Verhältnis- und Absolutskalen nicht zulässig. Auch eine positive lineare Transformation (z. B. + 3) ist nicht zulässig, da sich dadurch der absolute Nullpunkt der Verhältnisskala verschieben würde.\n\n\n\n\n\n\nWeshalb ist es von Bedeutung, dass man das Skalenniveau kennt und berücksichtigt?\n\n\n\n\n\n\nLösung Aufgabe 1.6\n\n\n\n\n\nEine mögliche Antwort wäre: Das Skalenniveau einer Variablen legt u.a. fest, welche Berechnungen (und welche statistischen Tests) sinnvollerweise durchgeführt werden können und welchen Informationsgehalt die Werte haben.\nEs gibt viele Fälle, in denen Daten transformiert werden müssen und dies sollte nur dann gemacht werden, wenn es auch zulässig ist. Beispielweise interessiert uns in einem bestimmten Experiment vielleicht nicht, wie lang die Reaktionszeit per se ist, sondern unter welchen Bedingungen jemand schneller oder langsamer reagiert oder wie stark sich die Reaktionszeit von einer mittleren Reaktionszeit einer Gruppe unterscheidet. Bei Reaktionszeiten ist eine solche Transformation möglich und sinnvoll.\n\n\n\n\n\n\nOrdnen Sie der Beschreibung das passende Skalenniveau zu.\n\nDie Daten können geordnet werden und haben einen natürlichen Nullpunkt.\nDie Daten können kategorisiert aber nicht (nach Rängen) geordnet werden.\nDie Daten haben keinen natürlichen Nullpunkt, aber gleichmässige Abstände.\nDie Daten können geordnet und kategorisiert werden.\n\n\n\n\n\n\n\nLösung Aufgabe 1.7\n\n\n\n\n\n\nVerhältnisskala (oder Absolutskala)\nNominalskala\nIntervallskala\nOrdinalskala (oder höher)\n\n\n\n\n\n\n\nÜberlegen Sie sich je drei Variablen die Merkmalsunterschiede zwischen Personen (wie Extraversion und Intraversion) und innerhalb einer Person (wie das Stresslevel zu verschiedenen Tageszeiten) beschreiben.\n\n\n\n\n\n\nLösung Aufgabe 1.8\n\n\n\n\n\nKontrollieren Sie nun für jede der sechs Variablen:\n\nKönnen diese gemessen werden?\nWenn ja, wie?\nWelches Skalenniveau haben die Messwerte?\n\n\n\n\n\n\n\nSuchen Sie zu jedem Skalenniveau einige weitere Beispiele. Notieren Sie sich Beispiele, bei denen Sie unsicher sind und diskutieren Sie diese mit anderen Studierenden.\n\n\n\n\n\n\nLösung Aufgabe 1.9\n\n\n\n\n\nHerzliche Gratulation. Alle Aufgaben sind geschafft!",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 1"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Herzlich Willkommen",
-    "section": "",
-    "text": "Vorlesung Statistik 1 (Übungen)\nBachelorstudiengang Psychologie\nFakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern\nHS 2024"
-  },
-  {
-    "objectID": "pages/admin/page_1.html",
-    "href": "pages/admin/page_1.html",
-    "title": "Informationen",
-    "section": "",
-    "text": "Hier finden Sie die wichtigsten Informationen zu den Übungen Statistik 1 im HS24.\n\nOrganisatorisches\n\nDie Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.\nDie Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.\nFalls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.\nEs ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben.\nFalls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn.\n\n\n\nFormat der Übungen\n\nDie Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.\nDie Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können.\nZu allen Aufgaben gibt es Lösungen oder Musterlösungen.\nAm 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache R und das Programm R Studio. Sie müssen in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der Übung R."
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html",
-    "href": "pages/exercises/exercise_02.html",
-    "title": "Übung 2",
-    "section": "",
-    "text": "Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.1",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.1",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.1",
-    "text": "Aufgabe 2.1\nEin in der Statistik oft benötigtes Operationszeichen ist das Summenzeichen \\(Σ\\).\n\\[\\sum_{i=1}^{5}x_i=x_1+x_2+x_3+x_4+x_5\\] Diese Formel bedeutet beispielsweise, dass hier die Summe aller \\(xi\\)-Werte für \\(i=1\\) bis \\(5\\) berechnet wird. Der Laufindex \\(i\\) könnte auch durch einen beliebigen anderen Buchstaben ersetzt werden. Unterhalb des Summenzeichens wird die untere Grenze des Laufindex angegeben (hier \\(1\\)). Oberhalb des Summenzeichens findet man die obere Grenze. Weitere Beispiele sind:\n\\[\\sum_{i=3}^{5}x_i=x_3+x_4+x_5\\]\n\\[\\sum_{i=1}^{3}x^2_i=x^2_1+x^2_2+x^2_3\\]\nGegeben sind die fünf Werte \\(x_1=1\\), \\(x_2=4\\), \\(x_3=5\\), \\(x_4=8\\), \\(x_5=10\\). Berechnen Sie daraus folgende Summen:\n\n\\[\\sum_{i=1}^{5}x_i\\]\n\\[\\sum_{i=1}^{5}x^2_i\\]\n\\[(\\sum_{i=1}^{3}x_i)^2\\]\n\\[\\sum_{i=1}^{5}x_i+5\\]\n\\[\\sum_{i=3}^{5}(2\\cdot x_i)\\]\n\n\n\n\n\n\n\nLösung Aufgabe 2.1\n\n\n\n\n\n\n\\[\\sum_{i=1}^{5}x_i=1+4+5+8+10=28\\]\n\\[\\sum_{i=1}^{5}x_i=1+16+25+64+100=206\\]\n\\[\\sum_{i=1}^{3}x_i=(1+4+5)^2=(10)^2=100\\]\n\\[\\sum_{i=1}^{5}x_i=6+9+10+13+15=53\\]\n\\[\\sum_{i=3}^{5}x_i=10+16+20=46\\]",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.2",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.2",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.2",
-    "text": "Aufgabe 2.2\nWelches Mass sagt etwas über die Verteilung einer nominalskalierten Skala aus?\n\n\n\n\n\n\nLösung Aufgabe 2.2\n\n\n\n\n\nMit Kennwerten der Dispersion soll angegeben werden, wie sehr sich die Merkmalsträger über die Kategorien verteilen, d.h., wie gleichmässig oder ungleichmässig die Werte der Skala vorkommen. Maximale Dispersion ist gegeben, wenn alle Kategorien gleich häufig besetzt sind, also eine Gleichverteilung der Messwerte vorliegt. Minimale Dispersion ist gegeben, wenn die Merkmalsträger sich überhaupt nicht unterscheiden, also alle den gleichen Messwert tragen. Zur Berechnung eignet sich dazu der relative Informationsgehalt H. Eine solche Berechnung müssen Sie in diesem Semester nicht durchführen können.",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.3",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.3",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.3",
-    "text": "Aufgabe 2.3\nZwölf Studierende an der Universität Luzern wurden gefragt, welches Menü in der Mensa sie am liebsten mögen. Dies wurde auf einer Skala mit 1 = MENÜ SOUL, 2 = MENÜ VEGVEG und 3 = MENÜ BOWL erhoben.\nErstellen Sie mit den folgenden Messwerten eine Häufigkeitstabelle. Berechnen Sie die absolute Häufigkeit \\(n_j\\), die relative Häufigkeit \\(h_j\\) und die relative Häufigkeit in Anteilen von 100 (\\(\\%_j\\)) der Merkmalsausprägungen. Überprüfen Sie Ihre Lösung bevor Sie zu Aufgabe 2.4 gehen.\n\nRunden Sie die Ergebnisse auf zwei Stellen nach dem Komma.\n\n\n\n\nID\nMenü\n\n\n\n\n01\n1\n\n\n02\n2\n\n\n03\n3\n\n\n04\n1\n\n\n05\n3\n\n\n06\n3\n\n\n07\n1\n\n\n08\n2\n\n\n09\n3\n\n\n10\n3\n\n\n11\n3\n\n\n12\n1\n\n\n\n\nBeispieltabelle\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n\n\n\n\n\n2\n\n\n\n\n\n3\n\n\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMenü (\\(a_j\\))\nAbsolute Häufigkeit \\(n_j\\)\nRelative Häufigkeit \\(h_j\\)\nRelative Häufigkeit in Anteilen von 100 \\(\\%_j\\)\n\n\n\n\n1\n4\n0.33\n33%\n\n\n2\n2\n0.17\n17%\n\n\n3\n6\n0.50\n50%",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.4",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.4",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.4",
-    "text": "Aufgabe 2.4\nZeichnen Sie nun ein Kuchendiagramm dieser Häufigkeitstabelle. Notieren die zu den entsprechenden Segmenten die Prozentwerte und erstellen Sie eine Legende.\n\n\n\n\n\n\nLösung Aufgabe 2.4\n\n\n\n\n\n So würde ein mögliches Säulendiagramm aussehen:",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.5",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.5",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.5",
-    "text": "Aufgabe 2.5\nHier sehen Sie die Häufigkeitsverteilung von 24 Klient:innen über neun mögliche Persönlichkeitsstörungen hinweg.\n\nBestimmen Sie den Modalwert.\n\n\n\n\nAbbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al. (2017, S. 131)\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.5a\n\n\n\n\n\nIm vorliegenden Fall ist der Modalwert Dissozial oder Dissoziale Persönlichkeitsstörung:\n\\(Mo=\\) Dissoziale Persönlichkeitsstörung\n\n\n\n\n\n\n\n\n\nTipp\n\n\n\n\n\nEs wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!\nAusserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.\n\n\n\n\nNehmen wir an, dass eine weitere Person mit der Persönlichkeitsstörung Ängstliche Persönlichkeitsstörung dazukommt. Was verändert sich in Bezug auf den Modalwert?\n\n\n\n\n\n\n\nLösung Aufgabe 2.5b\n\n\n\n\n\nEs gibt nun zwei Antwortkategorien, die gleich häufig vorkommen (ängstliche Persönlichkeitsstörung und dissoziale Persönlichkeitsstörung). Der Modus ist durch die Gleichverteilungen (Verteilungen, bei denen alle Merkmalsausprägungen mit gleicher Häufigkeit vorkommen) nicht definiert.\nDer Modus reagiert sensibel auf leichte Veränderungen der Verteilung im Gipfelbereich (Gipfelverschiebungen bei ähnlich häufig besetzten Kategorien im Gipfelbereich).",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.6",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.6",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.6",
-    "text": "Aufgabe 2.6\nDie Messwerte eines Merkmals sind 7, 2, 5, 1, 10, 2, 1, 2. Welche Antworten zum Modalwert und Median sind korrekt?\n\nDer Modalwert ist 2.\nDer Median ist 5.\nDer Modalwert ist 5.\nDer Median ist 2.\nDer Median ist 2.5.\n\n\n\n\n\n\n\nLösung Aufgabe 2.6\n\n\n\n\n\nKorrekte Antworten: a, d",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
-    ]
-  },
-  {
-    "objectID": "pages/exercises/exercise_02.html#aufgabe-2.7",
-    "href": "pages/exercises/exercise_02.html#aufgabe-2.7",
-    "title": "Übung 2",
-    "section": "Aufgabe 2.7",
-    "text": "Aufgabe 2.7\nBei einem Experiment wird gemessen, wie lange die Versuchspersonen mit geschlossenen Augen auf einem Bein stehen können. Nach 21 Personen liegen folgende Messwerte in Sekunden vor.\n18, 36, 18, 22, 23, 24, 26, 29, 32, 34, 36, 16, 42, 22, 43, 46, 46, 49, 57, 34, 23\n\nBerechnen Sie den Median.\nBerechnen Sie das untere Quartil (\\(Q_1\\)) und das obere Quartil (\\(Q_3\\)).\nBerechnen Sie den Interquartilsabstand (\\(IQR\\)).\n\n\n\n\n\n\n\nLösung Aufgabe 2.7a\n\n\n\n\n\nZuerst ordnen wir die Messwerte nach ihrer Reihenfolge.\n16, 18, 18, 22, 22, 23, 23, 24, 26, 29, 32, 34, 34, 36, 36, 42, 43, 46, 46, 49, 57\nDer Median berechnet sich durch \\((n+1)/2\\). Da 21 Messwerte vorliegen, liegt der Median beim 11. Messwert (Berechnung: \\(22/2\\)). Der 11. Messwert in der geordneten Folge beträgt 32 Sekunden.\n\\(Md = 32\\) Sekunden\nHinweis zum Modalwert: Hier liegen mehrere Modalwerte vor (18, 22, 23, 34, 36, 46). Wir haben somit multimodale Daten, was zeigt, dass hier ein Modalwert nicht informativ ist.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7b\n\n\n\n\n\nDas untere Quartil (\\(Q_1\\)): Wir teilen dazu den Stichprobenumfang durch 4 (\\(21/4=5.25\\)) oder multiplizieren den Stichprobenumfang mit 0.25 (\\(n\\cdot 0.25 = 21\\cdot0.25=5.25\\)) und runden dann auf die nächste ganze Zahl (\\(6\\)). \\(Q_1\\) liegt also beim 6. Messwert, bei 23 Sekunden.\nDas obere Quartil (\\(Q_3\\)): Wir multiplizieren dazu den Stichprobenumfang mit 0.75 (\\(n\\cdot 0.75 = 21\\cdot0.75=15.75\\)) und runden dann auf die nächste ganze Zahl (\\(16\\)). \\(Q3\\) liegt also beim 16. Messwert, bei 42 Sekunden.\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 2.7c\n\n\n\n\n\n\\(IQR = Q3 - Q1\\)\n\\(IQR = 42 - 23 = 19\\)\nDer Interquartilsabstand beträgt \\(19\\).\n\n\n\n \nHerzliche Gratulation, alle Übungen sind geschafft!",
-    "crumbs": [
-      "Herzlich Willkommen",
-      "Übungen",
-      "Übung 2"
     ]
   },
   {

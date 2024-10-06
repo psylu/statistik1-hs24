@@ -13,7 +13,7 @@ license: CC BY
 citation: true
 ---
 
-Hinweis: Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913) oder [hier](../../ressources/Formelsammlung_Statistik1_HS24_Seite2.pdf). Benützen Sie sie, wann immer Sie möchten.
+Hinweis: Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913) oder [hier](../../ressources/Formelsammlung_Statistik1_HS24_20241007.pdf). Benützen Sie sie, wann immer Sie möchten.
 
 <br>
 
