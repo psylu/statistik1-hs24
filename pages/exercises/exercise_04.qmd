@@ -227,13 +227,15 @@ c. Prüfen Sie auch mit der Formel der stochastischen Unabhängigkeit, ob die dr
 
 $P\left(\left.B\right|{A}\right)=P\left(\left.B\right|\overline{A}\right)=P\left(B\right)$
 
-$P\left(\left.Schirm\right|{Regen}\right)=\frac{20}{100}=0.2$
+$P\left(\left.Schirm\right|{Regen}\right)=\frac{20}{50}=0.4$ (rot eingefärbt)
 
-$P\left(\left.Schirm\right|\overline{Regen}\right)=\frac{30}{100}=0.3$
+$P\left(\left.Schirm\right|\overline{Regen}\right)=\frac{10}{50}=0.2$ (grün eingefärbt)
 
-$P\left(Schirm\right)=\frac{30}{100}=0.3$
+$P\left(Schirm\right)=\frac{30}{100}=0.3$ (blau eingefärbt)
 
-Somit ist gezeigt, dass in diesem Beispiel die Wahrscheinlichkeit einen Schirm dabei zu haben nicht unabhängig davon ist, ob es auf dem Weg zum Bahnhof geregnet hat. 
+Somit ist gezeigt, dass in diesem Beispiel die Wahrscheinlichkeit einen Schirm dabei zu haben nicht unabhängig davon ist, ob es auf dem Weg zum Bahnhof geregnet hat. Die Wahrscheinlichkeit, dass jemand unabhängig vom Wetter einen Regenschirm dabei hat ist 30%, diese Wahrscheinlichkeit steigt bei Regen auf 40% und sinkt bei keinem Regen auf 20%.
+
+![](img/table4.8c.jpg)
 
 :::
 
@@ -309,7 +311,7 @@ Die Angaben sind erfunden und entsprechen nicht unbedingt der Realität.
 
 ## Lösung Aufgabe 4.10
 
-$P\left(\left.nein\right|{m}\right)=\frac{10}{160}=0.0625$
+$P\left(\left.nein\right|{m}\right)=\frac{10}{40}=0.25$
 
 ![](img/table4.10b.jpg)
 
