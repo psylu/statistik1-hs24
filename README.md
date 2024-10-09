@@ -6,12 +6,10 @@ Link: [[https://psylu.github.io/statistik1-hs24](https://psylu.github.io/statist
 
 ### Render Website
 To reproduce this website:
-- Install R
-- Install RStudio
-- [Download webr extension (into project folder)](https://github.com/coatless/quarto-webr?tab=readme-ov-file)
-`quarto add coatless/quarto-webr`
-- [Download fontawesome extension (into project folder)](https://github.com/quarto-ext/fontawesome)
-  `quarto add quarto-ext/fontawesome`
+- Install [R](https://cran.rstudio.com/)
+- Install [RStudio](https://posit.co/download/rstudio-desktop/)
+- Download [webr extension](https://github.com/coatless/quarto-webr?tab=readme-ov-file) into the project folder with `quarto add coatless/quarto-webr`
+- Download [fontawesome extension](https://github.com/quarto-ext/fontawesome) into the project folder with `quarto add quarto-ext/fontawesome` 
 
 ### License: 
 Creative Commons Attribution 4.0 International
