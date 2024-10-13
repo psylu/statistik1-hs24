@@ -8,9 +8,10 @@
 
 <meta name="author" content="Mirjam Senn">
 <meta name="author" content="Gerda Wyssen">
-<meta name="dcterms.date" content="2024-09-16">
+<meta name="dcterms.date" content="2024-10-14">
+<meta name="description" content="Wahrscheinlichkeitstheorie und Wahrscheinlichkeitsverteilungen 2">
 
-<title>Download – Statistik 1</title>
+<title>Übung 5 – Statistik 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -118,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/formulas/formelsammlung.html">Formelsammlung</a></li><li class="breadcrumb-item"><a href="../../pages/formulas/formelsammlung.html">Download</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_05.html">Übung 5</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -173,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/exercises/exercise_05.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/exercises/exercise_05.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Übung 5</span></a>
   </div>
 </li>
@@ -196,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/formulas/formelsammlung.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../pages/formulas/formelsammlung.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Download</span></a>
   </div>
 </li>
@@ -207,17 +237,34 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#aufgaben" id="toc-aufgaben" class="nav-link active" data-scroll-target="#aufgaben">Aufgaben</a></li>
+  <li><a href="#aufgabe-5.1" id="toc-aufgabe-5.1" class="nav-link" data-scroll-target="#aufgabe-5.1">Aufgabe 5.1</a></li>
+  <li><a href="#aufgabe-5.2" id="toc-aufgabe-5.2" class="nav-link" data-scroll-target="#aufgabe-5.2">Aufgabe 5.2</a></li>
+  <li><a href="#aufgabe-5.3" id="toc-aufgabe-5.3" class="nav-link" data-scroll-target="#aufgabe-5.3">Aufgabe 5.3</a></li>
+  <li><a href="#aufgabe-5.4" id="toc-aufgabe-5.4" class="nav-link" data-scroll-target="#aufgabe-5.4">Aufgabe 5.4</a></li>
+  <li><a href="#aufgabe-5.5" id="toc-aufgabe-5.5" class="nav-link" data-scroll-target="#aufgabe-5.5">Aufgabe 5.5</a></li>
+  <li><a href="#aufgabe-5.6" id="toc-aufgabe-5.6" class="nav-link" data-scroll-target="#aufgabe-5.6">Aufgabe 5.6</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/formulas/formelsammlung.html">Formelsammlung</a></li><li class="breadcrumb-item"><a href="../../pages/formulas/formelsammlung.html">Download</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_05.html">Übung 5</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Download</h1>
+<h1 class="title">Übung 5</h1>
 </div>
 
+<div>
+  <div class="description">
+    Wahrscheinlichkeitstheorie und Wahrscheinlichkeitsverteilungen 2
+  </div>
+</div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Authors</div>
@@ -251,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 16, 2024</p>
+      <p class="date">October 14, 2024</p>
     </div>
   </div>
   
@@ -263,17 +310,460 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="aufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="aufgaben">Aufgaben</h2>
+<p>Hinweise:</p>
+<ul>
+<li>Die Formelsammlung zu dieser Übung finden Sie auf <a href="https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913">OLAT</a>. Benützen Sie sie, wann immer Sie möchten.</li>
+<li>Für die Berechnungen benötigen Sie einen einfachen Taschenrechner (auch gut auf dem Laptop möglich) mit dem Sie beispielsweise <span class="math inline">\(0.8^9\)</span> ausrechnen können.</li>
+<li>Die Tabelle zur Binomialverteilung finden Sie im Lehrbuch und unter Onlinematerialen des Verlags <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.01.pdf">hier</a>.</li>
+<li>Für die Aufgaben und an der Prüfung stehen Ihnen die nötigen Ausschnitte der Tabellen zur Verfügung.</li>
+</ul>
 <p><br></p>
-<p><strong>OLAT</strong></p>
-<p>Die aktuellste Formelsammlung finden Sie jeweils auf <a href="https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913">OLAT</a>.</p>
+</section>
+<section id="aufgabe-5.1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.1">Aufgabe 5.1</h2>
+<ol type="a">
+<li>Was ist eine binomiale Zufallsvariable?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.1a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Eine binomiale Zufallsvariable ist eine spezielle diskrete Zufallsvariable. Sie ist definiert als die Häufigkeit von <span class="math inline">\(n\)</span> unabhängigen dichotomen (auch binär genannt) Zufallsvariablen mit dem Parameter <span class="math inline">\(\pi\)</span>. Sie wird häufig verwendet, um die Anzahl der Erfolge bei einer bestimmten Anzahl identischer binärer Experimente zu modellieren, z. B. die Anzahl der Köpfe bei fünf Münzwürfen.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="a">
+<li>Durch welche Parameter wird eine Binomialverteilung beschrieben?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.1b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Die Binomialverteilung wird durch die Wahrscheinlichkeit für das interessierende Ereignis (<span class="math inline">\(\pi\)</span>) und die Anzahl der Durchgänge (<span class="math inline">\(n\)</span>) vollständig beschrieben.</p>
+<p>Man kann die Binomialverteilung einer Zufallsvariable <span class="math inline">\(X\)</span> so darstellen:</p>
+<p><span class="math inline">\(X\sim B\left(n,\pi\right)\)</span></p>
+</div>
+</div>
+</div>
 <p><br></p>
-<p><strong>Direktdownload</strong></p>
-<p><a href="../../ressources/Formelsammlung_Statistik1_HS24_20241007.pdf">Formelsammlung zum herunterladen.</a></p>
-<p><em>(Achtung, diese Formelsammlung dient der schnellen Zugänglichkeit. Sie ist evtl. nicht immer die aktuellste!)</em></p>
+</section>
+<section id="aufgabe-5.2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.2">Aufgabe 5.2</h2>
+<p>Wir haben gesehen, dass Zufallsvariablen eine Verteilung besitzen. In dieser Aufgabe sollen Sie eine solche Verteilung zeichnen.</p>
+<p>Erstellen Sie per Hand die grafische Darstellung (a) der Wahrscheinlichkeitsverteilung und (b) der Verteilungsfunktion einer Zufallsvariablen <span class="math inline">\({X}\)</span>, die folgende Verteilung aufweist: <span class="math inline">\(X\sim B\left(3,0.5\right)\)</span>. Die Verteilung entspricht beispielweise der Anzahl Köpfe, wenn eine Münze dreimal geworfen wird.</p>
+<p>Sie können die Aufgabe ohne weitere Hilfestellung lösen oder hier einer Schritt-für-Schritt-Anleitung folgen.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+1. Ereignisse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Welche Ereignisse (z. B. <span class="math inline">\({(K, K, K)}\)</span>, d.h. 3-mal Kopf) können eintreffen? Notieren Sie die verschiedenen Möglichkeiten oder bestimmen Sie die Wahrscheinlichkeit für jede «Anzahl Kopf». Sie müssen herausfinden, wie wahrscheinlich es ist, dass 0-mal Kopf vorkommt, 1-mal Kopf vorkommt, 2.-mal Kopf vorkommt und 3-mal Kopf vorkommt. Dazu müssen Sie auch bestimmen, wie viele Möglichkeiten es insgesamt gibt.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+2. Grafische Darstellung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Zeichen Sie nun eine <span class="math inline">\(x\)</span>-Achse und <span class="math inline">\(y\)</span>-Achse und wählen Sie die Achsenabschnitte. Auf der <span class="math inline">\(x\)</span>-Achse können Sie die Ereignisse abbilden (d.h. 0, 1, 2, 3 [ = Anzahl Kopf bei dreifachem Münzwurf] und auf der <span class="math inline">\(y\)</span>-Achse die Wahrscheinlichkeiten (z. B. 0.125, 0.375 usw.) eintragen.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+3. Wahrscheinlichkeitsfunktion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Zeichnen Sie nun für jedes Ereignis die Wahrscheinlichkeit als Säule oder Punkt ein. Sie erhalten somit vier Säulen.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+4. Verteilungsfunktion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Kumulieren Sie die Wahrscheinlichkeiten bis zum jeweiligen Ereibnis indem Sie die Wahrscheinlichkeiten addieren. Zeichnen Sie so die Verteilungsfunktion (Linie) ein. Die treppenförmige Linie sollte bei der Wahrscheinlichkeit 1 enden.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.2
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Ihre Lösung könnte zum Beispiel so aussehen:</p>
+<p><img src="img/bindist5.2.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<section id="zusatz" class="level4">
+<h4 class="anchored" data-anchor-id="zusatz">Zusatz</h4>
+<p>Versuchen Sie die Verteilung auch in dieser <a href="https://seeing-theory.brown.edu/probability-distributions/index.html#section2">interaktiven Visualisierung</a> zu erstellen. Wählen Sie «Binomialverteilung» aus und definieren Sie die Parameter gemäss unserer Aufgabe. Sie können rechts in der Verteilung den Ausschnitt vergrössern, verkleinern und mit dem orangen Punkt die Verteilungsfunktion einzeichnen.</p>
+<p><br></p>
+</section>
+</section>
+<section id="aufgabe-5.3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.3">Aufgabe 5.3</h2>
+<p>Notieren Sie die Binomialverteilung der Zufallsvariablen <span class="math inline">\(X\)</span>: „Anzahl Kopf beim sechsfachen Münzwurf“ und berechnen Sie den Erwartungswert und die Varianz.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.3
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Zufallsvariable <span class="math inline">\(X\)</span>: „Anzahl Kopf beim sechsfachen Münzwurf“ ist binomialverteilt mit <span class="math inline">\(X\sim B(6,0.5)\)</span></p>
+<p>Erwartungswert: <span class="math inline">\(\mu=n\cdot\pi=6\cdot0.5=3\)</span></p>
+<p>Varianz: <span class="math inline">\(\sigma^2=n\cdot\pi\cdot\left(1-\pi\right)=6\cdot0.5\cdot\left(1-0.5\right)=3\cdot0.5=1.5\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-5.4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.4">Aufgabe 5.4</h2>
+<p>Die Subskala eines Intelligenztests besteht aus fünf Fragen, wobei zu jeder Frage vier Antwortmöglichkeiten gegeben sind und je eine Antwort korrekt ist. Der Intelligenztest wird nun rein zufällig ausgefüllt.</p>
+<ol type="a">
+<li>Wie gross ist die Wahrscheinlichkeit, dass <strong>alle</strong> Antworten korrekt beantwortet werden?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.4a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(5\right)={0.25}^5=0.0.00098\)</span></p>
+</div>
+</div>
+</div>
+<ol start="2" type="a">
+<li>Wie gross ist die Wahrscheinlichkeit, dass <strong>keine</strong> Antwort richtig beantwortet wird?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.4b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(0\right)={0.75}^5=0.2373\)</span></p>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
+<li>Wie gross ist die Wahrscheinlichkeit, dass <strong>mindestens</strong> drei Antworten korrekt beantwortet werden?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.4c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(5\right)={0.25}^5=0.00098\)</span></p>
+<p><span class="math inline">\(P\left(4\right)=\binom{5}{4}\cdot 0.25^4\cdot 0.75^1=5\cdot 0.0039\cdot 0.75=0.0146\)</span></p>
+<p><span class="math inline">\(P\left(3\right)=\binom{5}{3}\cdot 0.25^3\cdot 0.75^2=10\cdot 0.0156\cdot 0.5625=0.0878\)</span></p>
+<p><span class="math inline">\(P\left(5\right)+P\left(4\right)+P\left(3\right)=0.00098+0.0146+0.0878\approx0.1034\)</span></p>
+<p>Die Wahrscheinlichkeit liegt bei etwa 0.10 bzw. 10%, dass drei oder mehr Aufgaben zufällig korrekt gelöst wurden.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-5.5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.5">Aufgabe 5.5</h2>
+<p>Berechnen Sie die Wahrscheinlichkeiten für folgende Ereignisse mit Hilfe der Formel der Binomialverteilung.</p>
+<ol type="a">
+<li>für 5 Erfolge bei 6 Versuchen mit <span class="math inline">\(\pi=0.5\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.5a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(5\right)=\binom{6}{5}\cdot0.5^5\cdot0.5^1= 6\cdot0.03125\cdot0.5=0.09375\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="2" type="a">
+<li>für 4 Erfolge bei <span class="math inline">\(n=7\)</span> Versuchen mit <span class="math inline">\(\pi=0.9\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hier erhalten Sie einen Tipp, um <span class="math inline">\(\binom{7}{4}\)</span> zu berechnen.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\binom{n}{x} = \frac{n!}{(n-x)!\cdot x!}\)</span></p>
+<p><span class="math inline">\(\binom{7}{4} = \frac{7!}{(7-4)!\cdot 4!}=\frac{7\cdot 6\cdot 5\cdot 4\cdot3 \cdot2}{3\cdot 2\cdot 4\cdot 3\cdot 2}=\frac{210}{6}=35\)</span></p>
+<p>Sie finden die Formel zur Berechnung des Binomialkoeffizienten auch in der Formelsammlung unter 3.1 Binomialverteilung.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.5b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(4\right)=\binom{7}{4}\cdot0.9^4\cdot0.1^3=35\cdot0.6561\cdot0.001=0.0230\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="3" type="a">
+<li>für mindestens 8 Treffer bei <span class="math inline">\(n=9\)</span> Versuchen mit <span class="math inline">\(\pi=0.8\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.5c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(8\right)+P\left(9\right)=\binom{9}{8}\cdot0.8^8\cdot0.2^1+0.8^9=9\cdot0.1678\cdot0.2+0.1342=0.4362\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="4" type="a">
+<li>für mindestens einen Treffer bei <span class="math inline">\(n=21\)</span> Versuchen mit <span class="math inline">\(\pi=0.1\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.5d
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(x\geq1\right)=1-P\left(0\right)=1-0.9^{21}=1-0.1094=0.8906\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<section id="eine-mögliche-prüfungsfrage-könnte-lauten" class="level4">
+<h4 class="anchored" data-anchor-id="eine-mögliche-prüfungsfrage-könnte-lauten">Eine mögliche Prüfungsfrage könnte lauten:</h4>
+<p>Wie gross ist die Wahrscheinlichkeit durch Münzwurf in 6 Versuchen 5-mal Kopf zu erzielen?</p>
+<ol type="a">
+<li><p>Die Wahrscheinlichkeit beträgt <span class="math inline">\(\approx0.094\)</span>.</p></li>
+<li><p>Die Wahrscheinlichkeit beträgt <span class="math inline">\(\approx0.078\)</span>.</p></li>
+<li><p>Die Wahrscheinlichkeit beträgt <span class="math inline">\(\approx0.016\)</span>.</p></li>
+<li><p>Die Wahrscheinlichkeit beträgt <span class="math inline">\(\approx0.1875\)</span>.</p></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Lösung siehe Aufgabe 5.5a.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="aufgabe-5.6" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-5.6">Aufgabe 5.6</h2>
+<p>Bestimmen Sie die Wahrscheinlichkeiten der Binomialverteilung mit Hilfe der Tabelle.</p>
+<p>Unterhalb finden Sie den benötigten Ausschnitt aus der <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.01.pdf">Tabelle A.1</a>.</p>
+<p><img src="img/table_bin_5.6.jpg" class="img-fluid"></p>
+<ol type="a">
+<li>Bei 6 Versuchen durch Münzwurf <span class="math inline">\((\pi=0.5)\)</span> höchstens 4-mal Kopf zu werfen.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.6a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(x\leq4\right)=0.8906\)</span></p>
+<p>Die Wahrscheinlichkeit liegt bei <span class="math inline">\(0.89\)</span> oder <span class="math inline">\(89\)</span>%. Aus der Spalte <span class="math inline">\(n=6\)</span> wird der 5. Wert für <span class="math inline">\(x\le4\)</span> abgelesen.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="a">
+<li>Bei 6 Versuchen durch Münzwurf <span class="math inline">\((\pi=0.5)\)</span> mindestens 5-mal Kopf zu werfen.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.6b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(x\ge5\right)=1-P\left(x\le4\right)=1-0.8906=0.1094\)</span></p>
+<p>Ausserm entspricht 5 oder 6-mal <em>Kopf</em> dem gleichen Wert, wie wenn man 1 oder 0-mal <em>Zahl</em> werfen würde.</p>
+<p>Also könnte man auch den Wert bei <span class="math inline">\(x\le1=0.1094\)</span> direkt ablesen. Dies geht aber nur, weil die Wahrscheinlichkeit von Zahl auch <span class="math inline">\(\pi=0.5\)</span> beträgt. Bei der Aufgabe in der Vorlesung müsste ich dazu eine Tabelle für <span class="math inline">\(\pi=0.8\)</span> haben. Diese gibt es jedoch nicht, da wir alle nötigen Informationen in der Tabelle <span class="math inline">\(\pi=0.2\)</span> finden. Falls Sie also einen Wert nicht finden, überprüfen Sie Ihren <span class="math inline">\(\pi\)</span>-Wert und ob Sie die richtige Tabelle ausgewählt haben.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
+<li>Bei 6 Versuchen durch Münzwurf <span class="math inline">\((\pi=0.5)\)</span> genau 5-mal Kopf zu werfen.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 5.6c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(x=5\right)=P\left(x\le5\right)-P\left(x\le4\right)=0.9844-0.8906=0.0938\)</span></p>
+<p>Um auf genau 5-mal Kopf zu kommen, müssen Sie zuerst ablesen, wie gross die Wahrscheinlichkeit für 5-mal oder weniger Kopf, also <span class="math inline">\(P\left(x\le5\right)\)</span>, ist. Danach subtrahieren Sie die Wahrscheinlichkeit für weniger als 5-mal Kopf, d.h. für alle Ereignisse mit 4, 3, 2, 1 oder 0-mal Kopf, also <span class="math inline">\(P\left(x\le4\right)\)</span>. Die Differenz ergibt genau 5-mal Kopf.</p>
+<p>Sie sind somit zum gleichen Ergebnis gekommen, wie bei <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html#aufgabe-5.5">Aufgabe 5.5a</a>. Sie kennen nun also zwei Varianten, wie sie eine solche Aufgabe lösen können – mit der Formel und mit der Tabelle.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Sie haben bereits <span class="math inline">\(\sqrt{5^2}\)</span> Statistikübungen abgeschlossen. Gönnen Sie sich eine Belohnung!</p>
+<p><img src="img/meme5.jpg" class="img-fluid"></p>
 
 
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn2024,
+  author = {Senn, Mirjam and Wyssen, Gerda},
+  title = {Übung 5},
+  date = {2024-10-14},
+  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Senn, Mirjam, and Gerda Wyssen. 2024. <span>“Übung 5.”</span> October
+14, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

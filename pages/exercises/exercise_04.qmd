@@ -207,7 +207,7 @@ a. Wie hoch ist die bedingte Wahrscheinlichkeit, dass die Person einen Schirm da
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 4.8a
 
-$P\left(\left.Schirm\right|Regen\right)=\frac{20}{30}=0.67$
+$P\left(\left.Schirm\right|Regen\right)=\frac{20}{50}=0.4$
 
 :::
 
@@ -216,11 +216,11 @@ b. Wie hoch ist die bedingte Wahrscheinlichkeit, dass eine Person einen Schirm d
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 4.8b
 
-$P\left(\left.Schirm\right|\overline{Regen}\right)=\frac{10}{30}=0.33$
+$P\left(\left.Schirm\right|\overline{Regen}\right)=\frac{10}{50}=0.2$
 
 :::
  
-c. Prüfen Sie auch mit der Formel der stochastischen Unabhängigkeit, ob die drei Eregnisse unabhängig sind: $P\left(\left.B\right|{A}\right)=P\left(\left.B\right|\overline{A}\right)=P\left(B\right)$.
+c. Prüfen Sie auch mit der Formel der stochastischen Unabhängigkeit, ob die drei Ereignisse unabhängig sind: $P\left(\left.B\right|{A}\right)=P\left(\left.B\right|\overline{A}\right)=P\left(B\right)$.
 
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 4.8c
