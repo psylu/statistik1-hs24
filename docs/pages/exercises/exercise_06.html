@@ -8,10 +8,10 @@
 
 <meta name="author" content="Mirjam Senn">
 <meta name="author" content="Gerda Wyssen">
-<meta name="dcterms.date" content="2024-09-23">
-<meta name="description" content="Univariate Deskriptivstatistik für nominale und ordinale Variablen">
+<meta name="dcterms.date" content="2024-10-21">
+<meta name="description" content="Wahrscheinlichkeitstheorie und Wahrscheinlichkeitsverteilungen 3">
 
-<title>Übung 2 – Statistik 1</title>
+<title>Übung 6 – Statistik 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_02.html">Übung 2</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_06.html">Übung 6</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -185,7 +185,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/exercises/exercise_02.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../pages/exercises/exercise_02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Übung 2</span></a>
   </div>
 </li>
@@ -209,7 +209,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/exercises/exercise_06.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/exercises/exercise_06.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Übung 6</span></a>
   </div>
 </li>
@@ -248,27 +248,26 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#aufgabe-2.1" id="toc-aufgabe-2.1" class="nav-link active" data-scroll-target="#aufgabe-2.1">Aufgabe 2.1</a></li>
-  <li><a href="#aufgabe-2.2" id="toc-aufgabe-2.2" class="nav-link" data-scroll-target="#aufgabe-2.2">Aufgabe 2.2</a></li>
-  <li><a href="#aufgabe-2.3" id="toc-aufgabe-2.3" class="nav-link" data-scroll-target="#aufgabe-2.3">Aufgabe 2.3</a></li>
-  <li><a href="#aufgabe-2.4" id="toc-aufgabe-2.4" class="nav-link" data-scroll-target="#aufgabe-2.4">Aufgabe 2.4</a></li>
-  <li><a href="#aufgabe-2.5" id="toc-aufgabe-2.5" class="nav-link" data-scroll-target="#aufgabe-2.5">Aufgabe 2.5</a></li>
-  <li><a href="#aufgabe-2.6" id="toc-aufgabe-2.6" class="nav-link" data-scroll-target="#aufgabe-2.6">Aufgabe 2.6</a></li>
-  <li><a href="#aufgabe-2.7" id="toc-aufgabe-2.7" class="nav-link" data-scroll-target="#aufgabe-2.7">Aufgabe 2.7</a></li>
+  <li><a href="#aufgaben" id="toc-aufgaben" class="nav-link active" data-scroll-target="#aufgaben">Aufgaben</a></li>
+  <li><a href="#aufgabe-6.1" id="toc-aufgabe-6.1" class="nav-link" data-scroll-target="#aufgabe-6.1">Aufgabe 6.1</a></li>
+  <li><a href="#aufgabe-6.2" id="toc-aufgabe-6.2" class="nav-link" data-scroll-target="#aufgabe-6.2">Aufgabe 6.2</a></li>
+  <li><a href="#aufgabe-6.3" id="toc-aufgabe-6.3" class="nav-link" data-scroll-target="#aufgabe-6.3">Aufgabe 6.3</a></li>
+  <li><a href="#aufgabe-6.4" id="toc-aufgabe-6.4" class="nav-link" data-scroll-target="#aufgabe-6.4">Aufgabe 6.4</a></li>
+  <li><a href="#aufgabe-6.5" id="toc-aufgabe-6.5" class="nav-link" data-scroll-target="#aufgabe-6.5">Aufgabe 6.5</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_02.html">Übung 2</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_06.html">Übung 6</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Übung 2</h1>
+<h1 class="title">Übung 6</h1>
 </div>
 
 <div>
   <div class="description">
-    Univariate Deskriptivstatistik für nominale und ordinale Variablen
+    Wahrscheinlichkeitstheorie und Wahrscheinlichkeitsverteilungen 3
   </div>
 </div>
 
@@ -304,7 +303,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 23, 2024</p>
+      <p class="date">October 21, 2024</p>
     </div>
   </div>
   
@@ -316,288 +315,143 @@ window.Quarto = {
 </header>
 
 
-<p>Hinweis: Die Lösungen finden Sie in den eingeklappten Kästchen. Für einen besseren Lerneffekt bearbeiten Sie die Aufgaben zuerst ohne Hilfe, notieren die Lösungen und gleichen diese erst danach mit den untenstehenden Lösungen ab.</p>
-<section id="aufgabe-2.1" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.1">Aufgabe 2.1</h2>
-<p>Ein in der Statistik oft benötigtes Operationszeichen ist das Summenzeichen <span class="math inline">\(Σ\)</span>.</p>
-<p><span class="math display">\[\sum_{i=1}^{5}x_i=x_1+x_2+x_3+x_4+x_5\]</span> Diese Formel bedeutet beispielsweise, dass hier die Summe aller <span class="math inline">\(xi\)</span>-Werte für <span class="math inline">\(i=1\)</span> bis <span class="math inline">\(5\)</span> berechnet wird. Der Laufindex <span class="math inline">\(i\)</span> könnte auch durch einen beliebigen anderen Buchstaben ersetzt werden. Unterhalb des Summenzeichens wird die untere Grenze des Laufindex angegeben (hier <span class="math inline">\(1\)</span>). Oberhalb des Summenzeichens findet man die obere Grenze. Weitere Beispiele sind:</p>
-<p><span class="math display">\[\sum_{i=3}^{5}x_i=x_3+x_4+x_5\]</span></p>
-<p><span class="math display">\[\sum_{i=1}^{3}x^2_i=x^2_1+x^2_2+x^2_3\]</span></p>
-<p>Gegeben sind die fünf Werte <span class="math inline">\(x_1=1\)</span>, <span class="math inline">\(x_2=4\)</span>, <span class="math inline">\(x_3=5\)</span>, <span class="math inline">\(x_4=8\)</span>, <span class="math inline">\(x_5=10\)</span>. Berechnen Sie daraus folgende Summen:</p>
-<ol type="a">
-<li><p><span class="math display">\[\sum_{i=1}^{5}x_i\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=1}^{5}x^2_i\]</span></p></li>
-<li><p><span class="math display">\[(\sum_{i=1}^{3}x_i)^2\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=1}^{5}x_i+5\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=3}^{5}(2\cdot x_i)\]</span></p></li>
-</ol>
+<section id="aufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="aufgaben">Aufgaben</h2>
+<p>Hinweise:</p>
+<ul>
+<li>Die Formelsammlung zu dieser Übung finden Sie auf <a href="https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913">OLAT</a>. Benützen Sie sie, wann immer Sie möchten.</li>
+<li>Für die Berechnungen benötigen Sie einen einfachen Taschenrechner (auch gut auf dem Laptop möglich) mit dem Sie beispielsweise <span class="math inline">\(0.8^9\)</span> ausrechnen können.</li>
+<li>Die Tabelle zur Standardnormalverteilung finden Sie im Lehrbuch und unter Onlinematerialen des Verlags <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf">hier</a>.</li>
+<li>Für die Aufgaben und an der Prüfung stehen Ihnen die nötigen Ausschnitte der Tabellen zur Verfügung.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="aufgabe-6.1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6.1">Aufgabe 6.1</h2>
+<p>Wie unterscheiden sich diskrete und stetige Zufallsvariablen und deren Verteilungen?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.1
+Lösung Aufgabe 6.1
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ol type="a">
-<li><p><span class="math display">\[\sum_{i=1}^{5}x_i=1+4+5+8+10=28\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=1}^{5}x_i=1+16+25+64+100=206\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=1}^{3}x_i=(1+4+5)^2=(10)^2=100\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=1}^{5}x_i=6+9+10+13+15=53\]</span></p></li>
-<li><p><span class="math display">\[\sum_{i=3}^{5}x_i=10+16+20=46\]</span></p></li>
-</ol>
+<p>Diskrete Zufallsvariablen haben endlich viele oder abzählbar unendlich viele Werte. Stetige Zufallsvariablen weisen überabzählbar unendlich viele Werte auf. Bei stetigen Zufallsvariablen ist die exakte Wahrscheinlichkeit eines einzelnen Wertes gleich 0.</p>
 </div>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="aufgabe-2.2" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.2">Aufgabe 2.2</h2>
-<p>Welches Mass sagt etwas über die Verteilung einer nominalskalierten Skala aus?</p>
+<section id="aufgabe-6.2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6.2">Aufgabe 6.2</h2>
+<ol type="a">
+<li>Wie wird eine Normalverteilung beschrieben?</li>
+</ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.2
+Lösung Aufgabe 6.2a
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Mit Kennwerten der Dispersion soll angegeben werden, wie sehr sich die Merkmalsträger über die Kategorien verteilen, d.h., wie gleichmässig oder ungleichmässig die Werte der Skala vorkommen. Maximale Dispersion ist gegeben, wenn alle Kategorien gleich häufig besetzt sind, also eine Gleichverteilung der Messwerte vorliegt. Minimale Dispersion ist gegeben, wenn die Merkmalsträger sich überhaupt nicht unterscheiden, also alle den gleichen Messwert tragen. Zur Berechnung eignet sich dazu der relative Informationsgehalt <em>H</em>. Eine solche Berechnung müssen Sie in diesem Semester nicht durchführen können.</p>
+<p><span class="math inline">\(X\sim N(\mu,\sigma^2)\)</span></p>
 </div>
 </div>
 </div>
-</section>
-<section id="aufgabe-2.3" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="aufgabe-2.3">Aufgabe 2.3</h2>
-<p>Zwölf Studierende an der Universität Luzern wurden gefragt, welches Menü in der Mensa sie am liebsten mögen. Dies wurde auf einer Skala mit 1 = <em>MENÜ SOUL</em>, 2 = <em>MENÜ VEGVEG</em> und 3 = <em>MENÜ BOWL</em> erhoben.</p>
-<p>Erstellen Sie mit den folgenden Messwerten eine Häufigkeitstabelle. Berechnen Sie die absolute Häufigkeit <span class="math inline">\(n_j\)</span>, die relative Häufigkeit <span class="math inline">\(h_j\)</span> und die relative Häufigkeit in Anteilen von 100 (<span class="math inline">\(\%_j\)</span>) der Merkmalsausprägungen. Überprüfen Sie Ihre Lösung bevor Sie zu Aufgabe 2.4 gehen.</p>
-<aside>
-Runden Sie die Ergebnisse auf zwei Stellen nach dem Komma.
-</aside>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>ID</th>
-<th>Menü</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>01</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>02</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>03</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>04</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>05</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>06</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>07</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>08</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>09</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<section id="beispieltabelle" class="level4">
-<h4 class="anchored" data-anchor-id="beispieltabelle">Beispieltabelle</h4>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 28%">
-<col style="width: 28%">
-<col style="width: 28%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Menü (<span class="math inline">\(a_j\)</span>)</th>
-<th>Absolute Häufigkeit <span class="math inline">\(n_j\)</span></th>
-<th>Relative Häufigkeit <span class="math inline">\(h_j\)</span></th>
-<th>Relative Häufigkeit in Anteilen von 100 <span class="math inline">\(\%_j\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<ol start="2" type="a">
+<li>Welcher Teil dieser Beschreibung entspricht dem Median und dem Modalwert der Normalverteilung?</li>
+</ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.3
+Lösung Aufgabe 6.2b
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 28%">
-<col style="width: 28%">
-<col style="width: 28%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Menü (<span class="math inline">\(a_j\)</span>)</th>
-<th>Absolute Häufigkeit <span class="math inline">\(n_j\)</span></th>
-<th>Relative Häufigkeit <span class="math inline">\(h_j\)</span></th>
-<th>Relative Häufigkeit in Anteilen von 100 <span class="math inline">\(\%_j\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>4</td>
-<td>0.33</td>
-<td>33%</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>2</td>
-<td>0.17</td>
-<td>17%</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>6</td>
-<td>0.50</td>
-<td>50%</td>
-</tr>
-</tbody>
-</table>
+<p><span class="math inline">\(\mu\)</span></p>
+<p>Bei der Normalverteilung fallen also alle drei Lagemasse, die wir kennengelernt haben, zusammen – genau wie bei allen anderen unimodalen symmetrischen Verteilungen.</p>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="aufgabe-2.4" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.4">Aufgabe 2.4</h2>
-<p>Zeichnen Sie nun ein Kuchendiagramm dieser Häufigkeitstabelle. Notieren die zu den entsprechenden Segmenten die Prozentwerte und erstellen Sie eine Legende.</p>
+<ol start="3" type="a">
+<li>Wie kann eine Normalverteilung in eine Standardnormalverteilung transformiert werden?</li>
+</ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.4
+Lösung Aufgabe 6.2c
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="img/piechart2.4.png" class="img-fluid" alt="Kuchendiagramm."> So würde ein mögliches Säulendiagramm aussehen: <img src="img/barplot2.4.png" class="img-fluid" alt="Säulendiagramm"></p>
+<p>Jede Normalverteilung kann mittels <span class="math inline">\(z\)</span>-Transformation in eine Standardnormalverteilung überführt werden.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="aufgabe-2.5" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.5">Aufgabe 2.5</h2>
-<p>Hier sehen Sie die Häufigkeitsverteilung von 24 Klient:innen über neun mögliche Persönlichkeitsstörungen hinweg.</p>
-<ol type="a">
-<li>Bestimmen Sie den Modalwert.</li>
+<ol start="4" type="a">
+<li>Wie lauten der Erwartungswert und die Varianz der Standardnormalverteilung?</li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/table_modal.png" class="img-fluid figure-img" alt="Säulendiagramm der Verteilung der absoluten Häufigkeiten."></p>
-<figcaption>Abbildung Säulendiagramm der Verteilung der absoluten Häufigkeiten aus Tabelle 6.3 aus Eid et al.&nbsp;(2017, S. 131)</figcaption>
-</figure>
-</div>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.5a
+Lösung Aufgabe 6.2d
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Im vorliegenden Fall ist der Modalwert <em>Dissozial</em> oder <em>Dissoziale Persönlichkeitsstörung</em>:</p>
-<p><span class="math inline">\(Mo=\)</span> Dissoziale Persönlichkeitsstörung</p>
+<p>Der Erwartungswert der Standardnormalverteilung lautet <span class="math inline">\(\mu=0\)</span> und die Varianz <span class="math inline">\(\sigma^2=1\)</span>.</p>
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<p><br></p>
+</section>
+<section id="aufgabe-6.3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6.3">Aufgabe 6.3</h2>
+<p>Was ist der Unterschied zwischen …</p>
+<ol type="a">
+<li>einer Wahrscheinlichkeits- und einer Dichtefunktion?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tipp
+Lösung Aufgabe 6.3a
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Es wäre falsch, die Häufigkeit (6) als Modalwert anzugeben. Der Modalwert ist der Wert der Variablen (die Merkmalsausprägung) und nicht der Wert der Häufigkeit!</p>
-<p>Ausserdem gilt: Der Modus ist dann nicht eindeutig bestimmbar, wenn jede Merkmalsausprägung nur einmal vorkommt.</p>
+<p>Die Wahrscheinlichkeitfunktion beschreibt die Wahrscheinlichkeitsverteilung einer <em>diskreten</em> Zufallsvariable z. B. in Form eines Säulendiagramms. Hingegen beschreibt die Dichtefunktion die Wahrscheinlichkeit einer <em>stetigen</em> Zufallsvariable, mit der <span class="math inline">\(x\)</span> innerhalb eines Intervalls mit der Untergrenze <span class="math inline">\(x_u\)</span> und der Obergrenze <span class="math inline">\(x_o\)</span> liegt.</p>
 </div>
 </div>
 </div>
 <ol start="2" type="a">
-<li>Nehmen wir an, dass eine weitere Person mit der Persönlichkeitsstörung <em>Ängstliche Persönlichkeitsstörung</em> dazukommt. Was verändert sich in Bezug auf den Modalwert?</li>
+<li>einer Dichte- und einer Verteilungsfunktion?</li>
 </ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
@@ -605,53 +459,42 @@ Tipp
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.5b
+Lösung Aufgabe 6.3b
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Es gibt nun zwei Antwortkategorien, die gleich häufig vorkommen (ängstliche Persönlichkeitsstörung und dissoziale Persönlichkeitsstörung). Der Modus ist durch die Gleichverteilungen (Verteilungen, bei denen alle Merkmalsausprägungen mit gleicher Häufigkeit vorkommen) nicht definiert.</p>
-<p>Der Modus reagiert sensibel auf leichte Veränderungen der Verteilung im Gipfelbereich (Gipfelverschiebungen bei ähnlich häufig besetzten Kategorien im Gipfelbereich).</p>
+<p>Die Dichtefunktion beschreibt die Wahrscheinlichkeit, mit der <span class="math inline">\(x\)</span> innerhalb eines Intervalls mit der Untergrenze <span class="math inline">\(x_u\)</span> und der Obergrenze <span class="math inline">\(x_o\)</span> liegt. Die Verteilungsfunktion beschreibt die (kumulierte) Wahrscheinlichkeit mit der eine beliebige Person höchstens einen Wert <span class="math inline">\(x\)</span> aufweist, also die Wahrscheinlichkeit <span class="math inline">\(P\left(X\le x_o\right)\)</span>.</p>
 </div>
 </div>
 </div>
+<p><br></p>
 </section>
-<section id="aufgabe-2.6" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.6">Aufgabe 2.6</h2>
-<p>Die Messwerte eines Merkmals sind 7, 2, 5, 1, 10, 2, 1, 2. Welche Antworten zum Modalwert und Median sind korrekt?</p>
-<ol type="a">
-<li>Der Modalwert ist 2.</li>
-<li>Der Median ist 5.</li>
-<li>Der Modalwert ist 5.</li>
-<li>Der Median ist 2.</li>
-<li>Der Median ist 2.5.</li>
-</ol>
-<div class="callout callout-style-default callout-caution callout-titled">
+<section id="aufgabe-6.4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6.4">Aufgabe 6.4</h2>
+<p>Eine Zufallsvariable ist normalverteilt mit einem Erwartungswert von <span class="math inline">\(\mu=50\)</span> und einer Varianz <span class="math inline">\(\sigma^2=25\)</span>. Bestimmen Sie die Wahrscheinlichkeiten für folgende Werte mit Hilfe der Tabelle der <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf">Standardnormalverteilung</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.6
+Wie gehe ich vor?
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Korrekte Antworten: a, d</p>
+<ol type="1">
+<li><p>Benützen Sie die Formel der <span class="math inline">\(z\)</span>-Transformation, um die Werte der Normalverteilung in die Standardnormalverteilung umzurechnen. Achten Sie darauf, dass Sie <span class="math inline">\(\sigma\)</span> und nicht <span class="math inline">\(\sigma^2\)</span> verwenden!</p></li>
+<li><p>Lesen Sie anschliessend die entsprechenden Werte in der Tabelle ab. Achten Sie jeweils darauf, ob Sie das Intervall oberhalb oder unterhalb benötigen.</p></li>
+</ol>
 </div>
 </div>
 </div>
-</section>
-<section id="aufgabe-2.7" class="level2">
-<h2 class="anchored" data-anchor-id="aufgabe-2.7">Aufgabe 2.7</h2>
-<p>Bei einem Experiment wird gemessen, wie lange die Versuchspersonen mit geschlossenen Augen auf einem Bein stehen können. Nach 21 Personen liegen folgende Messwerte in Sekunden vor.</p>
-<p>18, 36, 18, 22, 23, 24, 26, 29, 32, 34, 36, 16, 42, 22, 43, 46, 46, 49, 57, 34, 23</p>
 <ol type="a">
-<li>Berechnen Sie den Median.</li>
-<li>Berechnen Sie das untere Quartil (<span class="math inline">\(Q_1\)</span>) und das obere Quartil (<span class="math inline">\(Q_3\)</span>).</li>
-<li>Berechnen Sie den Interquartilsabstand (<span class="math inline">\(IQR\)</span>).</li>
+<li><span class="math inline">\(P\left(x\leq50\right)\)</span></li>
 </ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
@@ -659,72 +502,188 @@ Lösung Aufgabe 2.6
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.7a
+Lösung Aufgabe 6.4a
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Zuerst ordnen wir die Messwerte nach ihrer Reihenfolge.</p>
-<p>16, 18, 18, 22, 22, 23, 23, 24, 26, 29, 32, 34, 34, 36, 36, 42, 43, 46, 46, 49, 57</p>
-<p>Der Median berechnet sich durch <span class="math inline">\((n+1)/2\)</span>. Da 21 Messwerte vorliegen, liegt der Median beim 11. Messwert (Berechnung: <span class="math inline">\(22/2\)</span>). Der 11. Messwert in der geordneten Folge beträgt 32 Sekunden.</p>
-<p><span class="math inline">\(Md = 32\)</span> Sekunden</p>
-<p>Hinweis zum Modalwert: Hier liegen mehrere Modalwerte vor (18, 22, 23, 34, 36, 46). Wir haben somit multimodale Daten, was zeigt, dass hier ein Modalwert nicht informativ ist.</p>
+<p><span class="math inline">\(P\left(z\leq0\right)=0.5\)</span></p>
 </div>
 </div>
 </div>
+<p><br></p>
+<ol start="2" type="a">
+<li><span class="math inline">\(P\left(x\gt64\right)\)</span></li>
+</ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.7b
+Lösung Aufgabe 6.4b
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>Das untere Quartil (<span class="math inline">\(Q_1\)</span>)</strong>: Wir teilen dazu den Stichprobenumfang durch 4 (<span class="math inline">\(21/4=5.25\)</span>) oder multiplizieren den Stichprobenumfang mit 0.25 (<span class="math inline">\(n\cdot 0.25 = 21\cdot0.25=5.25\)</span>) und runden dann auf die nächste ganze Zahl (<span class="math inline">\(6\)</span>). <span class="math inline">\(Q_1\)</span> liegt also beim 6. Messwert, bei <strong>23 Sekunden</strong>.</p>
-<p><strong>Das obere Quartil (<span class="math inline">\(Q_3\)</span>)</strong>: Wir multiplizieren dazu den Stichprobenumfang mit 0.75 (<span class="math inline">\(n\cdot 0.75 = 21\cdot0.75=15.75\)</span>) und runden dann auf die nächste ganze Zahl (<span class="math inline">\(16\)</span>). <span class="math inline">\(Q3\)</span> liegt also beim 16. Messwert, bei <strong>42 Sekunden</strong>.</p>
+<p><span class="math inline">\(P\left(z\gt2.8\right)=1-P\left(z\le2.8\right)=1-0.9974=0.0026\)</span></p>
 </div>
 </div>
 </div>
+<p><br></p>
+<ol start="3" type="a">
+<li><span class="math inline">\(P\left(x\gt40\right)\)</span></li>
+</ol>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung Aufgabe 2.7c
+Lösung Aufgabe 6.4c
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(IQR = Q3 - Q1\)</span></p>
-<p><span class="math inline">\(IQR = 42 - 23 = 19\)</span></p>
-<p>Der Interquartilsabstand beträgt <span class="math inline">\(19\)</span>.</p>
+<p><span class="math inline">\(P\left(z&gt;-2\right)=P\left(z\leq2\right)=0.9772\)</span></p>
 </div>
 </div>
 </div>
-<p><br> <br></p>
-<p>Herzliche Gratulation, alle Übungen sind geschafft!</p>
-<p><img src="img/sheep.jpg" class="img-fluid"></p>
+<p><br></p>
+<ol start="4" type="a">
+<li><span class="math inline">\(P\left(x\leq59.8\right)\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 6.4d
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(P\left(z\leq1.96\right)=0.975\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="5" type="a">
+<li><span class="math inline">\(P\left(40\lt x\leq55\right)\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 6.4e
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(z_o=P\left(z\leq1\right)=0.8413\)</span></p>
+<p><span class="math inline">\(z_u=P\left(z\leq-2\right)=1-P\left(z\leq2\right)=1-0.9972=0.0028\)</span></p>
+<p>Da wir <span class="math inline">\(P\left(z\leq-2\right)\)</span> nicht direkt ablesen können, bestimmen wir <span class="math inline">\(P\left(z\leq2\right)\)</span> und nehmen dann die Gegenwahrscheinlichkeit.</p>
+<p><span class="math inline">\(z_o-z_u=0.8413-0.0028=0.8385\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-6.5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-6.5">Aufgabe 6.5</h2>
+<p>Eine Zufallsvariable ist normalverteilt mit einem Erwartungswert von <span class="math inline">\(\mu=120\)</span> und einer Varianz <span class="math inline">\(\sigma^2=400\)</span>. Bestimmen Sie jeweils denjenigen Wert, unter dem die genannten Prozente der Verteilung liegen.</p>
+<ol type="a">
+<li><span class="math inline">\(z_{68\%}\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 6.5a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(z_{68\%}=0.47\)</span></p>
+<p>Die Wahrscheinlichkeit von 68% wird mit dem Wert <span class="math inline">\(P=0.6808\)</span> überschritten. Dadurch können wir den <span class="math inline">\(z\)</span>-Wert für <span class="math inline">\(0.6808\)</span> aus der Tabelle ablesen und im zweiten Schritt in die vorgegebene Normalverteilung transformieren.</p>
+<p><span class="math inline">\(x_{68\%}=\mu+z\cdot \sigma=120+0.47⋅20=129.4\)</span></p>
+<p><span class="math inline">\(x_{68\%}=129.4\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="2" type="a">
+<li><span class="math inline">\(z_{95\%}\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 6.5b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(z_{95\%}=0.65\)</span></p>
+<p><span class="math inline">\(x_{95\%}=\mu+z\cdot \sigma=120+0.65⋅20=133\)</span></p>
+<p><span class="math inline">\(x_{95\%}=133\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="3" type="a">
+<li><span class="math inline">\(z_{5\%}\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 6.5c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Da 5% nicht ablesbar ist, lesen wir den entsprechenden <span class="math inline">\(z\)</span>-Wert bei 95% ab. Dieser wird bei <span class="math inline">\(P=0.9505\)</span> überschritten und ergibt einen <span class="math inline">\(z\)</span>-Wert von <span class="math inline">\(+1.65\)</span>. Für 5% statt 95% haben wir also einen <span class="math inline">\(z\)</span>-Wert von <span class="math inline">\(-1.65\)</span>, da die Verteilung symmetrisch ist.</p>
+<p><span class="math inline">\(z_{5\%}=-1.65\)</span></p>
+<p><span class="math inline">\(x_{5\%}=\mu-z\cdot \sigma=120-1.65⋅20=87\)</span></p>
+<p><span class="math inline">\(x_{5\%}=87\)</span></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Diese Woche gibt es etwas zu feiern! Sie haben bereits die Hälfte der Übungen geschafft.</p>
+<p><img src="img/meme6c.jpg" class="img-fluid"></p>
 
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn2024,
   author = {Senn, Mirjam and Wyssen, Gerda},
-  title = {Übung 2},
-  date = {2024-09-23},
-  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_02.html},
+  title = {Übung 6},
+  date = {2024-10-21},
+  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_06.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Senn, Mirjam, and Gerda Wyssen. 2024. <span>“Übung 2.”</span> September
-23, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_02.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_02.html</a>.
+Senn, Mirjam, and Gerda Wyssen. 2024. <span>“Übung 6.”</span> October
+21, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_06.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_06.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

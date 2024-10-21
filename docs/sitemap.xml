@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/formulas/formelsammlung.html</loc>
-    <lastmod>2024-10-09T13:39:19.533Z</lastmod>
+    <lastmod>2024-10-21T17:25:26.345Z</lastmod>
   </url>
   <url>
-    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html</loc>
-    <lastmod>2024-10-13T19:23:25.191Z</lastmod>
-  </url>
-  <url>
-    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_03.html</loc>
-    <lastmod>2024-10-09T13:39:19.526Z</lastmod>
-  </url>
-  <url>
-    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_01.html</loc>
-    <lastmod>2024-10-09T13:39:19.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://psylu.github.io/statistik1-hs24/index.html</loc>
-    <lastmod>2024-10-09T13:39:19.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://psylu.github.io/statistik1-hs24/pages/admin/page_1.html</loc>
-    <lastmod>2024-10-09T13:39:19.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_02.html</loc>
-    <lastmod>2024-10-09T13:39:19.525Z</lastmod>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_06.html</loc>
+    <lastmod>2024-10-21T18:00:16.021Z</lastmod>
   </url>
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_04.html</loc>
-    <lastmod>2024-10-13T19:27:43.097Z</lastmod>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_02.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/admin/page_1.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/index.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_01.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_03.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_05.html</loc>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
   </url>
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</loc>
-    <lastmod>2024-10-09T13:39:19.526Z</lastmod>
+    <lastmod>2024-10-13T20:00:40.052Z</lastmod>
   </url>
 </urlset>
