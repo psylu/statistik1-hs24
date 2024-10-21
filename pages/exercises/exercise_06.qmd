@@ -1,0 +1,240 @@
+---
+title: "Übung 6"
+description: "Wahrscheinlichkeitstheorie und Wahrscheinlichkeitsverteilungen 3"
+date: "2024-10-21"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+license: CC BY
+citation: true
+execute:
+  echo: false
+---
+
+## Aufgaben
+
+Hinweise: 
+
+-   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). Benützen Sie sie, wann immer Sie möchten.
+-   Für die Berechnungen benötigen Sie einen einfachen Taschenrechner (auch gut auf dem Laptop möglich) mit dem Sie beispielsweise $0.8^9$ ausrechnen können.
+-   Die Tabelle zur Standardnormalverteilung finden Sie im Lehrbuch und unter Onlinematerialen des Verlags [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+-   Für die Aufgaben und an der Prüfung stehen Ihnen die nötigen Ausschnitte der Tabellen zur Verfügung. 
+
+
+<br>
+
+## Aufgabe 6.1
+
+Wie unterscheiden sich diskrete und stetige Zufallsvariablen und deren Verteilungen? 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.1
+
+Diskrete Zufallsvariablen haben endlich viele oder abzählbar unendlich viele Werte. Stetige Zufallsvariablen weisen überabzählbar unendlich viele Werte auf. Bei stetigen Zufallsvariablen ist die exakte Wahrscheinlichkeit eines einzelnen Wertes gleich 0. 
+
+:::
+
+
+
+<br>
+
+## Aufgabe 6.2
+
+a.    Wie wird eine Normalverteilung beschrieben?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.2a
+
+$X\sim N(\mu,\sigma^2)$
+
+:::
+
+b.    Welcher Teil dieser Beschreibung entspricht dem Median und dem Modalwert der Normalverteilung?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.2b
+
+$\mu$
+
+Bei der Normalverteilung fallen also alle drei Lagemasse, die wir kennengelernt haben, zusammen – genau wie bei allen anderen unimodalen symmetrischen Verteilungen.
+
+:::
+
+c.    Wie kann eine Normalverteilung in eine Standardnormalverteilung transformiert werden?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.2c
+
+Jede Normalverteilung kann mittels $z$-Transformation in eine Standardnormalverteilung überführt werden.
+
+:::
+
+d.    Wie lauten der Erwartungswert und die Varianz der Standardnormalverteilung?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.2d
+
+Der Erwartungswert der Standardnormalverteilung lautet $\mu=0$ und die Varianz $\sigma^2=1$.
+
+:::
+
+<br>
+
+## Aufgabe 6.3
+
+Was ist der Unterschied zwischen ...
+
+a.    einer Wahrscheinlichkeits- und einer Dichtefunktion?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.3a
+
+Die Wahrscheinlichkeitfunktion beschreibt die Wahrscheinlichkeitsverteilung einer _diskreten_ Zufallsvariable z. B. in Form eines Säulendiagramms. Hingegen beschreibt die Dichtefunktion die Wahrscheinlichkeit einer _stetigen_ Zufallsvariable, mit der $x$ innerhalb eines Intervalls mit der Untergrenze $x_u$ und der Obergrenze $x_o$ liegt.  
+
+:::
+
+b.    einer Dichte- und einer Verteilungsfunktion?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.3b
+
+Die Dichtefunktion beschreibt die Wahrscheinlichkeit, mit der $x$ innerhalb eines Intervalls mit der Untergrenze $x_u$ und der Obergrenze $x_o$ liegt. Die Verteilungsfunktion beschreibt die (kumulierte) Wahrscheinlichkeit mit der eine beliebige Person höchstens einen Wert $x$ aufweist, also die Wahrscheinlichkeit $P\left(X\le x_o\right)$.
+
+:::
+
+<br>
+
+## Aufgabe 6.4
+
+Eine Zufallsvariable ist normalverteilt mit einem Erwartungswert von $\mu=50$ und einer Varianz $\sigma^2=25$. Bestimmen Sie die Wahrscheinlichkeiten für folgende Werte mit Hilfe der Tabelle der [Standardnormalverteilung](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+
+::: {.callout-tip collapse="true"}
+## Wie gehe ich vor?
+
+1.    Benützen Sie die Formel der $z$-Transformation, um die Werte der Normalverteilung in die Standardnormalverteilung umzurechnen. Achten Sie darauf, dass Sie $\sigma$ und nicht $\sigma^2$ verwenden! 
+
+2.    Lesen Sie anschliessend die entsprechenden Werte in der Tabelle ab. Achten Sie jeweils darauf, ob Sie das Intervall oberhalb oder unterhalb benötigen.
+
+:::
+
+a.    $P\left(x\leq50\right)$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.4a
+
+$P\left(z\leq0\right)=0.5$
+
+:::
+
+<br>
+
+b.    $P\left(x\gt64\right)$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.4b
+
+$P\left(z\gt2.8\right)=1-P\left(z\le2.8\right)=1-0.9974=0.0026$
+
+:::
+
+<br>
+
+c.    $P\left(x\gt40\right)$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.4c
+
+$P\left(z>-2\right)=P\left(z\leq2\right)=0.9772$
+
+:::
+
+<br>
+
+d.    $P\left(x\leq59.8\right)$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.4d
+
+$P\left(z\leq1.96\right)=0.975$
+
+:::
+
+<br>
+
+e.    $P\left(40\lt x\leq55\right)$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.4e
+
+$z_o=P\left(z\leq1\right)=0.8413$
+
+$z_u=P\left(z\leq-2\right)=1-P\left(z\leq2\right)=1-0.9972=0.0028$
+
+Da wir $P\left(z\leq-2\right)$ nicht direkt ablesen können, bestimmen wir $P\left(z\leq2\right)$ und nehmen dann die Gegenwahrscheinlichkeit. 
+
+$z_o-z_u=0.8413-0.0028=0.8385$
+
+:::
+
+<br>
+
+## Aufgabe 6.5
+
+Eine Zufallsvariable ist normalverteilt mit einem Erwartungswert von $\mu=120$ und einer Varianz $\sigma^2=400$. Bestimmen Sie jeweils denjenigen Wert, unter dem die genannten Prozente der Verteilung liegen.
+
+a.    $z_{68\%}$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.5a
+
+$z_{68\%}=0.47$
+
+Die Wahrscheinlichkeit von 68% wird mit dem Wert $P=0.6808$ überschritten. Dadurch können wir den $z$-Wert für $0.6808$ aus der Tabelle ablesen und im zweiten Schritt in die vorgegebene Normalverteilung transformieren. 
+
+$x_{68\%}=\mu+z\cdot \sigma=120+0.47⋅20=129.4$
+
+$x_{68\%}=129.4$
+
+:::
+
+<br>
+
+b.    $z_{95\%}$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.5b
+
+$z_{95\%}=0.65$
+
+$x_{95\%}=\mu+z\cdot \sigma=120+0.65⋅20=133$
+
+$x_{95\%}=133$
+
+:::
+
+<br>
+
+c.    $z_{5\%}$
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 6.5c
+
+Da 5% nicht ablesbar ist, lesen wir den entsprechenden $z$-Wert bei 95% ab. Dieser wird bei $P=0.9505$ überschritten und ergibt einen $z$-Wert von $+1.65$. Für 5% statt 95% haben wir also einen $z$-Wert von $-1.65$, da die Verteilung symmetrisch ist.  
+
+$z_{5\%}=-1.65$
+
+$x_{5\%}=\mu-z\cdot \sigma=120-1.65⋅20=87$
+
+$x_{5\%}=87$
+
+:::
+
+<br>
+
+Diese Woche gibt es etwas zu feiern! Sie haben bereits die Hälfte der Übungen geschafft.
+
+![](img/meme6c.jpg)

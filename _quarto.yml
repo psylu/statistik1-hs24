@@ -28,7 +28,8 @@ website:
        - pages/exercises/exercise_02.qmd
        - pages/exercises/exercise_03.qmd
        - pages/exercises/exercise_04.qmd
-       - pages/exercises/exercise_05.qmd         
+       - pages/exercises/exercise_05.qmd
+       - pages/exercises/exercise_06.qmd
        - pages/exercises/exercise_R.qmd
     - section: Formelsammlung
       contents:
