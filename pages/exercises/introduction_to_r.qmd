@@ -489,6 +489,8 @@ glimpse(d)
 
 ## {{< fa regular lightbulb >}}&emsp;Tipp
 
+Falls `d` nicht angezeigt werden kann, erscheint die Fehlermeldung `Error: object 'd' not found`. Scrollen Sie nach oben und erstellen Sie den Datensatz `d`unter __3. Objekte in R__.
+
 Drücken Sie `Run Code`.
 
 ## {{< fa check >}}&emsp;Lösung
@@ -540,7 +542,9 @@ cars$___
 
 ## {{< fa regular lightbulb >}}&emsp;Tipp
 
-Wählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie ein.
+Wählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie nach dem `$` ein.
+
+Beispiel: `speed` oder `dist`.
 
 Drücken Sie `Run Code`.
 
@@ -659,7 +663,7 @@ Häufigste Fehlerquellen sind:
 
 - Fehlende oder unpassende Argumente (z.B. `hist()` mit zwei Variablen aufrufen: `hist(cars)`))
 
-- Reihenfolgen (z.B. zuerst Variable speichern, erst dann ist sie abrufbar)
+- Reihenfolgen (z.B. Variable abrufen wollen, obwohl sie noch nicht erstellt wurde)
 
 Das __Debugging__, also das Beheben von Fehlern im Code, gehört zum Programmieren dazu.
 Lassen Sie sich nicht von Fehlermeldungen aus der Ruhe bringen.
