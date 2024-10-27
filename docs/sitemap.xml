@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/introduction_to_r.html</loc>
+    <lastmod>2024-10-27T19:41:40.016Z</lastmod>
+  </url>
+  <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/formulas/formelsammlung.html</loc>
-    <lastmod>2024-10-22T20:36:47.820Z</lastmod>
+    <lastmod>2024-10-27T19:25:51.066Z</lastmod>
   </url>
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_06.html</loc>
-    <lastmod>2024-10-22T20:39:17.538Z</lastmod>
+    <lastmod>2024-10-27T19:25:51.060Z</lastmod>
   </url>
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_04.html</loc>
@@ -39,5 +43,9 @@
   <url>
     <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</loc>
     <lastmod>2024-10-13T20:00:40.052Z</lastmod>
+  </url>
+  <url>
+    <loc>https://psylu.github.io/statistik1-hs24/pages/exercises/webr.html</loc>
+    <lastmod>2024-10-23T13:00:36.214Z</lastmod>
   </url>
 </urlset>

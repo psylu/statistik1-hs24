@@ -6,34 +6,33 @@ project:
   - pages/admin/*.qmd
   - pages/exercises/*.qmd
   - pages/formulas/*.qmd
-
 website:
-  title: "Statistik 1"
+  title: Statistik 1
   site-url: https://psylu.github.io/statistik1-hs24/
-  #favicon: logo.jpg
   reader-mode: true
   navbar:
-    #logo: logo.jpg
     background: primary
     left:
-      - href: index.qmd
-      - pages/admin/page_1.qmd 
+    - href: index.qmd
+    - pages/admin/page_1.qmd
   sidebar:
     style: floating
     search: true
     contents:
     - section: Übungen
       contents:
-       - pages/exercises/exercise_01.qmd
-       - pages/exercises/exercise_02.qmd
-       - pages/exercises/exercise_03.qmd
-       - pages/exercises/exercise_04.qmd
-       - pages/exercises/exercise_05.qmd
-       - pages/exercises/exercise_06.qmd
-       - pages/exercises/exercise_R.qmd
-    - section: Formelsammlung
+      - pages/exercises/exercise_01.qmd
+      - pages/exercises/exercise_02.qmd
+      - pages/exercises/exercise_03.qmd
+      - pages/exercises/exercise_04.qmd
+      - pages/exercises/exercise_05.qmd
+      - pages/exercises/exercise_06.qmd
+    - section: R
       contents:
-       - pages/formulas/formelsammlung.qmd
+      - pages/exercises/webr.qmd
+      - pages/exercises/introduction_to_r.qmd
+    - section: Formelsammlung
+      contents: pages/formulas/formelsammlung.qmd
 format:
   html:
     theme:
@@ -43,9 +42,11 @@ format:
       dark:
       - darkly
       - styles/dark.scss
-    css: styles.css
+    css:
+    - styles.css
+    - include/webex.css
     toc: true
     link-external-newwindow: true
-    
+    include-after-body: include/webex.js
 editor:
   render-on-save: true
