@@ -1,0 +1,705 @@
+---
+title: "Einführung in R"
+description: "Skript zur Vorlesung"
+date: "2024-10-28"
+author:
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+engine: knitr
+filters:
+  - webr
+webr:
+  packages:
+    - tidyverse
+license: CC BY
+citation: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", collapse = TRUE)
+set.seed(1234)
+```
+
+## 1. Getting Started
+
+Diese Seite wird begleitend zur Vorlesung "Einführung in R" vom 28.10.2024 genutzt.
+Gleichzeitig gilt das Skript auch als __Übung 7__.
+
+::: {.callout-note appearance="simple" icon=false collapse=true}
+## {{< fa laptop-code >}}&emsp;Informationen zu WebR auf dieser Seite
+<br>
+
+- Das Package `{tidyverse}` ist schon installiert und muss nicht geladen werden.
+
+- Die Datensätze `mpg` und `iris`sind verfügbar.
+
+- Beim Schliessen des Browserfensters gehen alle gespeicherten Eingaben (z.B. Variablen) verloren.
+
+:::
+
+
+## 2. R Konsole als Rechner
+
+Eine R Konsole kann als Rechner verwendet werden. 
+Untenstehend finden Sie eine Konsole mit dem Inhalt`1+1`. 
+Sobald ein grüner Pfeil und `Run Code` erscheint, ist WebR geladen und bereit.
+Mit `Run Code` kann der Text - oder ___Code___ - in der Konsole *ausgeführt* werden.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+1+1
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+1+1
+```
+
+:::
+
+
+Nach Ausführen des Codes wird unter der Konsole das Resultat - der ___Output___ - angezeigt.
+Die Zahl in Klammern, also `[1]` beschreibt die Zeilennummer.
+Die Zahl danach, also `2`, zeigt den Output.
+
+Der Code in der Konsole kann gelöscht und durch anderen Code ersetzt werden. 
+Es können auch andere Operatoren (z.B. `-`, `/` oder `*`) oder Funktionen (wie `sqrt`) genutzt werden.
+(Am linken Rand wird die Zeilennummer des Codes angegeben. Diese Zahl kann nicht geändert werden. Sie dient bei langem Code dazu sich zu orientieren.)
+
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+Geben Sie in die Konsole verschiedene mathematische Operationen ein:
+
+- $1+1+1$
+
+- $5*5$
+
+- $3*(4+3)$
+
+- $1000/10^2$
+
+- $\sqrt{144}$
+
+- $\sin60$
+
+
+```{webr-r}
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Schauen Sie in den Folien unter "Wichtigste mathematische Operationen in R" nach.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+#| echo: false
+
+1+1+1
+5*5
+3*(4+3)
+1000/(10^2)
+sqrt(144)
+sin(60)
+```
+
+:::
+
+
+## 3. Objekte in R: Variablen und Datensätze
+
+Objekte können in R erstellt werden indem einer der beiden Zuweisungsoperatoren `=` oder `<-` genutzt wird.
+In diesem Kurs arbeiten wir vor allem mit `<-`. In den meisten Fällen ergibt `=` jedoch dasselbe Ergebnis.
+
+**Vor** dem Zuweisungsoperator steht der Variablenname. 
+**Nach** dem Zuweisungsoperator steht der Variablenwert bzw. die -werte.
+
+### Vektoren
+
+Die simpelsten Objekte in R sind Vektoren (eine Reihe Werten, wie z.B. eine Spalte einer Exceltabelle). 
+Der Vektor kann keinen, einen oder mehrere Werte enthalten.
+Matrizen können mehrere Vektoren desselben Datentyps kombinieren. 
+Datensätzen (`data.frame` oder `tibble`) können Variablen unterschiedlicher Typen kombinieren.
+
+
+Beispiel: Mit dem Code `x <- 5` wird eine Variable `x` mit dem Wert `5` erstellt.
+Für das Erstellen der Variable muss der Code ausgeführt werden.
+
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Erstellen Sie eine Variable namens `x` mit dem Wert `5`.
+
+```{webr-r}
+___ <- ___
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Setzen Sie vor dem Pfeil den Variablennamen ein.
+
+Setzen Sie nach dem Pfeil den Variablenwert ein.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+x <- 5
+```
+
+
+:::
+
+Die Variable wurde nun gespeichert.
+Sie kann jederzeit wieder abgerufen werden bis sie geändert oder gelöscht wird, oder bis das Browserfenster geschlossen wird.
+Durch die Angabe des Variablennamens wird die Variable aufgerufen:
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+x
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Drücken Sie `Run Code`.
+
+Wenn die Fehlermeldung `Error: object 'x' not found` erscheint, bedeutet das, dass die Variable `x` nicht existiert und daher nicht angezeigt werden kann. 
+Dies kann daran liegen, dass der vorherige Code `x <- 5` nicht ausgeführt wurde (die Variable also gar nicht gespeichert wurde) oder dass die Variable z.B. durch das zwischenzeitliche Schliessen des Browsertabs gelöscht wurde.
+Führen Sie den obigen Code `x <- 5`nochmals aus, um die Variable zu erstellen und ihr einen Wert zuzuweisen.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+x
+```
+:::
+
+
+Variablen können __mehrere Werte__ enthalten. 
+Einen Weg mehrere Werte als Variable zu speichern ist die Funktion `c()` zu nutzen.
+Die Variable `y <- c(23, 45, 34)` enthält die Zahlen `23`, `45` und `34`.
+Wörter werden jeweils in `"`Anführungszeichen`"` gesetzt: `z <- c("ja", "nein", "vielleicht")`.
+
+<aside>Faktoren können mit der Funktion `as.factor()` erstellt werden. Wenn z.B. `ja`, `nein` und `vielleicht` als Faktoren gespeichert werden sollen lautet der Code `z <- as.factor(c("ja", "nein", "vielleicht"))`. </aside>
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+y <- c(___)
+z <- c(___)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie in die Klammer mehrere Werte ein.
+Sie können Zahlen einfügen oder Wörter. 
+Wörter müssen in Anführungszeichen (`" "`) gesetzt werden. 
+
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+y <- c(23, 45, 34)
+z <- c("ja", "nein", "vielleicht")
+```
+
+:::
+
+
+Variablen können __unterschiedliche Datentypen__ enthalten, z.B. Zahlen oder Wörter.
+Der __Variablentyp__ (oder die __Variablenklasse__) entspricht dem zugewiesenen Wert bzw. den zugewiesenen Werten.
+Mit der Funktion `class()` kann erfragt werden, welchen Variablentyp eine Variable hat.
+In die Klammer wird der Variablennamen, also bspw. `y` eingesetzt.
+
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+y <- ___
+class(y)
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Definieren Sie eine Variable `y`.
+
+Fügen Sie in die Klammer nach `class` den Variablennamen ein.
+
+Sie können `y <- ...` der nächsten Aufgabe kopieren und hier einsetzen, um sich den Variablentyp ausgeben zu lassen.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+y <- c(23, 45, 34)
+class(y)
+```
+
+:::
+
+
+
+::: {.callout-note appearance="simple" icon=false}
+## {{< fa circle-question >}}&emsp;Quiz: Variablentyp
+
+<br>
+
+Welcher Variablentyp hat die Variable `y`?
+
+*a.*
+
+`y <- c(23, 34, 634, 234, 12, 34)`
+
+`r webexercises::mcq(c("character", answer = "numeric", "factor", "leer"))`
+
+*b.*
+
+`y <- c("hallo", "a", "nein")`
+
+`r webexercises::mcq(c(answer = "character", "numeric", "factor", "leer"))`
+
+
+*c.*
+
+`y <- 0`
+
+`r webexercises::mcq(c("character",  answer = "numeric", "factor", "leer"))`
+
+*d.*
+
+`y <- NULL`
+
+`r webexercises::mcq(c("character",  "numeric", "factor", answer = "leer"))`
+
+*e.*
+
+`y <- as.factor(c("blue", "red", "yellow"))`
+
+`r webexercises::mcq(c("character",  "numeric", answer = "factor", "leer"))`
+
+:::
+
+<br>
+
+
+### Datensätze
+
+Objekte können nicht nur einen Vektor enthalten wie oben, sondern können auch ganze Datensätze sein.
+Also mehrere aneinandergereihte Vektoren (wie eine Exceltabelle).
+Datensätze können unterschiedliche Variablentypen enthalten.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Erstellen Sie einen Datensatz mit 3 Variablen:
+
+- Name: `sub`, Werte: `sub-01`, `sub-02`, `sub-03`, `sub-04`, `sub-05`
+- Alter: `age`, Werte: `43`, `54`, `33`. `29`, `22`
+- Korrekte Antworten: `accuracy`, Werte: `89`, `77`, `95`, `98`, `99`
+
+```{webr-r}
+# Erstellen Sie den Datensatz
+d <- tibble(sub = c("sub-01", "sub-02", "sub-03", "sub-04"),
+            age = c(43, ___, ___, ___),
+            ___ = c(89, 77, ___, ___)
+            )
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie bei allen `___` die fehlenden Werte ein und drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+d <- tibble(sub = c("sub-01", "sub-02", "sub-03", "sub-04"),
+            age = c(43,54, 33, 29),
+            accuracy = c(89, 77, 95, 98)
+            )
+```
+
+:::
+
+
+
+## 4. Funktionen und Argumente
+
+Funktionen werden mit dem Funktionsname und den Argumenten in Klammern aufgerufen. Bei jeder Funktion ist definiert, welche Argumente eingegeben werden müssen. Teilweise können die Argumente auch weggelassen werden, dann werden die in der Funktion voreingegebenen Werte verwendet.
+
+Die Funktion `mean()`berechnet den Mittelwert. 
+Die notwendigen Argumente dieser Funktion sind Zahlen, die in der Klammer angegeben werden. 
+Eine Reihe von Zahlen wird mit der Funktion `c()` erstellt.
+Wir können also der Funktion `mean()` einen Zahlenvektor `c(12, 34, 56, 78)` als Argument geben und so den Mittelwert dieser Zahlen berechnen.
+
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+mean(c(___))
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Geben Sie die Zahlen innerhalb der Klammern an.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+mean(c(12, 34, 56, 78))
+```
+
+
+:::
+
+Es gibt viele weitere nützliche Funktionen für statistische Berechnungen:
+
+- `mean()`: berechnet den Mittelwert
+- `median()`: berechnet den Median
+- `mode()`: berechnet den Modus
+- `sd()`: berechnet die Standardabweichung
+- `sum()`: berechnet die Summe
+- `min()`: extrahiert den kleinsten Wert
+- `max()`: extrahiert den grössten Wert
+<!-- - `scale()`: z-transformiert die Daten -->
+
+
+
+::: {.callout-note appearance="simple" icon=false}
+## {{< fa circle-question >}}&emsp;Quiz: Funktionen nutzen
+
+<br>
+
+Dieser Code erstellt einen Variable mit 100 fiktiven IQ-Messungen.
+
+```{r}
+data_iq <- rnorm(100, mean = 100, sd = 15) # diese Zeile generiert 100 Messungen
+```
+
+Verwenden Sie die Konsole um die Lösung zu berechnen.
+Sie können die Funktionen von oben nutzen um das Quiz zu beantworten.
+
+
+```{webr-r}
+mean(data_iq)
+median(___)
+
+
+```
+
+
+<br>
+
+__a.__ Was ist der Mittelwert der Daten?
+
+`r webexercises::mcq(c("ca. 50", answer = "ca. 100", "ca. 1000"))`
+
+__b.__ Was ist der Median der Daten?
+
+`r webexercises::mcq(c("ca. 10", "ca. 50", answer = "ca. 100"))`
+
+__b.__ Was ist die Standardabweichung der Daten?
+
+`r webexercises::mcq(c(answer = "ca. 15", "ca. 50", "ca. 100"))`
+
+__c.__ Was ist die der maximale Wert?
+
+__d.__ Was ist der minimale Wert?
+
+
+:::
+
+<aside>
+Alles hinter dem `#` wird nicht ausgeführt, es dient als Kommentar. 
+So kann beschrieben werden, was eine Zeile Code genau macht, ohne dass diese mit dem Code interferiert.
+</aside>
+
+### Packages
+
+Packages können mit der Funktion `install.packages()` installiert und mit `library()` geladen werden. 
+
+<aside> Zu Beginn der Website wird jeweils angegeben, welche Packages für Sie im Hintergrund schon geladen wurden. </aside>
+
+Wenn ein Package nicht geladen werden, aber eine Funktion daraus verwendet werden soll, kann die Funktion nach dem Package-Name mit `::` aufgerufen werden: `packagename::funktionsname()`.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Laden Sie das Package `{ggplot2}`:
+
+```{webr-r}
+library(___)
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Geben Sie innerhalb der Klammer den Packagename an (keine Anführungszeichen).
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+#| eval: false
+
+library(ggplot2)
+```
+
+
+:::
+
+
+## 5. Data wrangling
+
+Datensätze können in R einfach dargestellt und zusammengefasst werden.
+
+Mit der Funktion `glimpse()` kann der Datensatz angeschaut werden
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Schauen Sie sich den oben erstellten Datensatz
+
+```{webr-r}
+glimpse(d)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+glimpse(d)
+```
+:::
+
+
+Zum Üben gibt es in R Datensätze, die immer verfügbar sind, z.B. `cars`. 
+In diesem Datensatz von 1920 werden verschiedene Autos und ihre Eigenschaften beschrieben.
+
+Mit `summary()` kann der Datensatz zusammengefasst werden, es werden automatisch die minimalen und maximalen Werte, Mittelwerte, etc. ausgegeben.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Schauen Sie sich die Zusammenfassung von `cars` an:
+
+```{webr-r}
+___(cars)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Verwenden Sie die Funktion `summary()`.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+summary(cars)
+```
+
+:::
+
+Mit dem Operator `$` kann eine einzelne Variable aus dem Datensatz ausgewählt werden.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+Schauen Sie sich die einzelnen Variablen von `cars` an.
+
+```{webr-r}
+cars$___
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Wählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie ein.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+cars$speed 
+```
+
+oder
+
+```{r}
+cars$dist 
+```
+:::
+
+
+## 6. Grafik
+
+Um Grafiken zu erstellen gibt es in R einfache Befehle, wie
+
+- `plot()`
+- `hist()`
+- `boxplot()`
+
+<aside>Komplexere und grafisch ansprechendere Plots können mit dem Package `{ggplot2}` erstellt werden. 
+[Cheatsheet für Interessierte](https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf)</aside>
+
+### Scatterplot
+
+Die Funktion `plot()` macht einen Scatterplot, zeichnet also immer die ersten beiden Werte zweier Variablen als Punkt. 
+Dann die zweiten zwei Werte, usw.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+plot(___)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Setzen Sie den Namen des Datensatzes (z.B.`cars`) ein.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+plot(cars)
+```
+:::
+ 
+ 
+### Histogramme
+
+Die Funktion `hist()` erstellt ein Histogramm. 
+Dafür wird nur eine Variable benötigt.
+Es wird die Häufigkeit eines Werts in dieser Variable abgetragen.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+hist(___$___)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Setzen Sie den Namen des Datensatzes (z.B.`cars`) ein.
+Setzen Sie hinter dem `$` einen Variablennamen ein.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+hist(cars$speed)
+```
+:::
+
+
+### Boxplots
+
+Die Funktion `boxplot()` erstellt ein Boxplot, mit Median und der 1. und 3. Quartile. 
+Dafür wird nur eine Variable benötigt. 
+Es kann aber auch ein Datensatz mit mehreren Variablen eingegeben werden. 
+Dann werden mehrere Boxen geplottet.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+boxplot(___)
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Setzen Sie den Namen des Datensatzes (z.B.`cars`) ein.
+Setzen Sie hinter dem `$` einen Variablennamen ein um nur eine Variable zu plotten.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+boxplot(cars)
+```
+:::
+ 
+## 7. Fehler beheben und Hilfe finden
+ 
+Häufigste Fehlerquellen sind:
+
+- Tippfehler (z.B. `meann(x)`)
+
+- Fehlende oder unpassende Argumente (z.B. `hist()` mit zwei Variablen aufrufen: `hist(cars)`))
+
+- Reihenfolgen (z.B. zuerst Variable speichern, erst dann ist sie abrufbar)
+
+das __Debugging__, also das Beheben von Fehlern im Code, gehört zu Programmieren dazu.
+Lassen Sie sich nicht von Fehlermeldungen aus der Ruhe bringen.
+Schauen Sie zuerst, ob es sich "nur" um eine Warnung (`WARNING`) handelt oder ob es sich tatsächlich um eine Fehlermeldung (`ERROR`) handelt. 
+Nur bei einem Fehler wird der Code nicht weiter ausgeführt.
+
+Um weiterzukommen ist es oft hilfreich Suchmaschinen zu nutzen (Fehlermeldung in Suchmaschine kopieren). 
+Oft hatten andere vorher schon dasselbe Problem. Auch ChatGPT zu fragen kann hilfreich sein (z.B. "Was bedeutet dieser Code? cor(x,y)").
+Natürlich kann die Antwort in Foren oder in ChatGPT immer falsch sein und muss getestet und kritisch überprüft werden.
+
+Um zu erfahren, was genau eine Funktion macht und welche Argumente sie benötigt kann die leere Funktion mit einem Fragezeichen aufgerufen werden: `?cor()`.
+ 
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+?cor()
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Wählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie ein.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+?cor()
+```
+:::
+
+
+
+## Ressourcen
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Data Skills for Reproducible Research](https://psyteachr.github.io/reprores-v3/)
+
+<br>
+<br>
+
+Diese Seite wurde mit __WebR__ erstellt: [webR documentation](https://quarto-webr.thecoatlessprofessor.com/qwebr-first-steps.html).

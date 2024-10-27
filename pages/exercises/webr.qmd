@@ -1,0 +1,69 @@
+---
+title: "WebR"
+description: "R Konsole"
+date: "2024-10-28"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Daniel Fitze
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+engine: knitr
+filters:
+  - webr
+webr:
+  packages:
+    - tidyverse
+  # cell-options:
+  #   editor-font-scale: 0.8
+  #   fig-width: 7
+  #   fig-height: 4.3
+  #   out-width: "85%"
+license: CC BY
+citation: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", collapse = TRUE)
+set.seed(1234)
+```
+
+# R Konsole
+
+Auf dieser Seite finden Sie eine R Konsole um Code zu testen.
+
+::: {.callout-note appearance="simple" icon=false collapse=true}
+## {{< fa laptop-code >}}&emsp;Informationen zu WebR auf dieser Seite
+<br>
+
+- Das Package `{tidyverse}` ist schon installiert und muss nicht geladen werden.
+
+- Die Datensätze `mpg` und `iris`sind verfügbar.
+
+- Beim Schliessen des Browserfensters gehen alle gespeicherten Eingaben (z.B. Variablen) verloren.
+
+:::
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+
+
+```
+
+
+## {{< fa question >}}&emsp;Tipp
+
+Sehen Sie sich z.B. mit `glimpse(mpg)` einen Datensatz in R an.
+
+:::
+
+### WebR
+
+Diese Seite wurde mit WebR erstellt: [webR documentation](https://quarto-webr.thecoatlessprofessor.com/qwebr-first-steps.html).

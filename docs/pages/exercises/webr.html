@@ -9,10 +9,10 @@
 <meta name="author" content="Mirjam Senn">
 <meta name="author" content="Gerda Wyssen">
 <meta name="author" content="Daniel Fitze">
-<meta name="dcterms.date" content="2024-09-16">
-<meta name="description" content="Vorschau: Programmieren mit R">
+<meta name="dcterms.date" content="2024-10-28">
+<meta name="description" content="R Konsole">
 
-<title>Übung R – Statistik 1</title>
+<title>WebR – Statistik 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,6 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -341,7 +343,7 @@ body.reveal.quarto-dark div.qwebr-console-area {
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = [''];
+globalThis.qwebrInstallRPackagesList = ['tidyverse'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -363,7 +365,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"message":"true","comment":"","output":"true","dpi":72,"fig-width":7,"editor-word-wrap":"true","editor-quick-suggestions":"false","warning":"true","label":"unnamed-chunk-1","fig-height":5,"autorun":"false","results":"markup","editor-max-height":"","out-width":"700px","read-only":"false","fig-cap":"","out-height":"","editor-font-scale":"1","classes":"","context":"interactive"},"code":"x = ___"},{"id":2,"options":{"message":"true","comment":"","output":"true","dpi":72,"fig-width":7,"editor-word-wrap":"true","editor-quick-suggestions":"false","warning":"true","label":"unnamed-chunk-2","fig-height":5,"autorun":"false","results":"markup","editor-max-height":"","out-width":"700px","read-only":"false","fig-cap":"","out-height":"","editor-font-scale":"1","classes":"","context":"interactive"},"code":"x = c(90, 111, 117, 84, 98, 102)"},{"id":3,"options":{"message":"true","comment":"","output":"true","dpi":72,"fig-width":7,"editor-word-wrap":"true","editor-quick-suggestions":"false","warning":"true","label":"unnamed-chunk-3","fig-height":5,"autorun":"false","results":"markup","editor-max-height":"","out-width":"700px","read-only":"false","fig-cap":"","out-height":"","editor-font-scale":"1","classes":"","context":"interactive"},"code":"mean(___)\nsd(___)"},{"id":4,"options":{"message":"true","comment":"","output":"true","dpi":72,"fig-width":7,"editor-word-wrap":"true","editor-quick-suggestions":"false","warning":"true","label":"unnamed-chunk-4","fig-height":5,"autorun":"false","results":"markup","editor-max-height":"","out-width":"700px","read-only":"false","fig-cap":"","out-height":"","editor-font-scale":"1","classes":"","context":"interactive"},"code":"mean(x)\nsd(x)"}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"","options":{"message":"true","dpi":72,"out-width":"700px","classes":"","warning":"true","comment":"","results":"markup","editor-quick-suggestions":"false","out-height":"","editor-max-height":"","read-only":"false","editor-word-wrap":"true","output":"true","fig-cap":"","context":"interactive","autorun":"false","fig-width":7,"label":"unnamed-chunk-1","fig-height":5,"editor-font-scale":"1"}}];
 
 </script>
 <script type="module">
@@ -1608,7 +1610,7 @@ globalThis.qwebrExecuteCode = async function (
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Übung R</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/webr.html">R</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/webr.html">WebR</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -1686,7 +1688,7 @@ globalThis.qwebrExecuteCode = async function (
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/exercises/webr.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/exercises/webr.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">WebR</span></a>
   </div>
 </li>
@@ -1719,7 +1721,7 @@ globalThis.qwebrExecuteCode = async function (
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#beispielsaufgabe-r" id="toc-beispielsaufgabe-r" class="nav-link active" data-scroll-target="#beispielsaufgabe-r">Beispielsaufgabe R</a>
+  <li><a href="#r-konsole" id="toc-r-konsole" class="nav-link active" data-scroll-target="#r-konsole">R Konsole</a>
   <ul class="collapse">
   <li><a href="#webr" id="toc-webr" class="nav-link" data-scroll-target="#webr">WebR</a></li>
   </ul></li>
@@ -2013,14 +2015,14 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 }
 </script>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/webr.html">R</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/webr.html">WebR</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Übung R</h1>
+<h1 class="title">WebR</h1>
 </div>
 
 <div>
   <div class="description">
-    Vorschau: Programmieren mit R
+    R Konsole
   </div>
 </div>
 
@@ -2066,7 +2068,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 16, 2024</p>
+      <p class="date">October 28, 2024</p>
     </div>
   </div>
   
@@ -2078,50 +2080,39 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="beispielsaufgabe-r" class="level1">
-<h1>Beispielsaufgabe R</h1>
-<p>Füllen Sie zum Lösen der Aufgaben die <code>___</code>-Stellen aus. Drücken Sie dann auf den grünen Pfeil (<code>Run</code>).</p>
-<ol type="1">
-<li>Erstellen Sie mit der Funktion <code>c()</code> einen Vektor und speichern Sie diesen in der Variable <code>x</code>. Der Vektor soll die Werte <code>90, 111, 117, 84, 98 und 102</code> enthalten.</li>
-</ol>
-<div id="qwebr-insertion-location-1"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<div class="callout callout-style-default callout-caution callout-titled">
+<section id="r-konsole" class="level1">
+<h1>R Konsole</h1>
+<p>Auf dieser Seite finden Sie eine R Konsole um Code zu testen.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung
+<i class="fa-solid fa-laptop-code" aria-label="laptop-code"></i> Informationen zu WebR auf dieser Seite
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="qwebr-insertion-location-2"></div>
+<p><br></p>
+<ul>
+<li><p>Das Package <code>{tidyverse}</code> ist schon installiert und muss nicht geladen werden.</p></li>
+<li><p>Die Datensätze <code>mpg</code> und <code>iris</code>sind verfügbar.</p></li>
+<li><p>Beim Schliessen des Browserfensters gehen alle gespeicherten Eingaben (z.B. Variablen) verloren.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Konsole</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-solid fa-question" aria-label="question"></i> Tipp</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
-</div>
-</div>
-<ol start="2" type="1">
-<li>Berechnen Sie den Mittelwert und die Standardabweichung der Variable <code>x</code>. Verwenden sie dazu die Funktionen <code>mean()</code> und <code>sd()</code>.</li>
-</ol>
-<div id="qwebr-insertion-location-3"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div id="qwebr-insertion-location-4"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Sehen Sie sich z.B. mit <code>glimpse(mpg)</code> einen Datensatz in R an.</p>
 </div>
 </div>
 </div>
@@ -2135,14 +2126,14 @@ Lösung
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn2024,
   author = {Senn, Mirjam and Wyssen, Gerda and Fitze, Daniel},
-  title = {Übung {R}},
-  date = {2024-09-16},
-  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html},
+  title = {WebR},
+  date = {2024-10-28},
+  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/webr.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Senn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. <span>“Übung
-R.”</span> September 16, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</a>.
+Senn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. <span>“WebR.”</span>
+October 28, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/webr.html">https://psylu.github.io/statistik1-hs24/pages/exercises/webr.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
 
