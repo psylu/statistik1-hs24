@@ -400,11 +400,12 @@ Dieser Code erstellt einen Variable mit 100 fiktiven IQ-Messungen.
 data_iq <- rnorm(100, mean = 100, sd = 15) # diese Zeile generiert 100 Messungen
 ```
 
-Verwenden Sie die Konsole um die Lösung zu berechnen.
-Sie können die Funktionen von oben nutzen um das Quiz zu beantworten.
+Verwenden Sie die Konsole um die Variable zu erstellen mit dem obigen Code.
+Danach können Sie die Funktionen von oben nutzen um das Quiz zu beantworten.
 
 
 ```{webr-r}
+___ # fügen Sie hier den Code zum Generieren der Daten ein
 mean(data_iq)
 median(___)
 
@@ -572,6 +573,8 @@ Um Grafiken zu erstellen gibt es in R einfache Befehle, wie
 
 <aside>Komplexere und grafisch ansprechendere Plots können mit dem Package `{ggplot2}` erstellt werden. 
 [Cheatsheet für Interessierte](https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf)</aside>
+
+In die Grafikfunktionen können teilweise ganze Datensätze als Argument eingegeben werden. Meistens brauchen die Funktionen aber die genauen Variablen, die geplottet werden sollen als Argumente. Die einzelnen Variablen können mit dem `$` spezifiziert werden (z.B. `cars$speed`).
 
 ### Scatterplot
 
