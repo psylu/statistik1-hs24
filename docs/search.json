@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "pages/formulas/formelsammlung.html",
+    "href": "pages/formulas/formelsammlung.html",
+    "title": "Download",
+    "section": "",
+    "text": "OLAT\nDie aktuellste Formelsammlung finden Sie jeweils auf OLAT.\n\n\n\n\n\n\n\nReuseCC BY 4.0"
+  },
+  {
     "objectID": "pages/exercises/introduction_to_r.html",
     "href": "pages/exercises/introduction_to_r.html",
     "title": "Einführung in R",
@@ -88,7 +95,7 @@
     "href": "pages/exercises/introduction_to_r.html#fehler-beheben-und-hilfe-finden",
     "title": "Einführung in R",
     "section": "7. Fehler beheben und Hilfe finden",
-    "text": "7. Fehler beheben und Hilfe finden\nHäufigste Fehlerquellen sind:\n\nTippfehler (z.B. meann(x))\nFehlende oder unpassende Argumente (z.B. hist() mit zwei Variablen aufrufen: hist(cars)))\nReihenfolgen (z.B. Variable abrufen wollen, obwohl sie noch nicht erstellt wurde)\n\nDas Debugging, also das Beheben von Fehlern im Code, gehört zum Programmieren dazu. Lassen Sie sich nicht von Fehlermeldungen aus der Ruhe bringen. Schauen Sie zuerst, ob es sich “nur” um eine Warnung (WARNING) oder ob es sich tatsächlich um eine Fehlermeldung (ERROR) handelt. Nur bei einem Fehler wird der Code nicht weiter ausgeführt.\nUm weiterzukommen ist es oft hilfreich Suchmaschinen zu nutzen (Fehlermeldung in Suchmaschine kopieren). Oft hatten andere vorher schon dasselbe Problem. Auch ChatGPT zu fragen kann hilfreich sein (z.B. “Was bedeutet dieser Code? cor(x,y)”). Natürlich kann die Antwort in Foren oder in ChatGPT immer falsch sein und muss getestet und kritisch überprüft werden.\nUm zu erfahren, was genau eine Funktion macht und welche Argumente sie benötigt, kann die leere Funktion mit einem Fragezeichen aufgerufen werden: ?cor().\n\n Konsole Tipp Lösung\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nWählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie ein.\nDrücken Sie Run Code.\n\n\n\n?cor()\n## starting httpd help server ... done",
+    "text": "7. Fehler beheben und Hilfe finden\nHäufigste Fehlerquellen sind:\n\nTippfehler (z.B. meann(x))\nFehlende oder unpassende Argumente (z.B. hist() mit zwei Variablen aufrufen: hist(cars)))\nReihenfolgen (z.B. Variable abrufen wollen, obwohl sie noch nicht erstellt wurde)\n\nDas Debugging, also das Beheben von Fehlern im Code, gehört zum Programmieren dazu. Lassen Sie sich nicht von Fehlermeldungen aus der Ruhe bringen. Schauen Sie zuerst, ob es sich “nur” um eine Warnung (WARNING) oder ob es sich tatsächlich um eine Fehlermeldung (ERROR) handelt. Nur bei einem Fehler wird der Code nicht weiter ausgeführt.\nUm weiterzukommen ist es oft hilfreich Suchmaschinen zu nutzen (Fehlermeldung in Suchmaschine kopieren). Oft hatten andere vorher schon dasselbe Problem. Auch ChatGPT zu fragen kann hilfreich sein (z.B. “Was bedeutet dieser Code? cor(x,y)”). Natürlich kann die Antwort in Foren oder in ChatGPT immer falsch sein und muss getestet und kritisch überprüft werden.\nUm zu erfahren, was genau eine Funktion macht und welche Argumente sie benötigt, kann die leere Funktion mit einem Fragezeichen aufgerufen werden: ?cor().\n\n Konsole Tipp Lösung\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nWählen Sie aus den oben angezeigten Variablen eine aus und setzen Sie sie ein.\nDrücken Sie Run Code.\n\n\n\n?cor()",
     "crumbs": [
       "Herzlich Willkommen",
       "R",
@@ -106,13 +113,6 @@
       "R",
       "Einführung in R"
     ]
-  },
-  {
-    "objectID": "pages/formulas/formelsammlung.html",
-    "href": "pages/formulas/formelsammlung.html",
-    "title": "Download",
-    "section": "",
-    "text": "OLAT\nDie aktuellste Formelsammlung finden Sie jeweils auf OLAT.\n\n\n\n\n\n\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "pages/exercises/exercise_06.html",
