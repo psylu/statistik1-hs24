@@ -1,0 +1,315 @@
+---
+title: "Übung 8"
+description: "Grundlagen der Inferenzstatistik"
+date: "2024-11-04"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+license: CC BY
+citation: true
+execute:
+  echo: false
+---
+
+## Aufgaben
+
+Hinweise: 
+
+-   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). Benützen Sie sie, wann immer Sie möchten.
+-   Für die Berechnungen benötigen Sie einen einfachen Taschenrechner (auch gut auf dem Laptop möglich) mit dem Sie beispielsweise $0.8^9$ ausrechnen können.
+-   Die Tabelle zur Standardnormalverteilung finden Sie im Lehrbuch und unter Onlinematerialen des Verlags [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+-   Für die Aufgaben und an der Prüfung stehen Ihnen die nötigen Ausschnitte der Tabellen zur Verfügung. 
+
+
+<br>
+
+## Aufgabe 8.1
+
+Beantworten Sie die folgenden Fragen. 
+
+a.    Was ist der Unterschied zwischen einer Null- und einer Alternativhypothese?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.1a
+
+Eine Alternativhypothese postuliert einen gewissen Effekt in der Population, z. B. durch ein Training oder ein Treatment. Die Nullhypothese behauptet die Falschheit der entsprechenden Alternativhypothesen, d.h. dass dieser Effekt in der Population nicht existiert. 
+
+:::
+
+<br>
+
+b.    Was ist der Unterschied zwischen einer gerichteten und einer ungerichteten Alternativhypothese?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.1b
+
+Gerichtete Alternativhypothesen geben die Richtung des behaupteten Zusammenhangs oder Unterschieds vor, ungerichtete Alternativhypothesen jedoch nicht. Eine gerichtete Hypothese wird in der Regel mit einem einseitigen, eine ungerichtete mit einem zweiseitigen Test überprüft. 
+
+:::
+
+<br>
+
+c.    Was ist der Unterschied zwischen einer spezifischen und einer unspezifischen Alternativhypothese?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.1c
+
+Spezifische Hypothesen geben den genauen Wert der von ihnen betroffenen statistischen Kennwerte an; unspezifische Hypothesen geben nur Wertebereiche an.
+
+:::
+
+<br>
+
+## Aufgabe 8.2
+
+Wie ist beim Nullhypothesentest nach Fisher der $p$-Wert zu interpretieren? Geben Sie bei jeder Aussage an, ob sie richtig oder falsch ist.
+
+a.    $p$ ist die Wahrscheinlichkeit, mit der die Nullhypothese wahr ist.
+b.    $p$ ist die Wahrscheinlichkeit, mit der die Nullhypothese falsch ist.
+c.    $p$ ist die festgelegte Grenze der Wahrscheinlichkeit (z. B. $0.05$), die bestimmt, ab wann ein Ergebnis als signifikant bezeichnet wird.
+d.    $p$ ist die Wahrscheinlichkeit für ein empirisches (oder jedes noch stärker gegen die $H_0$ sprechende) Ergebnis unter der Annahme, dass die $H_0$ gilt. 
+e.    Der $p$-Wert gibt die Überschreitungswahrscheinlichkeit an.
+f.    $p$ ist die Wahrscheinlichkeit, mit der ein Populationseffekt $\mu$ gleich $0$ ist.
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.2
+
+a:    falsch <br>
+b:    falsch <br>
+c:    falsch <br>
+d:    richtig <br>
+e:    richtig <br>
+f:    falsch <br>
+
+
+:::
+
+<br>
+
+## Aufgabe 8.3
+
+Wie ist die Teststärke definiert? Geben Sie bei jeder Aussage an, ob sie richtig oder falsch ist. 
+
+Die Teststärke… 
+
+a.    gibt die Wahrscheinlichkeit an, sich fälschlicherweise für die $H_0$ zu entscheiden. <br>
+b.    gibt die Wahrscheinlichkeit an, sich fälschlicherweise für die $H_1$ zu entscheiden. <br>
+c.    hängt von der Grösse des spezifizierten Effekts in der Population ab. <br>
+d.    entspricht der Fläche $1-\beta$ der Stichprobenkennwerteverteilung unter der Alternativhypothese. <br>
+e.    gibt die Wahrscheinlichkeit an, einen Effekt einer vorher definierten Grösse zu finden, falls dieser tatsächlich existiert. 
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.3
+
+a:    falsch <br>
+b:    falsch <br>
+c:    richtig <br>
+d:    richtig <br>
+e:    richtig <br>
+
+:::
+
+<br>
+
+## Aufgabe 8.4
+
+Warum kann bei einer unspezifischen $H_1$ die Wahrscheinlichkeit eines Fehlers 2. Art nicht bestimmt werden? 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.4
+
+Bei einem Fehler 2. Art (auch Irrtumswahrscheinlichkeit $\beta$) wird die $H_0$ angenommen, obwohl eigentlich die $H_1$ richtig ist. Um die Wahrscheinlichkeit eines Fehlers 2. Art zu bestimmen, muss die Verteilung der Population, auf die sich die $H_1$ bezieht, bekannt sein (es muss also $μ_1$ bekannt sein). Eine unspezifische Hypothese macht aber nur die generelle Aussage, es bestehe ein Unterschied zwischen $μ_0$ und $μ_1$. Die Verteilung der $H_1$-Population – insbesondere ihr $μ$ – wird nicht spezifiziert. So kann der Fehler 2. Art nicht berechnet werden.
+
+:::
+
+<br>
+
+## Aufgabe 8.5
+
+Ein statistisches Hypothesenpaar laute:
+$$H_0: μ=μ_0$$
+$$H_1: μ=μ_1$$
+
+Es gelte ausserdem: $μ_1<μ_0$. Die folgende Abbildung zeigt zwei Stichprobenkennwerteverteilungen (d.h. von zwei hypothetischen Stichproben aus einer Population), von denen eine die Nullhypothese $H_0$ und die andere die Alternativhypothese $H_1$ beschreibt.
+
+a.    Welche Stichprobenkennwerteverteilung beschreibt die Null-, welche die Alternativhypothese?
+b.    Was wird durch den grau gefärbten Bereich markiert?
+c.    Was wird durch den blau gefärbten Bereich markiert?
+d.    Wo befindet sich der Ablehnungsbereich unter der $H_0$?
+e.    Wo befindet sich die Teststärke?
+
+![](img/ue8.5_a.jpg)
+
+::: {.callout-tip collapse="true"}
+## Tipp
+
+Wichtig ist zu bemerken, dass es sich hier um eine gerichtete Null- bzw. Alternativhypothese handelt; der Test wird also einseitig durchgeführt. 
+
+Der Effekt ist hier negativ, d. h. die $H_1$ liegt unterhalb (links von) der $H_0$. Der $α$-Fehler ist in der Abbildung grau gefärbt. Der $β$-Fehler ist in der Abbildung blau gefärbt. 
+
+Die Teststärke ist die Gegenwahrscheinlichkeit zu $β$ unter der $H_1$. Der Ablehnungsbereich ist der Bereich links vom kritischen Wert unter der $H_0$.
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.5
+
+![](img/ue8.5_b.jpg)
+
+:::
+
+<br>
+
+## Aufgabe 8.6
+
+Laut neusten Forschungsbefunden kann eine Verschiebung des Unterrichtsbeginns um eine Stunde nach hinten die Lernleistung von Jugendlichen und daher deren Intelligenz steigern. Die Intelligenz wird mit einem Intelligenztest gemessen. 
+
+Eine um eine Stunde späterer Unterrichtsbeginn soll nach einem Jahr ein Anstieg um $10$ IQ-Punkte bewirken. Der Populationsmittelwert mit herkömmlichem Schulstart liegt bei $100$ Punkten, die Standardabweichung bei $10$ Punkten; $X\sim N(100,100)$. Sie testen nun nach einem Jahr eine jugendliche Person und haben einen Wert von $x=118$ ermittelt.
+
+a.    Formulieren Sie eine unspezifische und eine spezifische Alternativhypothese.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6a
+
+-   Unspezifisch: Die Verschiebung des Unterrichtsbeginns bewirkt einen Anstieg der Intelligenz. 
+-   Spezifisch: Die Verschiebung des Unterrichtsbeginns bewirkt einen Anstieg der Intelligenz um $10$ IQ-Punkte.
+
+:::
+
+<br>
+
+b.    Formulieren Sie die Nullhypothese.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6b
+
+-   Die Verschiebung des Unterrichtsbeginns hat keinen oder einen negativen Effekt auf die Intelligenz (d.h. sie nimmt ab).
+
+:::
+
+<br>
+
+c.    Legen Sie das Signifikanzniveau fest. 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6c
+
+Üblicherweise legen wir das Signifikanzniveau $\alpha$ auf $5\%$ fest, d.h. $\alpha=0.05$.
+
+:::
+
+<br>
+
+d.    Welches ist der kritische Wert bzw. der Ablehnungsbereich unter der Nullhypothese?
+
+$z_{...}=_{...}$ 
+
+$x_{krit}=_{...}$ 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6d
+
+Wir bestimmen zuerst den $z$-Wert gemäss dem Signifikantniveau von $5\%$. Dabei muss beachtet werden, ob es sich um eine gerichtete oder unberichtete Hypothese handelt. Wir testen hier eine gerichtete Hypothese (mehr IQ-Punkte). 
+
+$z_{95\%}=1.65$ 
+
+Anschliessend berechnen wir daraus den kritischen Wert durch die Transformation in die gegebene Normalverteilung. 
+
+$x_{krit}=\mu+z\cdot \sigma=100+1.65⋅10=116.5$
+
+Alle Werte gleich und über $116.5$ liegen im Ablehnungsbereich der $H_0$ auf dem Signifikanzniveau von $\alpha=0.05$.
+
+:::
+
+<br>
+
+e.    Wie gross ist der $p$-Wert? 
+
+::: {.callout-tip collapse="true"}
+## Tipp zur Berechnung von $p$
+
+Der $p$-Wert entspricht der Überschreitungswahrscheinlichkeit und bezeichnet die Wahrscheinlichkeit, dass wir, unter der Voraussetzung dass die Nullhypothese gilt, einen Wert grösser oder gleich dem vorliegenden Testwert erhalten.
+
+Wir ermitteln somit den $p$-Wert, indem wir den vorliegenden Testwert $x$ in einen standardnormalverteilten $z$-Wert umrechnen und dann für diesen $z$-Wert bestimmen, welche Wahrscheinlichkeit alle $z$-Werte haben, die grösser oder gleich dem erhaltenen Wert sind.
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6e
+
+$z_{118}=\frac{118-100}{10}=1.8$
+
+$p(z\leq 1.8)=0.9641$
+
+$p(z\geq 1.8)=1-0.9641=0.0359$
+
+:::
+
+<br>
+
+f.    Kann die Alternativhypothese angenommen werden?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6f
+
+Wenn Sie das Signifikanzniveau auf $5\%$ festgelegt haben, können Sie die Nullhypothese ablehnen und die Alternativhypothese annehmen da $p\leq a$ bzw. $0.0359\lt 0.05$.
+
+:::
+
+<br>
+
+g.    Wie gross ist der $\beta$-Fehler? 
+
+::: {.callout-tip collapse="true"}
+## Tipp zur Berechnung des $\beta$-Fehlers
+
+Wenn wir fälschlicherweise die $H_1$ ablehnen, bezeichnet man das als Fehler zweiter Art, die Wahrscheinlichkeit eines solchen Fehlers mit $\beta$. Wir berechnen $\beta$, indem wir den Flächenanteil unter der Verteilung von $H_1$ bestimmen, der sich unterhalb des kritischen Werts zur Ablehnung der Nullhypothese befindet. Dazu rechnen wir den kritischen $x$-Wert unter $H_0$ in den $z$-Wert von $H_1$ um (d.h. der an derselben Stelle ist). 
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6g
+
+$x_{krit}=118$ und $\mu_1=110$
+
+$z_{118}=\frac{118-110}{10}=0.8$
+
+$p(z\leq 0.8)=0.7881$
+
+$\beta=0.7881=78.8\%$
+
+:::
+
+<br>
+
+h.    Bestimmen Sie die Teststärke. 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 8.6h
+
+$1-\beta=1-0.7881=0.2119$
+
+Das ergibt eine Wahrscheinlichkeit von $21\%$, dass ein Test signifikant wird unter der Annahme, dass es auch wirklich einen Effekt in der Population gibt. 
+
+:::
+
+
+
+<br>
+
+
+
+![](img/meme8.png)
+
+
+[Quelle](https://www.explainxkcd.com/wiki/index.php/882:_Significant)
+
+
