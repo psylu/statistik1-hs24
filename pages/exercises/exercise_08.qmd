@@ -278,13 +278,13 @@ Wenn wir fälschlicherweise die $H_1$ ablehnen, bezeichnet man das als Fehler zw
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 8.6g
 
-$x_{krit}=118$ und $\mu_1=110$
+$x_{krit}=116.5$ und $\mu_1=110$
 
-$z_{118}=\frac{118-110}{10}=0.8$
+$z_{krit}=\frac{116.5-110}{10}=0.65$
 
-$p(z\leq 0.8)=0.7881$
+$p(z\leq 0.65)=0.7422$
 
-$\beta=0.7881=78.8\%$
+$\beta=0.7422=74.2\%$
 
 :::
 
@@ -295,12 +295,11 @@ h.    Bestimmen Sie die Teststärke.
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 8.6h
 
-$1-\beta=1-0.7881=0.2119$
+$1-\beta=1-0.7422=0.2578$
 
-Das ergibt eine Wahrscheinlichkeit von $21\%$, dass ein Test signifikant wird unter der Annahme, dass es auch wirklich einen Effekt in der Population gibt. 
+Das ergibt hier eine Wahrscheinlichkeit von $25.8\%$, dass der Test signifikant wird unter der Annahme, dass es auch wirklich einen Effekt in der Population gibt. Die Teststärke ist hier klein, da die gerichtete Hypothese einen Unterschied von lediglich 10 IQ-Punkten postuliert, was nur einer Standardabweichung entspricht. Das heisst, es ist relativ wahrscheinlich, dass wir hier die Alternativhypothese fälschlicherweise verwerfen bzw. die Nullhypothese fälschlicherweise beibehalten, unter der Annahme, dass es einen Effekt gibt - da sich die beiden Verteilungen stark überlappen (siehe F26).    
 
 :::
-
 
 
 <br>
