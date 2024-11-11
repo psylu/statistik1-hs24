@@ -28,6 +28,7 @@ website:
       - pages/exercises/exercise_05.qmd
       - pages/exercises/exercise_06.qmd
       - pages/exercises/exercise_08.qmd
+      - pages/exercises/exercise_09.qmd
     - section: R
       contents:
       - pages/exercises/webr.qmd
