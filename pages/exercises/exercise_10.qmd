@@ -1,0 +1,350 @@
+---
+title: "Übung 10"
+description: "Grundlagen der Inferenzstatistik 3"
+date: "2024-11-18"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+engine: knitr
+filters:
+  - webr
+webr:
+  packages:
+    - tidyverse
+license: CC BY
+citation: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", collapse = TRUE)
+set.seed(1234)
+```
+
+## Aufgaben
+
+Hinweise: 
+
+-   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
+-  Die Tabelle für die Standardnormalverteilung finden Sie [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+-  Die Tabelle für die _t_-Verteilung finden Sie  [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.03.pdf).
+
+
+<br>
+
+## Aufgabe 10.1
+
+In welchem Zusammenhang stehen ein Signifkanztest und ein Konfidenzintervall für den Mittelwert?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.1
+
+Das Prinzip des Signifikanztests ist eng mit dem Konzept des Konfidenzintervalls verwandt: Die Nullhypothese $H_0:\mu=\mu_0$ mit einem zweiseitigen Test auf einem Signifikanzniveau von $\alpha=5{\%}$ zu verwerfen, ist gleichbedeutend mit der Aussage, dass das zweiseitige 95%-Konfidenzintervall für den Mittelwert den Wert $\mu_0$ nicht beinhaltet.
+
+:::
+
+<br>
+
+## Aufgabe 10.2
+
+Wie verändert sich das Konfidenzintervall des Mittelwertes...
+
+a.    bei Vergrösserung des Konfidenzkoeffizienten?
+b.    bei Vergrösserung des Stichprobenumfangs? 
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.2
+
+a.    Mit grösserem Konfidenzkoeffizenten (z.B. 99% statt 95%) vergrössert sich das Intervall.
+
+b.    Mit steigendem $n$ verringert sich der Standardfehler und mit ihm das Intervall.
+
+:::
+
+<br>
+
+## Aufgabe 10.3
+ 
+Beim _t_-Test wird bei konstantem Effekt und konstanter Stichprobengrösse ...
+
+a.    $\alpha$ umso grösser, je kleiner $\beta$ ist.
+
+`r webexercises::mcq(c(answer= "richtig", "falsch"))`
+
+b.    die Teststärke umso grösser, je kleiner $\beta$ ist.
+
+`r webexercises::mcq(c(answer= "richtig", "falsch"))`
+
+c.    $\beta$ umso grösser, je grösser $\alpha$ ist.
+
+`r webexercises::mcq(c("richtig", answer= "falsch"))`
+
+d.    $\alpha$ umso kleiner, je kleiner die Teststärke ist.
+
+`r webexercises::mcq(c(answer= "richtig", "falsch"))`
+
+e.    $\beta$ umso kleiner, je grösser die Wahrscheinlichkeit ist, einen Effekt zu finden, falls dieser tatsächlich existiert. 
+
+`r webexercises::mcq(c(answer= "richtig", "falsch"))`
+
+<br>
+
+
+## Aufgabe 10.4
+ 
+Berechnen Sie das 95%-Konfidenzintervall eines Stichprobenmittelwerts von $\overline{x}=90$ für eine Stichprobengrösse von $n=22$ für ein normalverteiltes Merkmal mit geschätzter Stichprobenstandardabweichung von $\hat\sigma_x=5$.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.4
+
+$95{\%}$-KI: $\overline{x}\pm t_{(0.975;21)}\cdot \hat\sigma_\overline{x}$
+
+$\overline{x}=90$
+
+$t_{(0.975;21)}=\pm 2.0796$
+
+$\hat\sigma_\overline{x}=\frac{\hat\sigma_x}{\sqrt n}=\frac{5}{\sqrt {22}}=1.066$
+
+$95{\%}$-KI: $[90-2.0796 \cdot 1.066;90+2.0796 \cdot 1.066]=[87.783;92.217]$
+
+
+:::
+
+
+<br>
+
+## Aufgabe 10.5
+ 
+Berechnen Sie das 99%-Konfidenzintervall eines Stichprobenmittelwerts von $\overline{x}=90$ für eine Stichprobengrösse von $n=22$ für ein normalverteiltes Merkmal mit geschätzter Stichprobenstandardabweichung von $\hat\sigma_x=5$.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.5
+
+$99{\%}$-KI: $\overline{x}\pm t_{(0.995;21)}\cdot \hat\sigma_\overline{x}$
+
+$\overline{x}=90$
+
+$t_{(0.995;21)}=\pm 2.8314$
+
+$\hat\sigma_\overline{x}=\frac{\hat\sigma_x}{\sqrt n}=\frac{5}{\sqrt {22}}=1.066$
+
+$99{\%}$-KI: $[90-2.8314 \cdot 1.066;90+2.8314 \cdot 1.066]=[86.982;93.018]$
+
+
+:::
+
+<br>
+
+
+## Aufgabe 10.6
+
+Sie möchten untersuchen, wie sich ein Achtsamkeitstraining auf das Wohlbefinden auswirkt. Das Achtsamkeitstraining könnte einerseits das Wohlbefinden verbessern, aber auch verschlechtern. Daher formulieren Sie eine ungerichtete Hypothese. 
+
+$H_0: \mu=25; H_1: \mu \neq 25$
+
+Eine Skala, die das Wohlbefinden misst sei normalverteilt mit $\mu_0=25$ und $\sigma_x=6$. Sie haben mit Hilfe eines Fragebogens $n=9$ Personen getestet, nachdem Sie ein Achtsamkeitstraining mit den Personen durchgeführt haben. 
+
+Die Skalenwerte der neun Personen sind:  19, 18, 20, 22, 26, 30, 32, 34 und 33
+
+a.	Testen Sie auf dem 5%-Signifkanzniveau (ungerichtet), ob der Mittelwert der Stichprobe signifikant vom Populationsmittelwert abweicht. 
+
+::: {.callout-tip collapse="true"}
+## Wie gehe ich vor?
+
+1.    Ermitteln Sie den Standardfehler.
+
+2.    Berechnen Sie die empirische Prüfgrösse. Überlegen Sie, ob Sie von einer $z$-Verteilung oder einer $t$-Verteilung ausgehen können. 
+
+3.    Legen Sie die kritischen Werte anhand des Signifikanzniveaus fest. 
+
+4.    Vergleichen Sie die empirische Prüfgrösse mit den kritischen Werten. 
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.6a
+
+1.    Zuerst ermitteln wir den Standardfehler.
+
+$\sigma_\overline{x}=\frac{\sigma_x}{\sqrt n}=\frac{6}{\sqrt 9}=2$
+
+2.    Um die empirische Prüfgrösse $z$ zu ermitteln, benötigen wir den Mittelwert der Stichprobe.
+
+$\overline{x}=\frac{19+18+20+22+26+30+32+34+33}{9}=\frac{234}{9}=26$
+
+$z_\overline{x}=\frac{\overline{x}-\mu_0}{\sigma_\overline{x}}=\frac{26-25}{2}=0.5$
+
+3.    Nun bestimmen wir die $z$-Werte für den oberen und unteren kritischen Wert. Hier benötigen wir beide, da wir eine ungerichtete Hypothese prüfen.
+
+$z_{97.5\%}=\pm 1.96$
+
+4.    Nun können wir die Werte vergleichen. Unsere Prüfgrösse $z=0.5$ liegt deutlich unter (bzw. über) den kritischen Werten (also dazwischen), womit wir die $H_0$ nicht ablehnen können. 
+
+:::
+
+
+<br>
+
+b.    Nehmen wir nun an, dass die Varianz in der Population __unbekannt__ ist. Testen Sie nun dieselbe Hypothese mit dem passenden Test. 
+
+::: {.callout-tip collapse="true"}
+## Wie gehe ich vor?
+
+1.    Ermitteln Sie die empirische Varianz.
+
+2.    Schätzen Sie nun die Populationsvarianz und bestimmen Sie den Standardfehler des Mittelwerts.
+
+3.    Berechnen Sie die empirische Prüfgrösse. Überlegen Sie, ob Sie von einer $z$-Verteilung oder einer $t$-Verteilung ausgehen können. 
+
+4.    Legen Sie die kritischen Werte anhand des Signifikanzniveaus fest. 
+
+5.    Vergleichen Sie die empirische Prüfgrösse mit den kritischen Werten. 
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.6b
+
+1.    Wir berechnen zuerst die empirische Varianz, da wir die Populationsvarianz nicht kennen.
+
+$\sigma^2_x=\frac{\sum_{i=1}^{n}(x_i-\bar{x})}{n}=\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667$
+
+2.    Nun schätzen wir die Populationsvarianz und damit den Standardfehler des Mittelwerts.
+
+$\hat\sigma^2_x=\sigma^2_x \cdot \frac{n}{n-1}=36.667 \cdot \frac{9}{8}=41.250$
+
+oder direkt:
+
+$\hat\sigma^2_x=\sqrt \frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}=41.250$
+
+Daraus können wir den Standardfehler berechnen:
+
+$\hat \sigma_\overline{x}=\sqrt\frac{\hat\sigma^2_x}{n}=\sqrt \frac{41.250}{9}=2.141$
+
+
+3.    Mit dem Standardfehler kann nun die empirische Prüfgrösse $t$ bestimmt werden.
+
+$t_\overline{x}=\frac{\overline{x}-\mu_0}{\hat \sigma_\overline{x}}=\frac{26-25}{2.141}=0.467$
+
+4.    Nun bestimmen wir die $t$-Werte für den oberen und unteren kritischen Wert. Wichtig ist, dass hier die Freiheitsgrade berücksichtigt werden ($df=n-1$).
+
+$t_{(0.975;8)}=\pm 2.306$
+
+5.    Nun können wir die Werte vergleichen. Unsere Prüfgrösse $t=0.467$ liegt deutlich unter (bzw. über) den kritischen Werten (also dazwischen), womit wir die $H_0$ nicht ablehnen können. 
+
+
+:::
+
+<br>
+
+c.    Konstruieren Sie für Aufgabe 10.6b ein 95%-Konfidenzintervall für den Mittelwert der Stichprobe.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.6c
+
+$95{\%}$-KI: $\overline{x}\pm t_{(0.975;8)}\cdot \hat\sigma_\overline{x}$
+
+$95{\%}$-KI: $[26-2.306 \cdot 2.141;26+2.306 \cdot 2.141]=[21.063;30.937]$
+
+
+In diesem Bereich können wir mit 95% Sicherheit das Populationsmittel der Skala «Wohlbefinden» vermuten. Alternativ (und technisch korrekter) kann man sagen, dass bei einer grossen Anzahl von Wiederholungen dieser Untersuchungen etwa 95% der berechneten Konfidenzintervalle $\mu$ enthalten. Wir sehen, dass 26 in diesem Konfidenzintervall enthalten (!) ist, womit wir die $H_0$ nicht ablehnen können.
+
+:::
+
+<br>
+
+## Aufgabe 10.7
+
+Führen Sie die Berechnung von 10.6b/10.6c nun mit Hilfe von R (WebR) durch. Erstellen Sie dazu eine Variable mit den Skalenwerten, eine Variable mit dem Mittelwert der Population und berechnen Sie dann den One-Sample-_t_-Test.
+
+Zur Erinnerung: Sie können mehrere Werte als Variable speichern indem Sie die Funktion `c()` nutzen.
+Die Variable `data <- c(18, 17, 19)` enthält die Werte `18`, `17` und `19`. Einen einzelnen Wert können Sie direkt in eine Variable schreiben `m <- 100`.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+data <- c(___)
+mu_0 <- 
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie in die Klammer die Werte aus Aufgabe 10.6 ein und trennen Sie die Werte jeweils mit einem Komma.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+data <- c(19, 18, 20, 22, 26, 30, 32, 34, 33)
+mu_0 <- 25
+```
+
+:::
+
+<br>
+
+Führen Sie nun einen One-Sample-_t_-Test mit der Funktion `t.test()` durch. Vergleichen Sie den Output von R mit Ihren Berechnungen von Aufgabe 10.6.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+t_test_result <- t.test(___, mu = ___, conf.level = ____)
+t_test_result
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie in die Klammer die Variable ein, die Sie vorher erstellt haben und für `mu=` die Variable mit dem Populationsmittelwert. Legen Sie auch den Konfidenzkoeffizenten fest.
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+t_test_result <- t.test(data, mu = mu_0, conf.level = 0.95)
+t_test_result
+```
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 10.7
+
+```{r}
+## One Sample t-test
+
+## data:  data
+## t = 0.4671, df = 8, p-value = 0.6529
+## alternative hypothesis: true mean is not equal to 25
+## 95 percent confidence interval:
+##  21.06314 30.93686
+## sample estimates:
+## mean of x 
+##        26
+```
+
+
+:::
+
+
+<br>
+
+Congratulations! You achieved the next level. 
+
+
+![](img/meme10.png)
+
+
+
+

@@ -1,5 +1,113 @@
 [
   {
+    "objectID": "pages/exercises/exercise_10.html",
+    "href": "pages/exercises/exercise_10.html",
+    "title": "Übung 10",
+    "section": "",
+    "text": "Hinweise:\n\nDie Formelsammlung zu dieser Übung finden Sie auf OLAT.\nDie Tabelle für die Standardnormalverteilung finden Sie hier.\nDie Tabelle für die t-Verteilung finden Sie hier.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgaben",
+    "href": "pages/exercises/exercise_10.html#aufgaben",
+    "title": "Übung 10",
+    "section": "",
+    "text": "Hinweise:\n\nDie Formelsammlung zu dieser Übung finden Sie auf OLAT.\nDie Tabelle für die Standardnormalverteilung finden Sie hier.\nDie Tabelle für die t-Verteilung finden Sie hier.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.1",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.1",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.1",
+    "text": "Aufgabe 10.1\nIn welchem Zusammenhang stehen ein Signifkanztest und ein Konfidenzintervall für den Mittelwert?\n\n\n\n\n\n\nLösung Aufgabe 10.1\n\n\n\n\n\nDas Prinzip des Signifikanztests ist eng mit dem Konzept des Konfidenzintervalls verwandt: Die Nullhypothese \\(H_0:\\mu=\\mu_0\\) mit einem zweiseitigen Test auf einem Signifikanzniveau von \\(\\alpha=5{\\%}\\) zu verwerfen, ist gleichbedeutend mit der Aussage, dass das zweiseitige 95%-Konfidenzintervall für den Mittelwert den Wert \\(\\mu_0\\) nicht beinhaltet.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.2",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.2",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.2",
+    "text": "Aufgabe 10.2\nWie verändert sich das Konfidenzintervall des Mittelwertes…\n\nbei Vergrösserung des Konfidenzkoeffizienten?\nbei Vergrösserung des Stichprobenumfangs?\n\n\n\n\n\n\n\nLösung Aufgabe 10.2\n\n\n\n\n\n\nMit grösserem Konfidenzkoeffizenten (z.B. 99% statt 95%) vergrössert sich das Intervall.\nMit steigendem \\(n\\) verringert sich der Standardfehler und mit ihm das Intervall.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.3",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.3",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.3",
+    "text": "Aufgabe 10.3\nBeim t-Test wird bei konstantem Effekt und konstanter Stichprobengrösse …\n\n\\(\\alpha\\) umso grösser, je kleiner \\(\\beta\\) ist.\n\nrichtigfalsch\n\ndie Teststärke umso grösser, je kleiner \\(\\beta\\) ist.\n\nrichtigfalsch\n\n\\(\\beta\\) umso grösser, je grösser \\(\\alpha\\) ist.\n\nrichtigfalsch\n\n\\(\\alpha\\) umso kleiner, je kleiner die Teststärke ist.\n\nrichtigfalsch\n\n\\(\\beta\\) umso kleiner, je grösser die Wahrscheinlichkeit ist, einen Effekt zu finden, falls dieser tatsächlich existiert.\n\nrichtigfalsch",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.4",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.4",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.4",
+    "text": "Aufgabe 10.4\nBerechnen Sie das 95%-Konfidenzintervall eines Stichprobenmittelwerts von \\(\\overline{x}=90\\) für eine Stichprobengrösse von \\(n=22\\) für ein normalverteiltes Merkmal mit geschätzter Stichprobenstandardabweichung von \\(\\hat\\sigma_x=5\\).\n\n\n\n\n\n\nLösung Aufgabe 10.4\n\n\n\n\n\n\\(95{\\%}\\)-KI: \\(\\overline{x}\\pm t_{(0.975;21)}\\cdot \\hat\\sigma_\\overline{x}\\)\n\\(\\overline{x}=90\\)\n\\(t_{(0.975;21)}=\\pm 2.0796\\)\n\\(\\hat\\sigma_\\overline{x}=\\frac{\\hat\\sigma_x}{\\sqrt n}=\\frac{5}{\\sqrt {22}}=1.066\\)\n\\(95{\\%}\\)-KI: \\([90-2.0796 \\cdot 1.066;90+2.0796 \\cdot 1.066]=[87.783;92.217]\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.5",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.5",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.5",
+    "text": "Aufgabe 10.5\nBerechnen Sie das 99%-Konfidenzintervall eines Stichprobenmittelwerts von \\(\\overline{x}=90\\) für eine Stichprobengrösse von \\(n=22\\) für ein normalverteiltes Merkmal mit geschätzter Stichprobenstandardabweichung von \\(\\hat\\sigma_x=5\\).\n\n\n\n\n\n\nLösung Aufgabe 10.5\n\n\n\n\n\n\\(99{\\%}\\)-KI: \\(\\overline{x}\\pm t_{(0.995;21)}\\cdot \\hat\\sigma_\\overline{x}\\)\n\\(\\overline{x}=90\\)\n\\(t_{(0.995;21)}=\\pm 2.8314\\)\n\\(\\hat\\sigma_\\overline{x}=\\frac{\\hat\\sigma_x}{\\sqrt n}=\\frac{5}{\\sqrt {22}}=1.066\\)\n\\(99{\\%}\\)-KI: \\([90-2.8314 \\cdot 1.066;90+2.8314 \\cdot 1.066]=[86.982;93.018]\\)",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.6",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.6",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.6",
+    "text": "Aufgabe 10.6\nSie möchten untersuchen, wie sich ein Achtsamkeitstraining auf das Wohlbefinden auswirkt. Das Achtsamkeitstraining könnte einerseits das Wohlbefinden verbessern, aber auch verschlechtern. Daher formulieren Sie eine ungerichtete Hypothese.\n\\(H_0: \\mu=25; H_1: \\mu \\neq 25\\)\nEine Skala, die das Wohlbefinden misst sei normalverteilt mit \\(\\mu_0=25\\) und \\(\\sigma_x=6\\). Sie haben mit Hilfe eines Fragebogens \\(n=9\\) Personen getestet, nachdem Sie ein Achtsamkeitstraining mit den Personen durchgeführt haben.\nDie Skalenwerte der neun Personen sind: 19, 18, 20, 22, 26, 30, 32, 34 und 33\n\nTesten Sie auf dem 5%-Signifkanzniveau (ungerichtet), ob der Mittelwert der Stichprobe signifikant vom Populationsmittelwert abweicht.\n\n\n\n\n\n\n\nWie gehe ich vor?\n\n\n\n\n\n\nErmitteln Sie den Standardfehler.\nBerechnen Sie die empirische Prüfgrösse. Überlegen Sie, ob Sie von einer \\(z\\)-Verteilung oder einer \\(t\\)-Verteilung ausgehen können.\nLegen Sie die kritischen Werte anhand des Signifikanzniveaus fest.\nVergleichen Sie die empirische Prüfgrösse mit den kritischen Werten.\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 10.6a\n\n\n\n\n\n\nZuerst ermitteln wir den Standardfehler.\n\n\\(\\sigma_\\overline{x}=\\frac{\\sigma_x}{\\sqrt n}=\\frac{6}{\\sqrt 9}=2\\)\n\nUm die empirische Prüfgrösse \\(z\\) zu ermitteln, benötigen wir den Mittelwert der Stichprobe.\n\n\\(\\overline{x}=\\frac{19+18+20+22+26+30+32+34+33}{9}=\\frac{234}{9}=26\\)\n\\(z_\\overline{x}=\\frac{\\overline{x}-\\mu_0}{\\sigma_\\overline{x}}=\\frac{26-25}{2}=0.5\\)\n\nNun bestimmen wir die \\(z\\)-Werte für den oberen und unteren kritischen Wert. Hier benötigen wir beide, da wir eine ungerichtete Hypothese prüfen.\n\n\\(z_{97.5\\%}=\\pm 1.96\\)\n\nNun können wir die Werte vergleichen. Unsere Prüfgrösse \\(z=0.5\\) liegt deutlich unter (bzw. über) den kritischen Werten (also dazwischen), womit wir die \\(H_0\\) nicht ablehnen können.\n\n\n\n\n\n\nNehmen wir nun an, dass die Varianz in der Population unbekannt ist. Testen Sie nun dieselbe Hypothese mit dem passenden Test.\n\n\n\n\n\n\n\nWie gehe ich vor?\n\n\n\n\n\n\nErmitteln Sie die empirische Varianz.\nSchätzen Sie nun die Populationsvarianz und bestimmen Sie den Standardfehler des Mittelwerts.\nBerechnen Sie die empirische Prüfgrösse. Überlegen Sie, ob Sie von einer \\(z\\)-Verteilung oder einer \\(t\\)-Verteilung ausgehen können.\nLegen Sie die kritischen Werte anhand des Signifikanzniveaus fest.\nVergleichen Sie die empirische Prüfgrösse mit den kritischen Werten.\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 10.6b\n\n\n\n\n\n\nWir berechnen zuerst die empirische Varianz, da wir die Populationsvarianz nicht kennen.\n\n\\(\\sigma^2_x=\\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})}{n}=\\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667\\)\n\nNun schätzen wir die Populationsvarianz und damit den Standardfehler des Mittelwerts.\n\n\\(\\hat\\sigma^2_x=\\sigma^2_x \\cdot \\frac{n}{n-1}=36.667 \\cdot \\frac{9}{8}=41.250\\)\noder direkt:\n\\(\\hat\\sigma^2_x=\\sqrt \\frac{\\sum_{i=1}^{n}(x_i-\\bar{x})^2}{n-1}=41.250\\)\nDaraus können wir den Standardfehler berechnen:\n\\(\\hat \\sigma_\\overline{x}=\\sqrt\\frac{\\hat\\sigma^2_x}{n}=\\sqrt \\frac{41.250}{9}=2.141\\)\n\nMit dem Standardfehler kann nun die empirische Prüfgrösse \\(t\\) bestimmt werden.\n\n\\(t_\\overline{x}=\\frac{\\overline{x}-\\mu_0}{\\hat \\sigma_\\overline{x}}=\\frac{26-25}{2.141}=0.467\\)\n\nNun bestimmen wir die \\(t\\)-Werte für den oberen und unteren kritischen Wert. Wichtig ist, dass hier die Freiheitsgrade berücksichtigt werden (\\(df=n-1\\)).\n\n\\(t_{(0.975;8)}=\\pm 2.306\\)\n\nNun können wir die Werte vergleichen. Unsere Prüfgrösse \\(t=0.467\\) liegt deutlich unter (bzw. über) den kritischen Werten (also dazwischen), womit wir die \\(H_0\\) nicht ablehnen können.\n\n\n\n\n\n\nKonstruieren Sie für Aufgabe 10.6b ein 95%-Konfidenzintervall für den Mittelwert der Stichprobe.\n\n\n\n\n\n\n\nLösung Aufgabe 10.6c\n\n\n\n\n\n\\(95{\\%}\\)-KI: \\(\\overline{x}\\pm t_{(0.975;8)}\\cdot \\hat\\sigma_\\overline{x}\\)\n\\(95{\\%}\\)-KI: \\([26-2.306 \\cdot 2.141;26+2.306 \\cdot 2.141]=[21.063;30.937]\\)\nIn diesem Bereich können wir mit 95% Sicherheit das Populationsmittel der Skala «Wohlbefinden» vermuten. Alternativ (und technisch korrekter) kann man sagen, dass bei einer grossen Anzahl von Wiederholungen dieser Untersuchungen etwa 95% der berechneten Konfidenzintervalle \\(\\mu\\) enthalten. Wir sehen, dass 26 in diesem Konfidenzintervall enthalten (!) ist, womit wir die \\(H_0\\) nicht ablehnen können.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
+    "objectID": "pages/exercises/exercise_10.html#aufgabe-10.7",
+    "href": "pages/exercises/exercise_10.html#aufgabe-10.7",
+    "title": "Übung 10",
+    "section": "Aufgabe 10.7",
+    "text": "Aufgabe 10.7\nFühren Sie die Berechnung von 10.6b/10.6c nun mit Hilfe von R (WebR) durch. Erstellen Sie dazu eine Variable mit den Skalenwerten, eine Variable mit dem Mittelwert der Population und berechnen Sie dann den One-Sample-t-Test.\nZur Erinnerung: Sie können mehrere Werte als Variable speichern indem Sie die Funktion c() nutzen. Die Variable data &lt;- c(18, 17, 19) enthält die Werte 18, 17 und 19. Einen einzelnen Wert können Sie direkt in eine Variable schreiben m &lt;- 100.\n\n Konsole Tipp Lösung\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nFügen Sie in die Klammer die Werte aus Aufgabe 10.6 ein und trennen Sie die Werte jeweils mit einem Komma.\nDrücken Sie Run Code.\n\n\n\ndata &lt;- c(19, 18, 20, 22, 26, 30, 32, 34, 33)\nmu_0 &lt;- 25\n\n\n\n\n\nFühren Sie nun einen One-Sample-t-Test mit der Funktion t.test() durch. Vergleichen Sie den Output von R mit Ihren Berechnungen von Aufgabe 10.6.\n\n Konsole Tipp Lösung\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nFügen Sie in die Klammer die Variable ein, die Sie vorher erstellt haben und für mu= die Variable mit dem Populationsmittelwert. Legen Sie auch den Konfidenzkoeffizenten fest.\nDrücken Sie Run Code.\n\n\n\nt_test_result &lt;- t.test(data, mu = mu_0, conf.level = 0.95)\nt_test_result\n## \n##  One Sample t-test\n## \n## data:  data\n## t = 0.4671, df = 8, p-value = 0.6529\n## alternative hypothesis: true mean is not equal to 25\n## 95 percent confidence interval:\n##  21.06314 30.93686\n## sample estimates:\n## mean of x \n##        26\n\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 10.7\n\n\n\n\n\n\n## One Sample t-test\n\n## data:  data\n## t = 0.4671, df = 8, p-value = 0.6529\n## alternative hypothesis: true mean is not equal to 25\n## 95 percent confidence interval:\n##  21.06314 30.93686\n## sample estimates:\n## mean of x \n##        26\n\n\n\n\n\nCongratulations! You achieved the next level.",
+    "crumbs": [
+      "Herzlich Willkommen",
+      "Übungen",
+      "Übung 10"
+    ]
+  },
+  {
     "objectID": "pages/exercises/introduction_to_r.html",
     "href": "pages/exercises/introduction_to_r.html",
     "title": "Einführung in R",
@@ -203,7 +311,7 @@
     "href": "pages/exercises/exercise_09.html#aufgabe-9.6",
     "title": "Übung 9",
     "section": "Aufgabe 9.6",
-    "text": "Aufgabe 9.6\nEin Konditionstraining soll die durchschnittliche Ausdauerleistung der Spielerinnen des FC Mediana erhöhen. Die durchschnittliche Ausdauerleistung beträgt \\(\\mu_0=30\\) Punkte mit einer Standardabweichung von \\(\\sigma=10\\). Die Leistung soll nun durch das Konditionstraining um mindestens 5 Punkte gesteigert werden.\n\nFormulieren Sie die Nullhypothese und die spezifische Alternativhypothese. Entscheiden Sie zuerst, ob es sich um eine gerichtete oder ungerichtete Hypothese handelt.\n\n\n\n\n\n\n\nLösung Aufgabe 9.6a\n\n\n\n\n\n\\(H_0\\): \\(\\mu=\\mu_0\\): Das Konditionstraining bewirkt keine Verbesserung der Leistung.\n\\(H_1\\): \\(\\mu&gt;\\mu_0\\): Das Konditionstraining bewirkt mindestens eine Verbesserung der Leistung um 5 Punkte.\n\n\n\n\n\nBerechnen Sie die standardisierte Effektstärke nach Cohen.\n\n\n\n\n\n\n\nLösung Aufgabe 9.6b\n\n\n\n\n\n\\(d=\\frac{\\overline{x}-\\mu_0}{\\sigma_x}=\\frac{35-30}{10}=0.5\\)\nDies entspricht einer Verbesserung der Leistung um eine halbe Standardabweichung und entspricht einem mittleren Effekt.\n\n\n\n\n\nFühren Sie eine a-priori-Poweranalyse durch:\n\nDer FC Mediana besteht aus \\(n=12\\) Spielerinnen. Wir sind an einer Erhöhung der Leistung um 5 Punkte interessiert und prüfen dies auf dem 1%-Signifikanzniveau.\n\n\n\n\n\n\nWelche Formel verwenden wir?\n\n\n\n\n\n\\(z_\\beta=z_{1-\\alpha}-\\sqrt{n}\\cdot \\delta\\)\n\n\n\n\n\n\n\n\n\nWelche Kennwerte verwenden wir?\n\n\n\n\n\nWir verwenden in dieser Aufgabe das 1%-Signifikanzniveau.\n\\(\\alpha=0.01\\) -&gt; \\(z_{1-\\alpha}=z_{99\\%}=2.33\\)\n\\(\\delta=\\frac{5}{10}=0.5\\)\n\\(n=12\\)\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 9.6c\n\n\n\n\n\n\\(z_\\beta=z_{1-\\alpha}-\\sqrt{n}\\cdot \\delta=2.33-\\sqrt{12}\\cdot 0.5=0.598\\)\nNun kann die Wahrscheinlichkeit \\(\\beta\\) für den kritischen Wert \\(z_\\beta=0.6\\) in der Tabelle abgelesen werden.\n\\(\\beta=0.7257\\)\nZum Schluss wir die Gegenwahrscheinlichkeit berechnet, um die Teststärke zu bestimmen.\n\\(1-\\beta=1-0.7257=0.2743\\)\nDie Wahrscheinlichkeit eine Verbesserung von 5 Punkten auf dem Signifikanzniveau von 1% zu entdecken (bei der gegebenen Stichprobengrösse und Standardabweichung) liegt bei nur 27%.\nWir geben uns nicht mit einer so geringen Teststärke zufrieden und beschliessen daher die optimale Stichprobengrösse zu berechnen (siehe 9.6d.), um den Effekt in einer grösseren Stichprobe zu untersuchen.\n\n\n\n\n\nBerechnen Sie die optimale Stichprobengrösse:\n\nWie gross muss die Stichprobe sein, um mindestens eine Power von 90% zu erreichen?\n\n\n\n\n\n\nWelche Formel verwenden wir?\n\n\n\n\n\n\\(n=\\frac{(z_{1-\\alpha}-z_\\beta)^2}{\\delta^2}\\)\n\n\n\n\n\n\n\n\n\nWelche Kennwerte benötigen wir?\n\n\n\n\n\nWir verwenden in dieser Aufgabe das 1%-Signifikanzniveau.\n\\(\\alpha=0.01\\) -&gt; \\(z_{1-\\alpha}=z_{99\\%}=2.33\\)\nDa wir den Wert von \\(\\beta=10\\%\\) nicht in der Tabelle ablesen können, lesen wir den Wert auf der anderen Seite der z-Verteilung ab, d.h. bei \\(z_{90\\%}\\). Da wir aber den Wert für \\(\\beta=10\\%\\) benötigen, setzen wir ein negatives Vorzeichen.\n\\(\\beta=0.10\\) -&gt; \\(z_{1-\\beta}=z_{90\\%}=1.29\\) -&gt; \\(z_\\beta=-1.29\\)\n\\(\\delta=0.5\\)\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 9.6d\n\n\n\n\n\n\\(n=\\frac{(z_{1-\\alpha}-z_\\beta)^2}{\\delta^2}=\\frac{(2.33-(-1.29))^2}{0.5^2}=\\frac{13.1044}{0.25}=52.1476\\)\nWir benötigen also eine Stichprobengrösse von \\(n=53\\) Personen, um einen spezifischen Effekt mit 90% Wahrscheinlichkeit entdecken zu können, wenn er wirkliche existiert.",
+    "text": "Aufgabe 9.6\nEin Konditionstraining soll die durchschnittliche Ausdauerleistung der Spielerinnen des FC Mediana erhöhen. Die durchschnittliche Ausdauerleistung beträgt \\(\\mu_0=30\\) Punkte mit einer Standardabweichung von \\(\\sigma=10\\). Die Leistung soll nun durch das Konditionstraining um mindestens 5 Punkte gesteigert werden.\n\nFormulieren Sie die Nullhypothese und die spezifische Alternativhypothese. Entscheiden Sie zuerst, ob es sich um eine gerichtete oder ungerichtete Hypothese handelt.\n\n\n\n\n\n\n\nLösung Aufgabe 9.6a\n\n\n\n\n\n\\(H_0\\): \\(\\mu=\\mu_0\\): Das Konditionstraining bewirkt keine Verbesserung der Leistung.\n\\(H_1\\): \\(\\mu&gt;\\mu_0\\): Das Konditionstraining bewirkt mindestens eine Verbesserung der Leistung um 5 Punkte.\n\n\n\n\n\nBerechnen Sie die standardisierte Effektstärke nach Cohen.\n\n\n\n\n\n\n\nLösung Aufgabe 9.6b\n\n\n\n\n\n\\(d=\\frac{\\overline{x}-\\mu_0}{\\sigma_x}=\\frac{35-30}{10}=0.5\\)\nDies entspricht einer Verbesserung der Leistung um eine halbe Standardabweichung und entspricht einem mittleren Effekt.\n\n\n\n\n\nFühren Sie eine a-priori-Poweranalyse durch:\n\nDer FC Mediana besteht aus \\(n=12\\) Spielerinnen. Wir sind an einer Erhöhung der Leistung um 5 Punkte interessiert und prüfen dies auf dem 1%-Signifikanzniveau.\n\n\n\n\n\n\nWelche Formel verwenden wir?\n\n\n\n\n\n\\(z_\\beta=z_{1-\\alpha}-\\sqrt{n}\\cdot \\delta\\)\n\n\n\n\n\n\n\n\n\nWelche Kennwerte verwenden wir?\n\n\n\n\n\nWir verwenden in dieser Aufgabe das 1%-Signifikanzniveau.\n\\(\\alpha=0.01\\) -&gt; \\(z_{1-\\alpha}=z_{99\\%}=2.33\\)\n\\(\\delta=\\frac{5}{10}=0.5\\)\n\\(n=12\\)\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 9.6c\n\n\n\n\n\n\\(z_\\beta=z_{1-\\alpha}-\\sqrt{n}\\cdot \\delta=2.33-\\sqrt{12}\\cdot 0.5=0.598\\)\nNun kann die Wahrscheinlichkeit \\(\\beta\\) für den kritischen Wert \\(z_\\beta=0.6\\) in der Tabelle abgelesen werden.\n\\(\\beta=0.7257\\)\nZum Schluss wir die Gegenwahrscheinlichkeit berechnet, um die Teststärke zu bestimmen.\n\\(1-\\beta=1-0.7257=0.2743\\)\nDie Wahrscheinlichkeit eine Verbesserung von 5 Punkten auf dem Signifikanzniveau von 1% zu entdecken (bei der gegebenen Stichprobengrösse und Standardabweichung) liegt bei nur 27%.\nWir geben uns nicht mit einer so geringen Teststärke zufrieden und beschliessen daher die optimale Stichprobengrösse zu berechnen (siehe 9.6d.), um den Effekt in einer grösseren Stichprobe zu untersuchen.\n\n\n\n\n\nBerechnen Sie die optimale Stichprobengrösse:\n\nWie gross muss die Stichprobe sein, um mindestens eine Power von 90% zu erreichen?\n\n\n\n\n\n\nWelche Formel verwenden wir?\n\n\n\n\n\n\\(n=\\frac{(z_{1-\\alpha}-z_\\beta)^2}{\\delta^2}\\)\n\n\n\n\n\n\n\n\n\nWelche Kennwerte benötigen wir?\n\n\n\n\n\nWir verwenden in dieser Aufgabe das 1%-Signifikanzniveau.\n\\(\\alpha=0.01\\) -&gt; \\(z_{1-\\alpha}=z_{99\\%}=2.33\\)\nDa wir den Wert von \\(\\beta=10\\%\\) nicht in der Tabelle ablesen können, lesen wir den Wert auf der anderen Seite der z-Verteilung ab, d.h. bei \\(z_{90\\%}\\). Da wir aber den Wert für \\(\\beta=10\\%\\) benötigen, setzen wir ein negatives Vorzeichen.\n\\(\\beta=0.10\\) -&gt; \\(z_{1-\\beta}=z_{90\\%}=1.29\\) -&gt; \\(z_\\beta=-1.29\\)\n\\(\\delta=0.5\\)\n\n\n\n\n\n\n\n\n\nLösung Aufgabe 9.6d\n\n\n\n\n\n\\(n=\\frac{(z_{1-\\alpha}-z_\\beta)^2}{\\delta^2}=\\frac{(2.33-(-1.29))^2}{0.5^2}=\\frac{13.1044}{0.25}=52.4176\\)\nWir benötigen also eine Stichprobengrösse von \\(n=53\\) Personen, um einen spezifischen Effekt mit 90% Wahrscheinlichkeit entdecken zu können, wenn er wirklich existiert.",
     "crumbs": [
       "Herzlich Willkommen",
       "Übungen",
@@ -533,20 +641,6 @@
       "Übungen",
       "Übung 2"
     ]
-  },
-  {
-    "objectID": "pages/admin/page_1.html",
-    "href": "pages/admin/page_1.html",
-    "title": "Informationen",
-    "section": "",
-    "text": "Hier finden Sie die wichtigsten Informationen zu den Übungen Statistik 1 im HS24.\n\nOrganisatorisches\n\nDie Übungen werden montags nach der Vorlesung aufgeschaltet. Bei Verzögerungen bitten wir Sie um Verständnis.\nDie Pflichtliteratur können Sie dem Semesterprogramm der Vorlesung entnehmen.\nFalls Sie bei einer Übung nicht mehr weiterkommen: Schauen Sie nach, was dazu in den Folien und der Pflichtliteratur steht. Inhaltliche Fragen können während der Vorlesung und auf OLAT im Q&A Forum besprochen werden. Geben Sie unbedingt jeweils die Aufgabennummer an.\nEs ist empfehlenswert Lerngruppen zu bilden und Unklarheiten oder Lösungsansätze gemeinsam zu besprechen. Oft ist es ein Irrtum zu denken, dass andere Studierende keine Fragen haben oder bereits alles verstanden haben.\nFalls Sie einen Fehler in den Aufgaben oder den Lösungen entdecken, wenden Sie sich direkt an Mirjam Senn.\n\n\n\nFormat der Übungen\n\nDie Aufgaben vertiefen den Lerninhalt der Vorlesungen. Hier können Sie das Gelernte anwenden.\nDie Übungen sind so konzipiert, dass sie selbstständig alleine oder in Lerngruppen gelöst werden können.\nZu allen Aufgaben gibt es Lösungen oder Musterlösungen.\nAm 28. Oktober 2024 erhalten Sie eine Einführung in die Programmiersprache R und das Programm R Studio. Sie müssen in diesem Semester noch keine Programme installieren, sondern können diese Website nutzen. Ein Beispiel dafür wie das Arbeiten mit ´R´ in diesen Übungen aussehen könnte, finden Sie in der Übung R."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Herzlich Willkommen",
-    "section": "",
-    "text": "Vorlesung Statistik 1 (Übungen)\nBachelorstudiengang Psychologie\nFakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern\nHS 2024"
   },
   {
     "objectID": "pages/exercises/exercise_01.html",
