@@ -275,6 +275,7 @@ d.    Berechnen Sie die optimale Stichprobengrösse:
 
 Wie gross muss die Stichprobe sein, um mindestens eine Power von 90% zu erreichen?
 
+
 ::: {.callout-tip collapse="true"}
 ## Welche Formel verwenden wir?
 
@@ -298,14 +299,23 @@ $\delta=0.5$
 :::
 
 
+
 ::: {.callout-caution collapse="true"}
+
 ## Lösung Aufgabe 9.6d
 
-$n=\frac{(z_{1-\alpha}-z_\beta)^2}{\delta^2}=\frac{(2.33-(-1.29))^2}{0.5^2}=\frac{13.1044}{0.25}=52.1476$
 
-Wir benötigen also eine Stichprobengrösse von $n=53$ Personen, um einen spezifischen Effekt mit 90% Wahrscheinlichkeit entdecken zu können, wenn er wirkliche existiert.
+$n=\frac{(z_{1-\alpha}-z_\beta)^2}{\delta^2}=\frac{(2.33-(-1.29))^2}{0.5^2}=\frac{13.1044}{0.25}=52.4176$
+
+
+Wir benötigen also eine Stichprobengrösse von $n=53$ Personen, um einen spezifischen Effekt mit 90% Wahrscheinlichkeit entdecken zu können, wenn er wirklich existiert.
+
 
 :::
+
+
+
+
 
 <br>
 
