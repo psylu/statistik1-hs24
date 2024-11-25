@@ -1,0 +1,349 @@
+---
+title: "Übung 11"
+description: "Methoden zum Vergleich von Gruppen 1"
+date: "2024-11-25"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+engine: knitr
+filters:
+  - webr
+webr:
+  packages:
+    - tidyverse
+license: CC BY
+citation: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", collapse = TRUE)
+set.seed(1234)
+```
+
+## Aufgaben
+
+Hinweise: 
+
+-   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
+-  Die Tabelle für die Standardnormalverteilung finden Sie [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+-  Die Tabelle für die _t_-Verteilung finden Sie  [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.03.pdf).
+
+
+<br>
+
+## Aufgabe 11.1
+
+In welche Verteilung geht die _t_-Verteilung mit wachsender Zahl von Freiheitsgraden über?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.1
+
+In eine Normalverteilung
+
+:::
+
+<br>
+
+## Aufgabe 11.2
+
+Bei einem _t_-Test für unabhängige Stichproben besteht eine wichtige Voraussetzung darin, dass die Varianzen homogen (also gleich) sind (sogenannte Homoskedastizitätsannahme). Dies kann beispielweise mit dem Varianzhomogenitätstest von Levene (1960) überprüft werden. Auf diesen Test gehen wir in diesem Semester nicht genauer ein. 
+
+Wie sieht es nun bei einem _t_-Test für abhängige Stichproben aus? Weshalb wird hier keine Varianzhomogenität vorausgesetzt? Schauen Sie sich die Formeln zu Berechnung der Prüfgrösse bei einem _t_-Test für abhängige Stichproben an und zeigen Sie, weshalb die Homogenität der Varianzen hier nicht nötig ist.
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.2
+
+Wenn man die Formel zur Berechnung der empirischen Prüfgrösse des _t_-Tests für abhängige Stichproben betrachtet, wird deutlich, dass hier nur eine Varianz in die Berechnung eingeht:
+
+$t_{\overline{x}_D}=\frac{\overline{x}_D}{\frac{\hat \sigma_D}{\sqrt n}}$
+
+Wir verwenden hier lediglich die Varianz $\hat \sigma_D$ der Differenzen der Beobachtungspaare. Da bei diesem Test nicht mehrere Varianzen in die Berechnung eingehen, ist ein Test auf Varianzhomogenität nicht notwendig. 
+
+:::
+
+<br>
+
+## Aufgabe 11.3
+ 
+Welchen Test würden Sie bei den folgenden Beispielen wählen? 
+
+a.    Es werden 35 Zwillingspaare zufällig ausgewählt. Pro Paar wird jeweils eine:r der Zwillinge ausgewählt und mit einem Medikament behandelt. Danach wird untersucht, ob sich das Medikament auf die kognitive Leistung auswirkt und mit den Zwillingen verglichen, die kein Medikament erhalten haben. 
+
+`r webexercises::mcq(c(answer= "abhängiger t-Test", "unabhängiger t-Test", "keine der beiden"))`
+
+b.    Es wird eine Stichprobe von 35 Zwillingspaare gezogen. Alle 70 Personen werden mit einem Medikament behandelt. Es wird untersucht, ob sich die kognitive Leistung durch das Medikament verbessert. 
+
+`r webexercises::mcq(c("abhängiger t-Test", "unabhängiger t-Test", answer= "keine der beiden"))`
+
+c.    An einer Studie nehmen 35 Zwillingspaare teil. Die älteren Zwillinge werden auf zwei Gruppen aufgeteilt, wobei die eine Hälfte ein Medikament erhält, die andere nicht. Im Anschluss wird untersucht, ob das Medikament bei den älteren Zwillingen die kognitive Leistung erhöht oder nicht.
+
+`r webexercises::mcq(c("abhängiger t-Test", answer= "unabhängiger t-Test", "keine der beiden"))`
+
+<br>
+
+
+## Aufgabe 11.4
+ 
+Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und 9 Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen. 
+
+Überprüfen Sie, ob das Präventionsprogramm das sichere Verhalten im Strassenverkehr verbessert (bzw. ob sich die Gruppen nach dem Programm signifikant auf dem 5%-Niveau unterscheiden).
+
+$H_0$: Nach dem Programm unterscheiden sich die Gruppen nicht.
+
+$H_1$: Nach dem Programm unterscheiden sich die Gruppen.
+
+
+|   | Gruppe "Programm" | Gruppe "Kontrolle" |
+|---|---|---|
+|   | $n=9$ | $n=9$ |
+| $\overline{x}$ | 25 | 19 |
+| $s^2$ | 80 | 100 |
+
+<br>
+
+a.	Handelt es sich um abhängige oder unabhängige Stichproben? Welchen Test wählen Sie?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.4a
+
+Unter den beschriebenen Bedingungen gehen wir davon aus, dass es sich um unabhängige Stichproben handelt. Wir entscheiden uns daher für einen _t_-Test für unabhängige Stichproben.
+
+:::
+
+<br>
+
+b.	Berechnen Sie die empirische Prüfgrösse und entscheiden Sie, ob Sie die $H_0$ ablehnen können oder nicht. 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.4b
+
+1. Zuerst wird die gemeinsame Innerhalb-Varianz berechnet.
+
+$\sigma_{inn}^2=\frac{s^2_1 \cdot (n_1-1) +s^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90$
+
+2. Daraus kann der Standardfehler der Differenz der Stichprobenmittelwerte berechnen werden.
+
+$\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\sigma_{inn}^2}{n_1}+ \frac{\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20$
+
+$\hat \sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{20}=4.47$
+
+3. Nun kann die empirische Prüfgrösse berechnen und mit dem kritischen Wert verglichen werden.
+
+$t_{\overline{x}_1-\overline{x}_2}=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{\overline{x}_1-\overline{x}_2}}=\frac{25-19}{4.47}=1.34$
+
+$df=n_1+n_2-2=9+9-2=16$
+
+$t_{(95\%;16)}=1.7459$
+
+$H_0$ wird beibehalten, da die empirische Prüfgrösse nicht grösser als der kritische Wert ist. Das Präventionsprogramm hat keinen Effekt bzw. die Gruppen unterscheiden sich nicht signifikant.  
+
+:::
+
+<br>
+
+c.	Berechnen Sie die standardisierte Effektgrösse nach Cohen.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.4c
+
+$d'_2=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{inn}}=\frac{25-19}{\sqrt{90}}=0.63$
+
+oder
+
+$d'_2=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63$
+
+Nach Cohen (1988) handelt es sich hier um einen mittelgrossen Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben. 
+
+:::
+
+<br>
+
+## Aufgabe 11.5
+
+Eine Marketingfirma hat folgende Daten erhoben und möchte wissen, ob sich die beiden Messungen unterscheiden.   
+
+ 
+Person ID	| Pretest | Posttest | _d_ |
+|---|---|---|---|
+| 1	| 10	| 9	| -1	|
+| 2	| 12	| 13	| 1	|
+| 3	| 11	| 11	| 0	|
+| 4	| 12	| 13	| 1	|
+| 5	| 8	| 10	| 2	|
+| 6	| 8	| 11	| 3	|
+
+<br>
+
+a.	Was können Sie hier herauslesen? Welcher _t_-Test muss zur Auswertung eingesetzt werden?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.5a
+
+Wir gehen davon aus, dass zweimal die selben Personen getestet wurden. Daher verwenden wir einen _t_-Test für abhängige Stichproben. 
+
+:::
+
+<br>
+
+b.	Was bedeutet _d_ und wie wird es berechnet?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.5b
+
+_d_ stellt die Differenz der Messwertpaare dar und wird berechnet mit $d=x_{post}-x_{pre}$.
+
+:::
+
+<br>
+
+c.	Untersuchen Sie, ob sich die Stichproben auf dem $\alpha=0.05$-Niveau unterscheiden. Berechnen Sie dazu den Mittelwert und die geschätzte Standardabweichung der Differenzen der Messwertpaare.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.5c
+
+$\overline{x}_D=\frac{(-1)+1+0+1+2+3}{6}=1$
+
+$\hat \sigma_D=\sqrt\frac{(-1-1)^2+(1-1)^2+(0-1)^2+(1-1)^2+(2-1)^2+(3-1)^2}{6-1}=\sqrt{\frac{10}{5}}=\sqrt 2=1.414$
+
+Mit der Formel für $\hat \sigma_D$ wird auch für die Schätzung der Populationsvarianz korrigiert (siehe Nenner $n-1$).
+
+:::
+
+<br>
+
+d.	Berechnen Sie nun den Standardfehler der Mittelwertsdifferenz. Berechnen Sie die empirische Prüfgrösse _t_ sowie den kritischen _t_-Wert, ab dem die Nullhypothese verworfen werden kann. Wie lautet Ihre Entscheidung? 
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.5d
+
+Standardfehler:
+
+$\hat \sigma_{\overline{x}_D}=\frac{\hat \sigma_{D}}{\sqrt{n}}=\frac{1.414}{\sqrt 6}=0.577$
+
+Empirische Prüfgrösse:
+
+$t_{\overline{x}_D}=\frac{\overline{x}_D}{\hat\sigma_{\overline{x}_D}}=\frac{1}{0.577}=1.73$
+
+Kritischer Wert (zweiseitig):
+
+$df=n-1=5$
+
+$t_{(97.5\%;5)}=2.5706$
+
+$H_0$ wird beibehalten, da die empirische Prüfgrösse nicht grösser als der kritische Wert ist. Die Messungen verändern sich nicht signifikant vom Pretest (vorher) zum Posttest (nachher).
+
+:::
+
+<br>
+
+e.	Konstruieren Sie ein zweiseitiges Konfidenzintervall für Aufgabe 11.5. Wir verwenden hier somit ein 95%-Kofidenzintervall.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.5e
+
+$\overline{x}_D=1$
+
+$t_{(0.975;5)}=\pm 2.5706$
+
+$\hat \sigma_{\overline{x}_D}=0.577$
+
+$95{\%}$-KI: $\overline{x}_D \pm t_{(0.975;5)}\cdot \hat\sigma_{\overline{x}_D}$
+
+$95{\%}$-KI: $1 \pm 2.5706 \cdot 0.577=[-0.48;2.48]$
+
+Wir kommen hier zum gleichen Schluss, d.h. die $H_0$ kann nicht abgelehnt werden, da der Wert 0 innerhalb des Konfidenzintervalls liegt.  
+
+:::
+
+<br>
+
+
+## Aufgabe 11.6
+
+Führen Sie den _t_-Test für abhängige Stichproben aus Aufgabe 11.5 mit Hilfe von R (WebR) durch. Erstellen Sie dazu zwei Variablen mit den Skalenwerten und berechnen Sie dann den Paired-_t_-Test.
+
+Zur Erinnerung: Sie können mehrere Werte als Variable speichern indem Sie die Funktion `c()` nutzen.
+Die Variable `data.pre <- c(18, 17, 19)` enthält die Werte `18`, `17` und `19`.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+data.pre <- c(___)
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie in die Klammer die Werte aus Aufgabe 11.5 ein und trennen Sie die Werte jeweils mit einem Komma. Erstellen Sie für den Posttest eine weitere Variable. 
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+data.pre <- c(10, 12, 11, 12, 8, 8)
+data.post <- c(9, 13, 11, 13, 10, 11)
+```
+
+:::
+
+<br>
+
+Führen Sie nun einen Paired _t_-Test mit der Funktion `t.test()` durch. Vergleichen Sie den Output von R mit Ihren Berechnungen von Aufgabe 11.5.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+t_test_result <- t.test(_POST_, _PRE_, mu = 0, paired=TRUE, conf.level = 0.95)
+t_test_result
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Fügen Sie bei POST und PRE die Variablen ein, die Sie vorher erstellt haben. 
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{r}
+#| eval: false
+t_test_result <- t.test(data.post, data.pre, mu = 0, paired = TRUE, conf.level = 0.95)
+t_test_result
+```
+
+:::
+
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 11.6
+
+```{r}
+#| echo: false
+t_test_result <- t.test(data.post, data.pre, mu = 0, paired = TRUE, conf.level = 0.95)
+t_test_result
+```
+
+
+:::
+
+<br>
+
+Somit haben Sie die Übungen dieser Woche erfolgreich absolviert! 
+
+
+![](img/meme11.jpg)
+
+
+
+
