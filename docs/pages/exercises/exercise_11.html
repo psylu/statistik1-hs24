@@ -8,11 +8,10 @@
 
 <meta name="author" content="Mirjam Senn">
 <meta name="author" content="Gerda Wyssen">
-<meta name="author" content="Daniel Fitze">
-<meta name="dcterms.date" content="2024-09-16">
-<meta name="description" content="Vorschau: Programmieren mit R">
+<meta name="dcterms.date" content="2024-11-25">
+<meta name="description" content="Methoden zum Vergleich von Gruppen 1">
 
-<title>Übung R – Statistik 1</title>
+<title>Übung 11 – Statistik 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -46,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -363,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"x = ___","id":1,"options":{"classes":"","read-only":"false","autorun":"false","message":"true","dpi":72,"output":"true","fig-height":5,"editor-word-wrap":"true","editor-max-height":"","context":"interactive","warning":"true","comment":"","out-height":"","label":"unnamed-chunk-1","fig-width":7,"fig-cap":"","out-width":"700px","editor-font-scale":"1","results":"markup","editor-quick-suggestions":"false"}},{"code":"x = c(90, 111, 117, 84, 98, 102)","id":2,"options":{"classes":"","read-only":"false","autorun":"false","message":"true","dpi":72,"output":"true","fig-height":5,"editor-word-wrap":"true","editor-max-height":"","context":"interactive","warning":"true","comment":"","out-height":"","label":"unnamed-chunk-2","fig-width":7,"fig-cap":"","out-width":"700px","editor-font-scale":"1","results":"markup","editor-quick-suggestions":"false"}},{"code":"mean(___)\nsd(___)","id":3,"options":{"classes":"","read-only":"false","autorun":"false","message":"true","dpi":72,"output":"true","fig-height":5,"editor-word-wrap":"true","editor-max-height":"","context":"interactive","warning":"true","comment":"","out-height":"","label":"unnamed-chunk-3","fig-width":7,"fig-cap":"","out-width":"700px","editor-font-scale":"1","results":"markup","editor-quick-suggestions":"false"}},{"code":"mean(x)\nsd(x)","id":4,"options":{"classes":"","read-only":"false","autorun":"false","message":"true","dpi":72,"output":"true","fig-height":5,"editor-word-wrap":"true","editor-max-height":"","context":"interactive","warning":"true","comment":"","out-height":"","label":"unnamed-chunk-4","fig-width":7,"fig-cap":"","out-width":"700px","editor-font-scale":"1","results":"markup","editor-quick-suggestions":"false"}}];
+globalThis.qwebrCellDetails = [{"options":{"out-height":"","fig-height":5,"results":"markup","editor-font-scale":"1","editor-word-wrap":"true","comment":"","context":"interactive","label":"unnamed-chunk-1","read-only":"false","fig-cap":"","autorun":"false","warning":"true","editor-quick-suggestions":"false","fig-width":7,"output":"true","message":"true","out-width":"700px","editor-max-height":"","dpi":72,"classes":""},"id":1,"code":"data.pre <- c(___)"},{"options":{"out-height":"","fig-height":5,"results":"markup","editor-font-scale":"1","editor-word-wrap":"true","comment":"","context":"interactive","label":"unnamed-chunk-2","read-only":"false","fig-cap":"","autorun":"false","warning":"true","editor-quick-suggestions":"false","fig-width":7,"output":"true","message":"true","out-width":"700px","editor-max-height":"","dpi":72,"classes":""},"id":2,"code":"t_test_result <- t.test(_POST_, _PRE_, mu = 0, paired=TRUE, conf.level = 0.95)\nt_test_result"}];
 
 </script>
 <script type="module">
@@ -1561,6 +1596,35 @@ globalThis.qwebrExecuteCode = async function (
 
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../include/webex.css">
@@ -1608,7 +1672,7 @@ globalThis.qwebrExecuteCode = async function (
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Übung R</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_11.html">Übung 11</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -1693,7 +1757,7 @@ globalThis.qwebrExecuteCode = async function (
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../pages/exercises/exercise_11.html" class="sidebar-item-text sidebar-link">
+  <a href="../../pages/exercises/exercise_11.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Übung 11</span></a>
   </div>
 </li>
@@ -1743,10 +1807,13 @@ globalThis.qwebrExecuteCode = async function (
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#beispielsaufgabe-r" id="toc-beispielsaufgabe-r" class="nav-link active" data-scroll-target="#beispielsaufgabe-r">Beispielsaufgabe R</a>
-  <ul class="collapse">
-  <li><a href="#webr" id="toc-webr" class="nav-link" data-scroll-target="#webr">WebR</a></li>
-  </ul></li>
+  <li><a href="#aufgaben" id="toc-aufgaben" class="nav-link active" data-scroll-target="#aufgaben">Aufgaben</a></li>
+  <li><a href="#aufgabe-11.1" id="toc-aufgabe-11.1" class="nav-link" data-scroll-target="#aufgabe-11.1">Aufgabe 11.1</a></li>
+  <li><a href="#aufgabe-11.2" id="toc-aufgabe-11.2" class="nav-link" data-scroll-target="#aufgabe-11.2">Aufgabe 11.2</a></li>
+  <li><a href="#aufgabe-11.3" id="toc-aufgabe-11.3" class="nav-link" data-scroll-target="#aufgabe-11.3">Aufgabe 11.3</a></li>
+  <li><a href="#aufgabe-11.4" id="toc-aufgabe-11.4" class="nav-link" data-scroll-target="#aufgabe-11.4">Aufgabe 11.4</a></li>
+  <li><a href="#aufgabe-11.5" id="toc-aufgabe-11.5" class="nav-link" data-scroll-target="#aufgabe-11.5">Aufgabe 11.5</a></li>
+  <li><a href="#aufgabe-11.6" id="toc-aufgabe-11.6" class="nav-link" data-scroll-target="#aufgabe-11.6">Aufgabe 11.6</a></li>
   </ul>
 </nav>
     </div>
@@ -2037,14 +2104,14 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 }
 </script>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_01.html">Übungen</a></li><li class="breadcrumb-item"><a href="../../pages/exercises/exercise_11.html">Übung 11</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Übung R</h1>
+<h1 class="title">Übung 11</h1>
 </div>
 
 <div>
   <div class="description">
-    Vorschau: Programmieren mit R
+    Methoden zum Vergleich von Gruppen 1
   </div>
 </div>
 
@@ -2072,16 +2139,6 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
             </a>
           </p>
       </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Daniel Fitze </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            <a href="https://www.unilu.ch/fakultaeten/vpf">
-            Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
-            </a>
-          </p>
-      </div>
   </div>
 
 <div class="quarto-title-meta">
@@ -2090,7 +2147,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 16, 2024</p>
+      <p class="date">November 25, 2024</p>
     </div>
   </div>
   
@@ -2102,71 +2159,446 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 </header>
 
 
-<section id="beispielsaufgabe-r" class="level1">
-<h1>Beispielsaufgabe R</h1>
-<p>Füllen Sie zum Lösen der Aufgaben die <code>___</code>-Stellen aus. Drücken Sie dann auf den grünen Pfeil (<code>Run</code>).</p>
-<ol type="1">
-<li>Erstellen Sie mit der Funktion <code>c()</code> einen Vektor und speichern Sie diesen in der Variable <code>x</code>. Der Vektor soll die Werte <code>90, 111, 117, 84, 98 und 102</code> enthalten.</li>
-</ol>
-<div id="qwebr-insertion-location-1"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<section id="aufgaben" class="level2">
+<h2 class="anchored" data-anchor-id="aufgaben">Aufgaben</h2>
+<p>Hinweise:</p>
+<ul>
+<li>Die Formelsammlung zu dieser Übung finden Sie auf <a href="https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913">OLAT</a>.</li>
+<li>Die Tabelle für die Standardnormalverteilung finden Sie <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf">hier</a>.</li>
+<li>Die Tabelle für die <em>t</em>-Verteilung finden Sie <a href="https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.03.pdf">hier</a>.</li>
+</ul>
+<p><br></p>
+</section>
+<section id="aufgabe-11.1" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.1">Aufgabe 11.1</h2>
+<p>In welche Verteilung geht die <em>t</em>-Verteilung mit wachsender Zahl von Freiheitsgraden über?</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung
+Lösung Aufgabe 11.1
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="qwebr-insertion-location-2"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p>In eine Normalverteilung</p>
 </div>
 </div>
 </div>
-<ol start="2" type="1">
-<li>Berechnen Sie den Mittelwert und die Standardabweichung der Variable <code>x</code>. Verwenden sie dazu die Funktionen <code>mean()</code> und <code>sd()</code>.</li>
-</ol>
-<div id="qwebr-insertion-location-3"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+<p><br></p>
+</section>
+<section id="aufgabe-11.2" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.2">Aufgabe 11.2</h2>
+<p>Bei einem <em>t</em>-Test für unabhängige Stichproben besteht eine wichtige Voraussetzung darin, dass die Varianzen homogen (also gleich) sind (sogenannte Homoskedastizitätsannahme). Dies kann beispielweise mit dem Varianzhomogenitätstest von Levene (1960) überprüft werden. Auf diesen Test gehen wir in diesem Semester nicht genauer ein.</p>
+<p>Wie sieht es nun bei einem <em>t</em>-Test für abhängige Stichproben aus? Weshalb wird hier keine Varianzhomogenität vorausgesetzt? Schauen Sie sich die Formeln zu Berechnung der Prüfgrösse bei einem <em>t</em>-Test für abhängige Stichproben an und zeigen Sie, weshalb die Homogenität der Varianzen hier nicht nötig ist.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Lösung
+Lösung Aufgabe 11.2
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div id="qwebr-insertion-location-4"></div>
+<p>Wenn man die Formel zur Berechnung der empirischen Prüfgrösse des <em>t</em>-Tests für abhängige Stichproben betrachtet, wird deutlich, dass hier nur eine Varianz in die Berechnung eingeht:</p>
+<p><span class="math inline">\(t_{\overline{x}_D}=\frac{\overline{x}_D}{\frac{\hat \sigma_D}{\sqrt n}}\)</span></p>
+<p>Wir verwenden hier lediglich die Varianz <span class="math inline">\(\hat \sigma_D\)</span> der Differenzen der Beobachtungspaare. Da bei diesem Test nicht mehrere Varianzen in die Berechnung eingehen, ist ein Test auf Varianzhomogenität nicht notwendig.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-11.3" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.3">Aufgabe 11.3</h2>
+<p>Welchen Test würden Sie bei den folgenden Beispielen wählen?</p>
+<ol type="a">
+<li>Es werden 35 Zwillingspaare zufällig ausgewählt. Pro Paar wird jeweils eine:r der Zwillinge ausgewählt und mit einem Medikament behandelt. Danach wird untersucht, ob sich das Medikament auf die kognitive Leistung auswirkt und mit den Zwillingen verglichen, die kein Medikament erhalten haben.</li>
+</ol>
+<p><select class="webex-select"><option value="blank"></option><option value="answer">abhängiger t-Test</option><option value="">unabhängiger t-Test</option><option value="">keine der beiden</option></select></p>
+<ol start="2" type="a">
+<li>Es wird eine Stichprobe von 35 Zwillingspaare gezogen. Alle 70 Personen werden mit einem Medikament behandelt. Es wird untersucht, ob sich die kognitive Leistung durch das Medikament verbessert.</li>
+</ol>
+<p><select class="webex-select"><option value="blank"></option><option value="">abhängiger t-Test</option><option value="">unabhängiger t-Test</option><option value="answer">keine der beiden</option></select></p>
+<ol start="3" type="a">
+<li>An einer Studie nehmen 35 Zwillingspaare teil. Die älteren Zwillinge werden auf zwei Gruppen aufgeteilt, wobei die eine Hälfte ein Medikament erhält, die andere nicht. Im Anschluss wird untersucht, ob das Medikament bei den älteren Zwillingen die kognitive Leistung erhöht oder nicht.</li>
+</ol>
+<p><select class="webex-select"><option value="blank"></option><option value="">abhängiger t-Test</option><option value="answer">unabhängiger t-Test</option><option value="">keine der beiden</option></select></p>
+<p><br></p>
+</section>
+<section id="aufgabe-11.4" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.4">Aufgabe 11.4</h2>
+<p>Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und 9 Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen.</p>
+<p>Überprüfen Sie, ob das Präventionsprogramm das sichere Verhalten im Strassenverkehr verbessert (bzw. ob sich die Gruppen nach dem Programm signifikant auf dem 5%-Niveau unterscheiden).</p>
+<p><span class="math inline">\(H_0\)</span>: Nach dem Programm unterscheiden sich die Gruppen nicht.</p>
+<p><span class="math inline">\(H_1\)</span>: Nach dem Programm unterscheiden sich die Gruppen.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Gruppe “Programm”</th>
+<th>Gruppe “Kontrolle”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><span class="math inline">\(n=9\)</span></td>
+<td><span class="math inline">\(n=9\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\overline{x}\)</span></td>
+<td>25</td>
+<td>19</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(s^2\)</span></td>
+<td>80</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<ol type="a">
+<li>Handelt es sich um abhängige oder unabhängige Stichproben? Welchen Test wählen Sie?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.4a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Unter den beschriebenen Bedingungen gehen wir davon aus, dass es sich um unabhängige Stichproben handelt. Wir entscheiden uns daher für einen <em>t</em>-Test für unabhängige Stichproben.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="2" type="a">
+<li>Berechnen Sie die empirische Prüfgrösse und entscheiden Sie, ob Sie die <span class="math inline">\(H_0\)</span> ablehnen können oder nicht.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.4b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Zuerst wird die gemeinsame Innerhalb-Varianz berechnet.</li>
+</ol>
+<p><span class="math inline">\(\sigma_{inn}^2=\frac{s^2_1 \cdot (n_1-1) +s^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90\)</span></p>
+<ol start="2" type="1">
+<li>Daraus kann der Standardfehler der Differenz der Stichprobenmittelwerte berechnen werden.</li>
+</ol>
+<p><span class="math inline">\(\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\sigma_{inn}^2}{n_1}+ \frac{\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20\)</span></p>
+<p><span class="math inline">\(\hat \sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{20}=4.47\)</span></p>
+<ol start="3" type="1">
+<li>Nun kann die empirische Prüfgrösse berechnen und mit dem kritischen Wert verglichen werden.</li>
+</ol>
+<p><span class="math inline">\(t_{\overline{x}_1-\overline{x}_2}=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{\overline{x}_1-\overline{x}_2}}=\frac{25-19}{4.47}=1.34\)</span></p>
+<p><span class="math inline">\(df=n_1+n_2-2=9+9-2=16\)</span></p>
+<p><span class="math inline">\(t_{(95\%;16)}=1.7459\)</span></p>
+<p><span class="math inline">\(H_0\)</span> wird beibehalten, da die empirische Prüfgrösse nicht grösser als der kritische Wert ist. Das Präventionsprogramm hat keinen Effekt bzw. die Gruppen unterscheiden sich nicht signifikant.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="3" type="a">
+<li>Berechnen Sie die standardisierte Effektgrösse nach Cohen.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.4c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(d'_2=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{inn}}=\frac{25-19}{\sqrt{90}}=0.63\)</span></p>
+<p>oder</p>
+<p><span class="math inline">\(d'_2=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63\)</span></p>
+<p>Nach Cohen (1988) handelt es sich hier um einen mittelgrossen Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-11.5" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.5">Aufgabe 11.5</h2>
+<p>Eine Marketingfirma hat folgende Daten erhoben und möchte wissen, ob sich die beiden Messungen unterscheiden.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Person ID</th>
+<th>Pretest</th>
+<th>Posttest</th>
+<th><em>d</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>10</td>
+<td>9</td>
+<td>-1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>12</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>11</td>
+<td>11</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>12</td>
+<td>13</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>8</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>8</td>
+<td>11</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<ol type="a">
+<li>Was können Sie hier herauslesen? Welcher <em>t</em>-Test muss zur Auswertung eingesetzt werden?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.5a
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Wir gehen davon aus, dass zweimal die selben Personen getestet wurden. Daher verwenden wir einen <em>t</em>-Test für abhängige Stichproben.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="2" type="a">
+<li>Was bedeutet <em>d</em> und wie wird es berechnet?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.5b
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>d</em> stellt die Differenz der Messwertpaare dar und wird berechnet mit <span class="math inline">\(d=x_{post}-x_{pre}\)</span>.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="3" type="a">
+<li>Untersuchen Sie, ob sich die Stichproben auf dem <span class="math inline">\(\alpha=0.05\)</span>-Niveau unterscheiden. Berechnen Sie dazu den Mittelwert und die geschätzte Standardabweichung der Differenzen der Messwertpaare.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.5c
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\overline{x}_D=\frac{(-1)+1+0+1+2+3}{6}=1\)</span></p>
+<p><span class="math inline">\(\hat \sigma_D=\sqrt\frac{(-1-1)^2+(1-1)^2+(0-1)^2+(1-1)^2+(2-1)^2+(3-1)^2}{6-1}=\sqrt{\frac{10}{5}}=\sqrt 2=1.414\)</span></p>
+<p>Mit der Formel für <span class="math inline">\(\hat \sigma_D\)</span> wird auch für die Schätzung der Populationsvarianz korrigiert (siehe Nenner <span class="math inline">\(n-1\)</span>).</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="4" type="a">
+<li>Berechnen Sie nun den Standardfehler der Mittelwertsdifferenz. Berechnen Sie die empirische Prüfgrösse <em>t</em> sowie den kritischen <em>t</em>-Wert, ab dem die Nullhypothese verworfen werden kann. Wie lautet Ihre Entscheidung?</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.5d
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Standardfehler:</p>
+<p><span class="math inline">\(\hat \sigma_{\overline{x}_D}=\frac{\hat \sigma_{D}}{\sqrt{n}}=\frac{1.414}{\sqrt 6}=0.577\)</span></p>
+<p>Empirische Prüfgrösse:</p>
+<p><span class="math inline">\(t_{\overline{x}_D}=\frac{\overline{x}_D}{\hat\sigma_{\overline{x}_D}}=\frac{1}{0.577}=1.73\)</span></p>
+<p>Kritischer Wert (zweiseitig):</p>
+<p><span class="math inline">\(df=n-1=5\)</span></p>
+<p><span class="math inline">\(t_{(97.5\%;5)}=2.5706\)</span></p>
+<p><span class="math inline">\(H_0\)</span> wird beibehalten, da die empirische Prüfgrösse nicht grösser als der kritische Wert ist. Die Messungen verändern sich nicht signifikant vom Pretest (vorher) zum Posttest (nachher).</p>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="5" type="a">
+<li>Konstruieren Sie ein zweiseitiges Konfidenzintervall für Aufgabe 11.5. Wir verwenden hier somit ein 95%-Kofidenzintervall.</li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.5e
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(\overline{x}_D=1\)</span></p>
+<p><span class="math inline">\(t_{(0.975;5)}=\pm 2.5706\)</span></p>
+<p><span class="math inline">\(\hat \sigma_{\overline{x}_D}=0.577\)</span></p>
+<p><span class="math inline">\(95{\%}\)</span>-KI: <span class="math inline">\(\overline{x}_D \pm t_{(0.975;5)}\cdot \hat\sigma_{\overline{x}_D}\)</span></p>
+<p><span class="math inline">\(95{\%}\)</span>-KI: <span class="math inline">\(1 \pm 2.5706 \cdot 0.577=[-0.48;2.48]\)</span></p>
+<p>Wir kommen hier zum gleichen Schluss, d.h. die <span class="math inline">\(H_0\)</span> kann nicht abgelehnt werden, da der Wert 0 innerhalb des Konfidenzintervalls liegt.</p>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="aufgabe-11.6" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-11.6">Aufgabe 11.6</h2>
+<p>Führen Sie den <em>t</em>-Test für abhängige Stichproben aus Aufgabe 11.5 mit Hilfe von R (WebR) durch. Erstellen Sie dazu zwei Variablen mit den Skalenwerten und berechnen Sie dann den Paired-<em>t</em>-Test.</p>
+<p>Zur Erinnerung: Sie können mehrere Werte als Variable speichern indem Sie die Funktion <code>c()</code> nutzen. Die Variable <code>data.pre &lt;- c(18, 17, 19)</code> enthält die Werte <code>18</code>, <code>17</code> und <code>19</code>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page"><i class="fa-solid fa-code" aria-label="code"></i> Konsole</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><i class="fa-regular fa-lightbulb" aria-label="lightbulb"></i> Tipp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><i class="fa-solid fa-check" aria-label="check"></i> Lösung</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="qwebr-insertion-location-1"></div>
 <noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
 </div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Fügen Sie in die Klammer die Werte aus Aufgabe 11.5 ein und trennen Sie die Werte jeweils mit einem Komma. Erstellen Sie für den Posttest eine weitere Variable.</p>
+<p>Drücken Sie <code>Run Code</code>.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data.pre <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">8</span>, <span class="dv">8</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>data.post <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">13</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">10</span>, <span class="dv">11</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<section id="webr" class="level3">
-<h3 class="anchored" data-anchor-id="webr">WebR</h3>
-<p>Diese Seite wurde mit WebR erstellt: <a href="https://quarto-webr.thecoatlessprofessor.com/qwebr-first-steps.html">webR documentation</a>.</p>
+</div>
+</div>
+<p><br></p>
+<p>Führen Sie nun einen Paired <em>t</em>-Test mit der Funktion <code>t.test()</code> durch. Vergleichen Sie den Output von R mit Ihren Berechnungen von Aufgabe 11.5.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true"><i class="fa-solid fa-code" aria-label="code"></i> Konsole</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false"><i class="fa-regular fa-lightbulb" aria-label="lightbulb"></i> Tipp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false"><i class="fa-solid fa-check" aria-label="check"></i> Lösung</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="qwebr-insertion-location-2"></div>
+<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Fügen Sie bei POST und PRE die Variablen ein, die Sie vorher erstellt haben.</p>
+<p>Drücken Sie <code>Run Code</code>.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>t_test_result <span class="ot">&lt;-</span> <span class="fu">t.test</span>(data.post, data.pre, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>t_test_result</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung Aufgabe 11.6
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="cell" data-layout-align="center">
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  data.post and data.pre
+## t = 1.7321, df = 5, p-value = 0.1438
+## alternative hypothesis: true mean difference is not equal to 0
+## 95 percent confidence interval:
+##  -0.4841261  2.4841261
+## sample estimates:
+## mean difference 
+##               1</code></pre>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>Somit haben Sie die Übungen dieser Woche erfolgreich absolviert!</p>
+<p><img src="img/meme11.jpg" class="img-fluid"></p>
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{senn2024,
-  author = {Senn, Mirjam and Wyssen, Gerda and Fitze, Daniel},
-  title = {Übung {R}},
-  date = {2024-09-16},
-  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html},
+  author = {Senn, Mirjam and Wyssen, Gerda},
+  title = {Übung 11},
+  date = {2024-11-25},
+  url = {https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_11.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-senn2024" class="csl-entry quarto-appendix-citeas" role="listitem">
-Senn, Mirjam, Gerda Wyssen, and Daniel Fitze. 2024. <span>“Übung
-R.”</span> September 16, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_R.html</a>.
+Senn, Mirjam, and Gerda Wyssen. 2024. <span>“Übung 11.”</span> November
+25, 2024. <a href="https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_11.html">https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_11.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
 
