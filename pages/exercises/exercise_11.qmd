@@ -27,12 +27,6 @@ set.seed(1234)
 
 ## Aufgaben
 
-Hinweise: 
-
--   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
--  Die Tabelle für die Standardnormalverteilung finden Sie [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
--  Die Tabelle für die _t_-Verteilung finden Sie  [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.03.pdf).
-
 
 <br>
 
@@ -94,12 +88,12 @@ Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherh
 
 Überprüfen Sie, ob das Präventionsprogramm das sichere Verhalten im Strassenverkehr verbessert (bzw. ob sich die Gruppen nach dem Programm signifikant auf dem 5%-Niveau unterscheiden).
 
-$H_0$: Nach dem Programm unterscheiden sich die Gruppen nicht.
+$H_0$: Nach dem Programm hat die Kursgruppe denselben oder einen kleineren Wert als die Kontrollgruppe.
 
-$H_1$: Nach dem Programm unterscheiden sich die Gruppen.
+$H_1$: Nach dem Programm hat die Kursruppe einen höheren Wert als die Kontrollgruppe. 
 
 
-|   | Gruppe "Programm" | Gruppe "Kontrolle" |
+|   | Gruppe "Kurs" | Gruppe "Kontrolle" |
 |---|---|---|
 |   | $n=9$ | $n=9$ |
 | $\overline{x}$ | 25 | 19 |
@@ -152,11 +146,11 @@ c.	Berechnen Sie die standardisierte Effektgrösse nach Cohen.
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 11.4c
 
-$d'_2=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{inn}}=\frac{25-19}{\sqrt{90}}=0.63$
+$d'=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{inn}}=\frac{25-19}{\sqrt{90}}=0.63$
 
 oder
 
-$d'_2=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63$
+$d'=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63$
 
 Nach Cohen (1988) handelt es sich hier um einen mittelgrossen Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben. 
 
@@ -243,7 +237,7 @@ $H_0$ wird beibehalten, da die empirische Prüfgrösse nicht grösser als der kr
 
 <br>
 
-e.	Konstruieren Sie ein zweiseitiges Konfidenzintervall für Aufgabe 11.5. Wir verwenden hier somit ein 95%-Kofidenzintervall.
+e.	Konstruieren Sie ein zweiseitiges Konfidenzintervall für Aufgabe 11.5. Wir verwenden hier somit ein 95%-Konfidenzintervall.
 
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 11.5e
