@@ -1,0 +1,329 @@
+---
+title: "Übung 12"
+description: "Methoden zum Vergleich von Gruppen 2"
+date: "2024-12-02"
+author:
+  - name: Mirjam Senn
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+  - name: Gerda Wyssen
+    affiliation: Fakultät für Verhaltenswissenschaften und Psychologie, Universität Luzern
+    affiliation-url: https://www.unilu.ch/fakultaeten/vpf
+engine: knitr
+filters:
+  - webr
+webr:
+  packages:
+    #- tidyverse
+license: CC BY
+citation: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", collapse = TRUE)
+set.seed(1234)
+```
+
+## Aufgaben
+
+Hinweise: 
+
+-   Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
+-  Die Tabelle für die $\chi^2$-Verteilung finden Sie  [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.05.pdf).
+
+
+<br>
+
+## Aufgabe 12.1
+
+Was kann mit einem $\chi^2$-Test getestet werden und welche Voraussetzungen müssen dabei erfüllt sein?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.1
+
+Mit dem $\chi^2$-Test kann überprüft werden, ob zwei kategoriale Variablen unabhängig voneinander sind. Die kategorialen Variablen können mehr als zwei Ausprägungen haben. 
+
+Vorausgesetzt wird hier, dass die Variablen kategorial sind und die Messungen (Stichproben) voneinander unabhängig sind. Das heisst eine Messung darf nicht in mehreren Feldern auftreten und die Messungen dürfen nicht abhängig sein (d.h. keine Messwiederholung oder gepaarte Daten). Ausserdem sollte die erwartete Häufigkeit für jede Zelle mind. 5 betragen, ansonsten wird auf den Fisher-Yates-Test zurückgegriffen. Ausserdem müssen die absoluten Häufigkeiten vorliegen, um die Prüfgrösse zu berechnen. 
+
+
+:::
+
+<br>
+
+## Aufgabe 12.2
+
+Inwiefern ist der Zweistichproben-$\chi^2$-Test ein Globaltest, der keine spezifischen Hypothesen testet? 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.2
+
+Der Test bezieht sich bei mehr als 4 Zellen in der Häufigkeitstafel auf eine globale Abweichung der empirischen Häufigkeitsverteilung von der theoretisch angenommenen Verteilung. Der Test ist also nicht in der Lage eine spezifische Hypothese zu Ausschnitten aus der Häufigkeitstabelle (d.h. zu spezifischen Zellen der Tafel) zu testen. 
+
+Er testet auch nicht die Richtung des Zusammenhangs. Dazu müssten zusätzliche Tests gemacht werden, um die Art und Richtung des Zusammenhangs genauer zu untersuchen. Der Vierfelder-$\chi^2$-Test ist formal auch ein Globaltest, jedoch ist hier eindeutig, welche Variablen zusammenhängen, da nur zwei Variablen mit je zwei Ausprägungen betrachtet werden. 
+:::
+
+<br>
+
+## Aufgabe 12.3
+ 
+Bestimmen Sie für folgende Werte die Prüfgrösse:
+
+a.    $\chi^2_{95 \%;20}$
+
+`r webexercises::mcq(c("3.84", "5.02", "5.99", "10.85", answer= "31.41", "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+
+b.    $\chi^2_{5 \%;20}$
+
+`r webexercises::mcq(c("3.84", "5.02", "5.99", answer= "10.85", "31.41", "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+c.    $\chi^2_{95 \%;1}$
+
+`r webexercises::mcq(c(answer= "3.84", "5.02", "5.99", "10.85", "31.41", "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+d.    $\chi^2_{97.5 \%;1}$
+
+`r webexercises::mcq(c("3.84", answer= "5.02", "5.99", "10.85", "31.41", "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+e.    $\chi^2_{50 \%;10}$
+
+`r webexercises::mcq(c("3.84", "5.02", "5.99", "10.85", "31.41", answer= "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+f.    $\chi^2_{95 \%;40}$
+
+`r webexercises::mcq(c("3.84", "5.02", "5.99", "10.85", "31.41", answer= "Der Wert kann anhand der Tabelle nicht bestimmt werden."))`
+
+<br>
+
+## Aufgabe 12.4
+ 
+a.    Überprüfen Sie die Werte aus [Aufgabe 4.7](https://psylu.github.io/statistik1-hs24/pages/exercises/exercise_04.html#aufgabe-4.7) mit Hilfe des $\chi^2$-Tests auf Unabhängigkeit auf einem Signifikanzniveau von $\alpha=5 \%$, d.h. ob die beiden Ereignisse «Schirm» und «Regen» unabhängig sind oder nicht. 
+
+<br>
+
+|   | Regen "ja" | Regen "nein" | Summe |
+|---|---|---|---|
+| __Schirm "ja"__ | 20 | 10 | 30 |
+| __Schirm "nein"__ | 30 | 40 | 70 |
+|  | 50 | 50 | 100 |
+
+<br>
+
+::: {.callout-tip collapse="true"}
+
+## Wie gehe ich vor?
+
+- Berechnen Sie die erwarteten Häufigkeiten anhand der Formel $e_{ij}=\frac {n_{i \bullet} \cdot n_{\bullet j}}{n}$. Multiplizieren Sie dazu jeweils die beiden Randverteilungen und dividieren Sie durch die Gesamtsumme. 
+
+- Berechnen Sie anhand der Formel die Prüfgrösse und bestimmen Sie die Freiheitsgrade ($df$).
+
+- Bestimmen Sie mit Hilfe der Tabelle den kritischen Wert und vergleichen ihn mit der empirischen Prüfgrösse.
+
+:::
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.4a
+
+Die theoretisch erwartete Häufigkeitsverteilung unter der Nullhypothese, der zufolge die beiden Dimensionen "Schirm" und "Regen" voneinander unabhängig sind, sieht folgendermassen aus:
+
+
+|   | Regen "ja" | Regen "nein" | Summe |
+|---|---|---|---|
+| __Schirm "ja"__ | 15 | 15 | 30 |
+| __Schirm "nein"__ | 35 | 35 | 70 |
+|  | 50 | 50 | 100 |
+
+<br>
+Aufgrund der beiden Häufigkeitsverteilung wird die Prüfgrösse $\chi^2$ berechnet:
+
+$\chi^2=\frac{(20-15)^2}{15}+\frac{(10-15)^2}{15}+\frac{(30-35)^2}{35}+\frac{(40-35)^2}{35}=\frac{25}{15}+\frac{25}{15}+\frac{25}{35}+\frac{25}{35}=4.76$
+
+$df=1$
+
+Der kritische $\chi^2$-Wert liegt bei $3.84$. Daher kann die Nullhypothese abgelehnt werden, die postuliert, dass es zwischen "Schirm" und "Regen" keine Abhängigkeit gibt. Wir kommen also zum gleichen Schluss (keine Unabhängigkeit), wie bei Aufgabe 4.7.
+
+Die Hypothese wird ungerichtet getestet, da nominalskalierte Daten vorliegen und diese beliegig codiert werden können. Ausserdem kann mit dem $\chi^2$-Test nur einseitig getestet werden, da der $\chi^2$-Wert nicht negativ werden kann. 
+
+:::
+
+<br>
+
+b.    Überprüfen Sie die Werte aus Aufgabe 4.7 ausserdem auch mit Hilfe des $\chi^2$-Tests (Pearson's Chi-squared test) in R (WebR). Erstellen Sie dazu eine Matrix mit den Häufigkeitsverteilungen und berechnen Sie dann den $\chi^2$-Test.
+
+::: {.panel-tabset}
+## {{< fa code >}}&emsp;Konsole
+
+```{webr-r}
+# Kontingenztabelle erstellen
+data <- matrix(c(n11, n21, n12, n22), nrow = 2, byrow = TRUE)
+rownames(data) <- c("x1", "x2") 
+colnames(data) <- c("y1", "y2") 
+data <- as.table(data)
+
+# Vierfelder-Chi-Quadrat-Test
+chisq.test(data, correct = FALSE)
+
+```
+
+## {{< fa regular lightbulb >}}&emsp;Tipp
+
+Um die Matrix zu erstellen, ersetzen Sie die Platzhalter `n11, n21, n12, n22` durch die entsprechenden Werte. 
+
+Unter `c("x1", "x2")` können Sie die Zeilen (rows) beschriften, indem Sie z.B. `x1` ersetzen.  
+
+Unter `c("y1", "y2")` können Sie die Spalten (colums) beschriften, indem Sie z.B. `y1` ersetzen. 
+
+Drücken Sie `Run Code`.
+
+## {{< fa check >}}&emsp;Lösung
+
+```{webr-r}
+#| eval: false
+# Kontingenztabelle erstellen
+data <- matrix(c(20, 10, 30, 40), nrow = 2, byrow = TRUE)
+rownames(data) <- c("Schirm ja ", "Schirm nein")
+colnames(data) <- c("Regen ja", "Regen nein")
+data <- as.table(data)
+
+# Vierfelder-Chi-Quadrat-Test
+chisq.test(data, correct = FALSE)
+
+```
+:::
+
+<br>
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.4b
+
+Der Pearson's Chi-squared test in R ergibt ebenfalls $\chi^2=4.76$.
+
+```{r}
+#| echo: false
+# Kontingenztabelle erstellen
+data <- matrix(c(20, 10, 30, 40), nrow = 2, byrow = TRUE)
+rownames(data) <- c("Schirm ja ", "Schirm nein")
+colnames(data) <- c("Regen ja", "Regen nein")
+data <- as.table(data)
+
+# Vierfelder-Chi-Quadrat-Test
+chisq.test(data, correct = FALSE)
+
+```
+
+:::
+
+<br>
+
+c.    Berechnen Sie die empirische Effektgrösse $\hat \omega$ nach Cohen.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.4c
+
+Mit Hilfe der Formel erhalten wir einen Wert von $\hat \omega= \sqrt{ \frac{4.76}{100}}=0.22$. Es handelt sich dabei nach Cohen (1988) um einen kleinen Effekt. 
+
+:::
+
+<br>
+
+d.    Berechnen Sie die Odds-Ratio.
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.4d
+
+$OR=\frac {n_{11}}{n_{12}} \cdot \frac{n_{22}}{n_{21}}=\frac {20}{10} \cdot \frac{40}{30}=2.67$
+
+Das bedeutet, dass die Chancen (odds) für das Auftreten eines bestimmten Ereignisses in der ersten Gruppe 2.67-mal höher ist als in der Vergleichsgruppe. 
+
+Regen tritt in der Gruppe mit Schirm "ja" 2.67-mal häufiger auf als in der Gruppe Schirm "nein". Es ist also 2.67-mal wahrscheinlicher, dass es regnet, wenn man einen Schirm dabei hat, als wenn man keinen Schirm dabei hat. Hierbei handelt es sich selbstverständlich nicht um einen Kausalzusammenhang bei dem der Schirm den Regen beeinflusst.
+
+:::
+
+<br>
+
+e.    Weshalb kann für einen $\chi^2$-Test kein Konfidenzintervall berechnet werden?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.4e
+
+Mit einem Konfidenzintervall wird die Unsicherheit der Parameterschätzung angegeben. Bei einem $\chi^2$-Test wird jedoch kein Parameter geschätzt. Da er keine Punkt- oder Parameterschätzung liefert, gibt es keine direkte Grundlage für ein Konfidenzintervall.
+
+:::
+
+<br>
+
+## Aufgabe 12.5
+
+In einem Experiment wurden Versuchspersonen in zwei Bedingungen eingeteilt und in beiden Gruppen die Stimmung manipuliert. Dazu wurden die Versuchspersonen entweder in gute Stimmung (Gruppe 1) oder in schlechte Stimmung (Gruppe 2) versetzt; anschliessend sollten sie eine Anagrammaufgabe lösen. Gezählt wurde, wie viele Anagramme die Versuchspersonen in den beiden Bedingungen gelöst haben. Bei dieser abhängigen Variablen soll es sich um einen Indikator für die stetige Variable kognitive Leistungsfähigkeit handeln.
+
+<aside> Beispiel adaptiert aus Eid et al. (2017).
+
+Ein Beispiel für ein Anagramm: GROEBENEGN (-> Regenbogen) </aside>
+
+Im Anschluss wurde geprüft, ob die Stimmung auch die Hilfsbereitschaft beeinflusst. Die Versuchspersonen erhielten als Entschädigung für ihre Teilnahme an der Untersuchung 10 CHF, die sie (a) entweder selbst behalten, (b) der Universität zur Verbesserung der Bibliotheksausstattung oder (c) einem Kinderhilfswerk spenden durften. 
+
+In Gruppe 1 (positive Stimmung) entschieden sich 5 Personen für a, 12 Personen für b und 13 Personen für c. 
+
+In Gruppe 2 (negative Stimmung) entschieden sich 10 Personen für a, 14 Personen für b und 6 Personen für c. 
+
+a.    Prüfen Sie mithilfe eines Zweistichproben-$\chi^2$-Tests auf einem Signifikanzniveau von $\alpha=5 \%$, ob die Verteilungen in den beiden Stichproben (Bedingungen) signifikant voneinander abweichen. Zu welchem Ergebnis kommen Sie? 
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.5a
+
+Die empirische Häufigkeitsverteilung sieht folgendermassen aus:
+
+|   | (a) | (b) | (c) | Summe |
+|---|---|---|---|---|
+| __positiv__ | 5 | 12 | 13 | 30 |
+| __negativ__ | 10 | 14 | 6 | 30 |
+|  | 15 | 26 | 19 | 60 |
+
+<br>
+
+Die theoretisch erwartete Häufigkeitsverteilung unter der Nullhypothese, der zufolge die beiden Dimensionen Stimmung und Entscheidung voneinander unabhängig sind, sieht folgendermassen aus:
+
+|   | (a) | (b) | (c) | Summe |
+|---|---|---|---|---|
+| __positiv__ | 7.5 | 13 | 9.5 | 30 |
+| __negativ__ | 7.5 | 13 | 9.5 | 30 |
+|  | 15 | 26 | 19 | 60 |
+
+<br>
+
+Aufgrund der beiden Häufigkeitsverteilung wird die Prüfgrösse $\chi^2$ berechnet:
+
+$\chi^2=\frac{(5-7.5)^2}{7.5}+\frac{(10-7.5)^2}{7.5}+\frac{(12-13)^2}{13}+\frac{(14-13)^2}{13}+\frac{(13-9.5)^2}{9.5}+\frac{(6-9.5)^2}{9.5}$
+
+$=\frac{6.25}{7.5}+\frac{6.25}{7.5}+\frac{1}{13}+\frac{1}{13}+\frac{12.25}{9.5}+\frac{12.25}{9.5}=4.4$
+
+$df=(p-1) \cdot (k-1)=1 \cdot 2=2$
+
+Der kritische $\chi^2$-Wert liegt bei $5.99$. Daher kann die Nullhypothese nicht abgelehnt werden und wir finden global keine signifikante Abhängigkeit zwischen der Stimmung und der Hilfsbereitschaft; oder anders gesagt, die beiden Gruppen (Bedingungen) unterscheiden sich nicht in ihrer Hilfsbereitschaft.
+
+:::
+
+<br>
+
+b.	Wie lautet die empirische Effektgrösse $\hat \omega$ nach Cohen?
+
+::: {.callout-caution collapse="true"}
+## Lösung Aufgabe 12.5b
+
+Mit Hilfe der Formel erhalten wir einen Wert von $\hat \omega= \sqrt{4.4/60}=0.27$. Es handelt sich dabei nach Cohen (1988) um einen mittelgrossen Effekt. 
+
+Ergänzung: Wenn wir jetzt noch eine Poweranalyse durchführen würden, könnten wir feststellen, dass es eigentlich $n=212$ Personen bräuchte, um einen solchen Effekt mit einer Wahrscheinlichkeit von $95 \%$ zu finden, falls ein solcher Effekt in der Population existiert. Unser "Modell" hat also zuwenig Power, um diesen Effekt aufzudecken, falls er existiert. 
+
+:::
+
+
+<br>
+
+Sie haben bereits zwölf Übungen absolviert, bravo! 
+
+![](img/meme12.jpg)
+
+
+
+
