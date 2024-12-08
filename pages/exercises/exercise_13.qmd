@@ -25,7 +25,7 @@ knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", col
 set.seed(1234)
 ```
 
-Hinweis: Diese Übung verwendet das Package `{tidyverse}´, das Laden von ´webr´ kann daher etwas länger dauern als sonst.
+Hinweis: Diese Übung verwendet das Package `{tidyverse}`, das Laden von `webr` kann daher etwas länger dauern als sonst.
 
 ## Aufgaben
 
@@ -231,7 +231,7 @@ $s_{xy}=r_{xy} \cdot (s_x \cdot s_y)=0.8 \cdot 25=20$
 
 Nun kann die Kovarianz mit der Stichprobengrösse multipliziert werden.
 
-$KPS=r_{xy} \cdot n=20 \cdot 120=2400$
+$KPS=s_{xy} \cdot n=20 \cdot 120=2400$
 
 :::
 

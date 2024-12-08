@@ -1196,7 +1196,7 @@
     "href": "pages/exercises/exercise_13.html",
     "title": "Übung 13",
     "section": "",
-    "text": "Hinweis: Diese Übung verwendet das Package `{tidyverse}´, das Laden von ´webr´ kann daher etwas länger dauern als sonst.",
+    "text": "Hinweis: Diese Übung verwendet das Package {tidyverse}, das Laden von webr kann daher etwas länger dauern als sonst.",
     "crumbs": [
       "Herzlich Willkommen",
       "Übungen",
@@ -1256,7 +1256,7 @@
     "href": "pages/exercises/exercise_13.html#aufgabe-13.4",
     "title": "Übung 13",
     "section": "Aufgabe 13.4",
-    "text": "Aufgabe 13.4\nDie Korrelation zweier Variablen X und Y beträgt \\(r_{xy}=0.8\\). Die Streuungen betragen \\(s_x=2.5\\) und \\(s_y=10\\). Es wurden Daten von \\(n=120\\) Personen erhoben. Berechnen Sie die Kovarianz und die Kreuzproduktsumme.\n\n\n\n\n\n\nLösung Aufgabe 13.4\n\n\n\n\n\nDie Korrelation wird mit dem Produkt der Standardabweichungen multipliziert.\n\\(s_{xy}=r_{xy} \\cdot (s_x \\cdot s_y)=0.8 \\cdot 25=20\\)\nNun kann die Kovarianz mit der Stichprobengrösse multipliziert werden.\n\\(KPS=r_{xy} \\cdot n=20 \\cdot 120=2400\\)",
+    "text": "Aufgabe 13.4\nDie Korrelation zweier Variablen X und Y beträgt \\(r_{xy}=0.8\\). Die Streuungen betragen \\(s_x=2.5\\) und \\(s_y=10\\). Es wurden Daten von \\(n=120\\) Personen erhoben. Berechnen Sie die Kovarianz und die Kreuzproduktsumme.\n\n\n\n\n\n\nLösung Aufgabe 13.4\n\n\n\n\n\nDie Korrelation wird mit dem Produkt der Standardabweichungen multipliziert.\n\\(s_{xy}=r_{xy} \\cdot (s_x \\cdot s_y)=0.8 \\cdot 25=20\\)\nNun kann die Kovarianz mit der Stichprobengrösse multipliziert werden.\n\\(KPS=s_{xy} \\cdot n=20 \\cdot 120=2400\\)",
     "crumbs": [
       "Herzlich Willkommen",
       "Übungen",
