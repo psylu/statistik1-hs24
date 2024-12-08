@@ -25,7 +25,16 @@ knitr::opts_chunk$set(fig.width = 6, fig.height = 4.5, fig.align = "center", col
 set.seed(1234)
 ```
 
+
 ## Aufgaben
+
+Hinweise: 
+
+- Die Formelsammlung zu dieser Übung finden Sie auf [OLAT](https://lms.uzh.ch/auth/RepositoryEntry/17570824281/CourseNode/110427371967913). 
+
+- Die Tabelle für die Standardnormalverteilung finden Sie [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.02.pdf).
+
+- Die Tabelle für die _t_-Verteilung finden Sie [hier](https://www.beltz.de/fileadmin/beltz/downloads/OnlinematerialienPVU/28201_Eid/05_Verteilungstabellen/Tab.A.03.pdf).
 
 
 <br>
