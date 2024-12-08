@@ -364,7 +364,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"message":"true","results":"markup","dpi":72,"editor-max-height":"","fig-width":7,"context":"interactive","fig-cap":"","classes":"","fig-height":5,"editor-word-wrap":"true","output":"true","label":"unnamed-chunk-1","editor-quick-suggestions":"false","comment":"","warning":"true","out-width":"700px","out-height":"","editor-font-scale":"1","read-only":"false","autorun":"false"},"code":"# Kontingenztabelle erstellen\ndata <- matrix(c(n11, n21, n12, n22), nrow = 2, byrow = TRUE)\nrownames(data) <- c(\"x1\", \"x2\") \ncolnames(data) <- c(\"y1\", \"y2\") \ndata <- as.table(data)\n\n# Vierfelder-Chi-Quadrat-Test\nchisq.test(data, correct = FALSE)"},{"id":2,"options":{"message":"true","results":"markup","dpi":72,"editor-max-height":"","fig-width":7,"context":"interactive","fig-cap":"","classes":"","fig-height":5,"editor-word-wrap":"true","eval":"false","output":"true","label":"unnamed-chunk-2","editor-quick-suggestions":"false","comment":"","warning":"true","out-width":"700px","out-height":"","editor-font-scale":"1","read-only":"false","autorun":"false"},"code":"# Kontingenztabelle erstellen\ndata <- matrix(c(20, 10, 30, 40), nrow = 2, byrow = TRUE)\nrownames(data) <- c(\"Schirm ja \", \"Schirm nein\")\ncolnames(data) <- c(\"Regen ja\", \"Regen nein\")\ndata <- as.table(data)\n\n# Vierfelder-Chi-Quadrat-Test\nchisq.test(data, correct = FALSE)"}];
+globalThis.qwebrCellDetails = [{"options":{"warning":"true","out-height":"","context":"interactive","output":"true","editor-quick-suggestions":"false","read-only":"false","fig-width":7,"editor-max-height":"","comment":"","dpi":72,"editor-font-scale":"1","fig-height":5,"classes":"","message":"true","fig-cap":"","label":"unnamed-chunk-1","editor-word-wrap":"true","autorun":"false","results":"markup","out-width":"700px"},"id":1,"code":"# Kontingenztabelle erstellen\ndata <- matrix(c(n11, n21, n12, n22), nrow = 2, byrow = TRUE)\nrownames(data) <- c(\"x1\", \"x2\") \ncolnames(data) <- c(\"y1\", \"y2\") \ndata <- as.table(data)\n\n# Vierfelder-Chi-Quadrat-Test\nchisq.test(data, correct = FALSE)"},{"options":{"warning":"true","out-height":"","context":"interactive","output":"true","editor-quick-suggestions":"false","read-only":"false","fig-width":7,"editor-max-height":"","classes":"","comment":"","dpi":72,"editor-font-scale":"1","fig-height":5,"eval":"false","message":"true","fig-cap":"","label":"unnamed-chunk-2","editor-word-wrap":"true","autorun":"false","results":"markup","out-width":"700px"},"id":2,"code":"# Kontingenztabelle erstellen\ndata <- matrix(c(20, 10, 30, 40), nrow = 2, byrow = TRUE)\nrownames(data) <- c(\"Schirm ja \", \"Schirm nein\")\ncolnames(data) <- c(\"Regen ja\", \"Regen nein\")\ndata <- as.table(data)\n\n# Vierfelder-Chi-Quadrat-Test\nchisq.test(data, correct = FALSE)"}];
 
 </script>
 <script type="module">
@@ -1731,6 +1731,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../pages/exercises/exercise_12.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Übung 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../pages/exercises/exercise_13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übung 13</span></a>
   </div>
 </li>
       </ul>
