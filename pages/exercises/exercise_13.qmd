@@ -179,7 +179,7 @@ b.    Berechnen Sie, ob die Korrelation auf dem 5%-Niveau signifikant von 0 vers
 
 1. Empirische Prüfgrösse berechnen:
 
-$t=\frac{r \cdot \sqrt{n-2}}{\sqrt{1-r^2}}=\frac{0.52 \cdot \sqrt{8-2}}{\sqrt{1-0.2704}}=1.75$
+$t=\frac{r \cdot \sqrt{n-2}}{\sqrt{1-r^2}}=\frac{0.52 \cdot \sqrt{8-2}}{\sqrt{1-0.2704}}=1.49$
 
 2. Kritischer Wert und Anzahl Freiheitsgrade bestimmen:
 
