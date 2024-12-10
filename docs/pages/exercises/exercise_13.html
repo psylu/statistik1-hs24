@@ -398,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"id":1,"options":{"read-only":"false","message":"true","fig-width":7,"fig-cap":"","comment":"","output":"true","editor-font-scale":"1","dpi":72,"context":"interactive","results":"markup","out-width":"700px","fig-height":5,"autorun":"false","out-height":"","classes":"","label":"unnamed-chunk-1","editor-quick-suggestions":"false","warning":"true","editor-max-height":"","editor-word-wrap":"true"},"code":"d <- tibble(id = c(\"01\", \"02\"),\n            age = c(__, __),\n            time = c(__, __)\n)"},{"id":2,"options":{"read-only":"false","message":"true","fig-width":7,"fig-cap":"","comment":"","output":"true","editor-font-scale":"1","dpi":72,"context":"interactive","results":"markup","out-width":"700px","fig-height":5,"autorun":"false","out-height":"","classes":"","label":"unnamed-chunk-2","editor-quick-suggestions":"false","warning":"true","editor-max-height":"","editor-word-wrap":"true"},"code":"#Datensatz anschauen\nglimpse(__)\n\n#Mittelwert und Standardabweichung berechnen\nmean(__$__)\nsd(__$__)\nmean(__$__)\nsd(__$__)"},{"id":3,"options":{"read-only":"false","message":"true","fig-width":7,"fig-cap":"","comment":"","output":"true","editor-font-scale":"1","dpi":72,"context":"interactive","results":"markup","out-width":"700px","fig-height":5,"autorun":"false","out-height":"","classes":"","label":"unnamed-chunk-3","editor-quick-suggestions":"false","warning":"true","editor-max-height":"","editor-word-wrap":"true"},"code":"#Scatterplot (Streudiagramm) anschauen\nplot(__,__)\n\n#Korrelation berechnen\ncor(__,__)"}];
+globalThis.qwebrCellDetails = [{"id":1,"code":"d <- tibble(id = c(\"01\", \"02\"),\n            age = c(__, __),\n            time = c(__, __)\n)","options":{"editor-font-scale":"1","dpi":72,"read-only":"false","results":"markup","label":"unnamed-chunk-1","context":"interactive","warning":"true","fig-height":5,"autorun":"false","editor-quick-suggestions":"false","fig-cap":"","classes":"","comment":"","output":"true","message":"true","out-width":"700px","out-height":"","editor-max-height":"","editor-word-wrap":"true","fig-width":7}},{"id":2,"code":"#Datensatz anschauen\nglimpse(__)\n\n#Mittelwert und Standardabweichung berechnen\nmean(__$__)\nsd(__$__)\nmean(__$__)\nsd(__$__)","options":{"editor-font-scale":"1","dpi":72,"read-only":"false","results":"markup","label":"unnamed-chunk-2","context":"interactive","warning":"true","fig-height":5,"autorun":"false","editor-quick-suggestions":"false","fig-cap":"","classes":"","comment":"","output":"true","message":"true","out-width":"700px","out-height":"","editor-max-height":"","editor-word-wrap":"true","fig-width":7}},{"id":3,"code":"#Scatterplot (Streudiagramm) anschauen\nplot(__,__)\n\n#Korrelation berechnen\ncor(__,__)","options":{"editor-font-scale":"1","dpi":72,"read-only":"false","results":"markup","label":"unnamed-chunk-3","context":"interactive","warning":"true","fig-height":5,"autorun":"false","editor-quick-suggestions":"false","fig-cap":"","classes":"","comment":"","output":"true","message":"true","out-width":"700px","out-height":"","editor-max-height":"","editor-word-wrap":"true","fig-width":7}}];
 
 </script>
 <script type="module">
@@ -2536,13 +2536,15 @@ Lösung Aufgabe 13.3c
 <ol start="2" type="1">
 <li>Konfidenzintervall mit <span class="math inline">\(Z_r\)</span> und dem entsprechenden <span class="math inline">\(z\)</span>-Wert:</li>
 </ol>
-<p><span class="math inline">\(Z_r \pm z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576 \pm 1.96 \cdot \frac{1}{\sqrt{5}}=0.348;0.804\)</span></p>
+<p>Untere Grenze: <span class="math inline">\(Z_r-z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576-1.96 \cdot \frac{1}{\sqrt{5}}=-0.30\)</span></p>
+<p>Obere Grenze: <span class="math inline">\(Z_r+z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576+1.96 \cdot \frac{1}{\sqrt{5}}=1.45\)</span></p>
 <ol start="3" type="1">
 <li>Konfidenzintervall in <span class="math inline">\(r\)</span> zurücktransformieren:</li>
 </ol>
-<p><span class="math inline">\(r_u=\frac{e^{2(0.348)} - 1}{e^{2(0.348)} + 1}=\frac{2.006-1}{2.006+1}=0.335\)</span></p>
-<p><span class="math inline">\(r_o=\frac{e^{2(0.804)} - 1}{e^{2(0.804)} + 1}=\frac{4.993-1}{4.993+1}=0.666\)</span></p>
-<p>Das 95%-KI:<span class="math inline">\([0.335;0.666]\)</span></p>
+<p><span class="math inline">\(r_u=\frac{e^{2\cdot(-0.30)}-1}{e^{2\cdot(-0.30)}+1}=\frac{0.549-1}{0.549+1}=-0.29\)</span></p>
+<p><span class="math inline">\(r_o=\frac{e^{2\cdot(1.45)}-1}{e^{2\cdot(1.45)}+1}=\frac{18.17-1}{18.17+1}=0.90\)</span></p>
+<p>95%-KI:<span class="math inline">\([-0.29;0.90]\)</span></p>
+<p>Da das 95%-Konfidenzintervall 0 überdeckt, kann die Nullhypothese nicht abgelehnt werden.</p>
 </div>
 </div>
 </div>

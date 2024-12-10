@@ -193,6 +193,7 @@ Die Nullhypothese kann nicht abgelehnt werden, da der kritische Wert stärker vo
 
 <br>
 
+
 c.    Konstruieren Sie das 95%-Konfidenzintervall für $r$. 
 
 ::: {.callout-caution collapse="true"}
@@ -204,17 +205,27 @@ $Z_r=0.5 \cdot \ln\frac{1+r}{1-r}=0.5 \cdot \ln\frac{1.52}{0.48}=0.576$
 
 2. Konfidenzintervall mit $Z_r$ und dem entsprechenden $z$-Wert:
 
-$Z_r \pm z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576 \pm 1.96 \cdot \frac{1}{\sqrt{5}}=0.348;0.804$
+Untere Grenze: $Z_r-z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576-1.96 \cdot \frac{1}{\sqrt{5}}=-0.30$
+
+Obere Grenze: $Z_r+z_{(0.975)} \cdot \frac{1}{\sqrt{n-3}}=0.576+1.96 \cdot \frac{1}{\sqrt{5}}=1.45$
 
 3. Konfidenzintervall in $r$ zurücktransformieren:
 
-$r_u=\frac{e^{2(0.348)} - 1}{e^{2(0.348)} + 1}=\frac{2.006-1}{2.006+1}=0.335$
+$r_u=\frac{e^{2\cdot(-0.30)}-1}{e^{2\cdot(-0.30)}+1}=\frac{0.549-1}{0.549+1}=-0.29$
 
-$r_o=\frac{e^{2(0.804)} - 1}{e^{2(0.804)} + 1}=\frac{4.993-1}{4.993+1}=0.666$
+$r_o=\frac{e^{2\cdot(1.45)}-1}{e^{2\cdot(1.45)}+1}=\frac{18.17-1}{18.17+1}=0.90$
 
-Das 95%-KI:$[0.335;0.666]$
+95%-KI:$[-0.29;0.90]$
+
+Da das 95%-Konfidenzintervall 0 überdeckt, kann die Nullhypothese nicht abgelehnt werden. 
 
 :::
+
+
+
+
+
+
 
 <br>
 
