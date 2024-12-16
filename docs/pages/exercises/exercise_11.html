@@ -398,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"options":{"message":"true","out-height":"","warning":"true","fig-width":7,"out-width":"700px","label":"unnamed-chunk-1","editor-word-wrap":"true","context":"interactive","comment":"","fig-cap":"","output":"true","dpi":72,"fig-height":5,"results":"markup","classes":"","read-only":"false","editor-font-scale":"1","autorun":"false","editor-max-height":"","editor-quick-suggestions":"false"},"code":"data.pre <- c(___)","id":1},{"options":{"message":"true","out-height":"","warning":"true","fig-width":7,"out-width":"700px","label":"unnamed-chunk-2","editor-word-wrap":"true","context":"interactive","comment":"","fig-cap":"","output":"true","dpi":72,"fig-height":5,"results":"markup","classes":"","read-only":"false","editor-font-scale":"1","autorun":"false","editor-max-height":"","editor-quick-suggestions":"false"},"code":"t_test_result <- t.test(_POST_, _PRE_, mu = 0, paired=TRUE, conf.level = 0.95)\nt_test_result","id":2}];
+globalThis.qwebrCellDetails = [{"options":{"out-height":"","results":"markup","editor-font-scale":"1","output":"true","editor-word-wrap":"true","label":"unnamed-chunk-1","autorun":"false","message":"true","out-width":"700px","context":"interactive","fig-width":7,"dpi":72,"editor-max-height":"","warning":"true","editor-quick-suggestions":"false","read-only":"false","fig-cap":"","classes":"","fig-height":5,"comment":""},"id":1,"code":"data.pre <- c(___)"},{"options":{"out-height":"","results":"markup","editor-font-scale":"1","output":"true","editor-word-wrap":"true","label":"unnamed-chunk-2","autorun":"false","message":"true","out-width":"700px","context":"interactive","fig-width":7,"dpi":72,"editor-max-height":"","warning":"true","editor-quick-suggestions":"false","read-only":"false","fig-cap":"","classes":"","fig-height":5,"comment":""},"id":2,"code":"t_test_result <- t.test(_POST_, _PRE_, mu = 0, paired=TRUE, conf.level = 0.95)\nt_test_result"}];
 
 </script>
 <script type="module">
@@ -2245,15 +2245,15 @@ Lösung Aufgabe 11.2
 </section>
 <section id="aufgabe-11.4" class="level2">
 <h2 class="anchored" data-anchor-id="aufgabe-11.4">Aufgabe 11.4</h2>
-<p>Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und 9 Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen.</p>
+<p>Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und neun Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen.</p>
 <p>Überprüfen Sie, ob das Präventionsprogramm das sichere Verhalten im Strassenverkehr verbessert (bzw. ob sich die Gruppen nach dem Programm signifikant auf dem 5%-Niveau unterscheiden).</p>
 <p><span class="math inline">\(H_0\)</span>: Nach dem Programm hat die Kursgruppe denselben oder einen kleineren Wert als die Kontrollgruppe.</p>
-<p><span class="math inline">\(H_1\)</span>: Nach dem Programm hat die Kursruppe einen höheren Wert als die Kontrollgruppe.</p>
+<p><span class="math inline">\(H_1\)</span>: Nach dem Programm hat die Kursgruppe einen höheren Wert als die Kontrollgruppe.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th></th>
-<th>Gruppe “Kurs”</th>
+<th>Gruppe “Programm”</th>
 <th>Gruppe “Kontrolle”</th>
 </tr>
 </thead>
@@ -2269,7 +2269,7 @@ Lösung Aufgabe 11.2
 <td>19</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(s^2\)</span></td>
+<td><span class="math inline">\(\hat\sigma^2\)</span></td>
 <td>80</td>
 <td>100</td>
 </tr>
@@ -2314,11 +2314,11 @@ Lösung Aufgabe 11.4b
 <ol type="1">
 <li>Zuerst wird die gemeinsame Innerhalb-Varianz berechnet.</li>
 </ol>
-<p><span class="math inline">\(\sigma_{inn}^2=\frac{s^2_1 \cdot (n_1-1) +s^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90\)</span></p>
+<p><span class="math inline">\(\hat\sigma_{inn}^2=\frac{\hat\sigma^2_1 \cdot (n_1-1) +\hat\sigma^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90\)</span></p>
 <ol start="2" type="1">
 <li>Daraus kann der Standardfehler der Differenz der Stichprobenmittelwerte berechnen werden.</li>
 </ol>
-<p><span class="math inline">\(\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\sigma_{inn}^2}{n_1}+ \frac{\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20\)</span></p>
+<p><span class="math inline">\(\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\hat\sigma_{inn}^2}{n_1}+ \frac{\hat\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20\)</span></p>
 <p><span class="math inline">\(\hat \sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{20}=4.47\)</span></p>
 <ol start="3" type="1">
 <li>Nun kann die empirische Prüfgrösse berechnen und mit dem kritischen Wert verglichen werden.</li>
@@ -2349,7 +2349,7 @@ Lösung Aufgabe 11.4c
 <p><span class="math inline">\(d'=\frac{\overline{x}_1-\overline{x}_2}{\hat\sigma_{inn}}=\frac{25-19}{\sqrt{90}}=0.63\)</span></p>
 <p>oder</p>
 <p><span class="math inline">\(d'=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63\)</span></p>
-<p>Nach Cohen (1988) handelt es sich hier um einen mittelgrossen Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben.</p>
+<p>Nach Cohen (1988) handelt es sich hier um einen mittleren Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben.</p>
 </div>
 </div>
 </div>

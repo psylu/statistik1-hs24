@@ -89,22 +89,23 @@ c.    An einer Studie nehmen 35 Zwillingspaare teil. Die älteren Zwillinge werd
 <br>
 
 
+
 ## Aufgabe 11.4
  
-Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und 9 Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen. 
+Sie möchten untersuchen, inwiefern ein Präventionsprogramm zur Verkehrssicherheit in der Schule den sicheren Umgang der Kinder im Strassenverkehr verbessert. 18 Kinder werden zufällig ausgewählt. Neun Kinder erhalten den Kurs und neun Kinder sind in der Kontrollgruppe. Danach wird während einer Woche beobachtet, wie sicher sich die Kinder auf dem Schulweg bewegen. 
 
 Überprüfen Sie, ob das Präventionsprogramm das sichere Verhalten im Strassenverkehr verbessert (bzw. ob sich die Gruppen nach dem Programm signifikant auf dem 5%-Niveau unterscheiden).
 
 $H_0$: Nach dem Programm hat die Kursgruppe denselben oder einen kleineren Wert als die Kontrollgruppe.
 
-$H_1$: Nach dem Programm hat die Kursruppe einen höheren Wert als die Kontrollgruppe. 
+$H_1$: Nach dem Programm hat die Kursgruppe einen höheren Wert als die Kontrollgruppe.
 
 
-|   | Gruppe "Kurs" | Gruppe "Kontrolle" |
+|   | Gruppe "Programm" | Gruppe "Kontrolle" |
 |---|---|---|
 |   | $n=9$ | $n=9$ |
 | $\overline{x}$ | 25 | 19 |
-| $s^2$ | 80 | 100 |
+| $\hat\sigma^2$ | 80 | 100 |
 
 <br>
 
@@ -126,11 +127,11 @@ b.	Berechnen Sie die empirische Prüfgrösse und entscheiden Sie, ob Sie die $H_
 
 1. Zuerst wird die gemeinsame Innerhalb-Varianz berechnet.
 
-$\sigma_{inn}^2=\frac{s^2_1 \cdot (n_1-1) +s^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90$
+$\hat\sigma_{inn}^2=\frac{\hat\sigma^2_1 \cdot (n_1-1) +\hat\sigma^2_2 \cdot (n_2-1) }{n_1+n_2-2}=\frac{80 \cdot 8 + 100 \cdot 8}{16}=90$
 
 2. Daraus kann der Standardfehler der Differenz der Stichprobenmittelwerte berechnen werden.
 
-$\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\sigma_{inn}^2}{n_1}+ \frac{\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20$
+$\hat \sigma^2_{\overline{x}_1-\overline{x}_2}=\frac {\hat\sigma_{inn}^2}{n_1}+ \frac{\hat\sigma_{inn}^2}{n_2}=\frac{90+90}{9}=20$
 
 $\hat \sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{20}=4.47$
 
@@ -159,9 +160,11 @@ oder
 
 $d'=t \cdot \sqrt \frac{n_1+n_2}{n_1 \cdot n_2}=1.34 \cdot \sqrt \frac{9+9}{9 \cdot 9}=1.34 \cdot \sqrt \frac{18}{81}=0.63$
 
-Nach Cohen (1988) handelt es sich hier um einen mittelgrossen Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben. 
+Nach Cohen (1988) handelt es sich hier um einen mittleren Effekt. Durch die kleine Stichprobe wird der Unterschied jedoch nicht signifikant, wie wir in Aufgabe 11.4b gesehen haben. 
 
 :::
+
+
 
 <br>
 
