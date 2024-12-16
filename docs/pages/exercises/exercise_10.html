@@ -398,7 +398,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"data <- c(___)\nmu_0 <- ","id":1,"options":{"context":"interactive","fig-cap":"","fig-width":7,"classes":"","fig-height":5,"dpi":72,"comment":"","message":"true","autorun":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-1","output":"true","editor-word-wrap":"true","out-height":"","read-only":"false","editor-max-height":"","results":"markup","warning":"true","out-width":"700px","editor-font-scale":"1"}},{"code":"t_test_result <- t.test(___, mu = ___, conf.level = ____)\nt_test_result","id":2,"options":{"context":"interactive","fig-cap":"","fig-width":7,"classes":"","fig-height":5,"dpi":72,"comment":"","message":"true","autorun":"false","editor-quick-suggestions":"false","label":"unnamed-chunk-2","output":"true","editor-word-wrap":"true","out-height":"","read-only":"false","editor-max-height":"","results":"markup","warning":"true","out-width":"700px","editor-font-scale":"1"}}];
+globalThis.qwebrCellDetails = [{"options":{"fig-height":5,"comment":"","editor-quick-suggestions":"false","classes":"","out-width":"700px","dpi":72,"output":"true","autorun":"false","warning":"true","fig-width":7,"results":"markup","context":"interactive","editor-max-height":"","fig-cap":"","editor-word-wrap":"true","message":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-1","read-only":"false"},"id":1,"code":"data <- c(___)\nmu_0 <- "},{"options":{"fig-height":5,"comment":"","editor-quick-suggestions":"false","classes":"","out-width":"700px","dpi":72,"output":"true","autorun":"false","warning":"true","fig-width":7,"results":"markup","context":"interactive","editor-max-height":"","fig-cap":"","editor-word-wrap":"true","message":"true","out-height":"","editor-font-scale":"1","label":"unnamed-chunk-2","read-only":"false"},"id":2,"code":"t_test_result <- t.test(___, mu = ___, conf.level = ____)\nt_test_result"}];
 
 </script>
 <script type="module">
@@ -2408,11 +2408,11 @@ Lösung Aufgabe 10.6b
 <ol type="1">
 <li>Wir berechnen zuerst die empirische Varianz, da wir die Populationsvarianz nicht kennen.</li>
 </ol>
-<p><span class="math inline">\(\sigma^2_x=\frac{\sum_{i=1}^{n}(x_i-\bar{x})}{n}=\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667\)</span></p>
+<p><span class="math inline">\(s^2_x=\frac{\sum_{i=1}^{n}(x_i-\bar{x})}{n}=\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667\)</span></p>
 <ol start="2" type="1">
-<li>Nun schätzen wir die Populationsvarianz und damit den Standardfehler des Mittelwerts.</li>
+<li>Nun schätzen wir die Populationsvarianz und den Standardfehler des Mittelwerts.</li>
 </ol>
-<p><span class="math inline">\(\hat\sigma^2_x=\sigma^2_x \cdot \frac{n}{n-1}=36.667 \cdot \frac{9}{8}=41.250\)</span></p>
+<p><span class="math inline">\(\hat\sigma^2_x=s^2_x \cdot \frac{n}{n-1}=36.667 \cdot \frac{9}{8}=41.250\)</span></p>
 <p>oder direkt:</p>
 <p><span class="math inline">\(\hat\sigma^2_x=\sqrt \frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}=41.250\)</span></p>
 <p>Daraus können wir den Standardfehler berechnen:</p>

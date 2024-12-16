@@ -203,16 +203,17 @@ b.    Nehmen wir nun an, dass die Varianz in der Population __unbekannt__ ist. T
 :::
 
 
+
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 10.6b
 
 1.    Wir berechnen zuerst die empirische Varianz, da wir die Populationsvarianz nicht kennen.
 
-$\sigma^2_x=\frac{\sum_{i=1}^{n}(x_i-\bar{x})}{n}=\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667$
+$s^2_x=\frac{\sum_{i=1}^{n}(x_i-\bar{x})}{n}=\frac{7^2+8^2+6^2+4^2+0+4^2+6^2+8^2+7^2}{9}=36.667$
 
-2.    Nun schätzen wir die Populationsvarianz und damit den Standardfehler des Mittelwerts.
+2.    Nun schätzen wir die Populationsvarianz und den Standardfehler des Mittelwerts.
 
-$\hat\sigma^2_x=\sigma^2_x \cdot \frac{n}{n-1}=36.667 \cdot \frac{9}{8}=41.250$
+$\hat\sigma^2_x=s^2_x \cdot \frac{n}{n-1}=36.667 \cdot \frac{9}{8}=41.250$
 
 oder direkt:
 
@@ -232,7 +233,6 @@ $t_\overline{x}=\frac{\overline{x}-\mu_0}{\hat \sigma_\overline{x}}=\frac{26-25}
 $t_{(0.975;8)}=\pm 2.306$
 
 5.    Nun können wir die Werte vergleichen. Unsere Prüfgrösse $t=0.467$ liegt deutlich unter (bzw. über) den kritischen Werten (also dazwischen), womit wir die $H_0$ nicht ablehnen können. 
-
 
 :::
 

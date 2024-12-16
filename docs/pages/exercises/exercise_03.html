@@ -850,11 +850,31 @@ Lösung Aufgabe 3.6
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(Md=31\)</span></p>
-<p><span class="math inline">\(Q_1=25\)</span></p>
-<p><span class="math inline">\(Q_3=35\)</span></p>
-<p><span class="math inline">\(IQR=10\)</span></p>
-<p><em>Whisker unten</em>: <span class="math inline">\(Q_1-1.5\cdot IQR=25-1.5\cdot10=10\)</span></p>
-<p><em>Whisker oben</em>: <span class="math inline">\(Q_3+1.5\cdot IQR=35+1.5\cdot10=50\)</span></p>
+<p><strong>KORRIGIERTE LÖSUNG</strong></p>
+<ul>
+<li>Schritt 1: <span class="math inline">\(Q_1\)</span></li>
+</ul>
+<p>Da <span class="math inline">\(n=12:4\)</span> eine ganze Zahl ergibt, wird die Formel <span class="math inline">\(Q_1=0.5\cdot(x_q+x_{q+1})\)</span> verwendet. <span class="math inline">\(q\)</span> entspricht <span class="math inline">\(n\cdot0.25=12\cdot 0.25=3\)</span>.</p>
+<p>Daher wird der 3. (<span class="math inline">\(x_q\)</span>) und der 4. Wert (<span class="math inline">\(x_{q+1}\)</span>) gemittelt.</p>
+<p><span class="math inline">\(Q_1=(25+26):2=25.5\)</span></p>
+<ul>
+<li>Schritt 2: <span class="math inline">\(Q_3\)</span></li>
+</ul>
+<p>Da <span class="math inline">\(n=12:4\)</span> eine ganze Zahl ergibt, wird die Formel <span class="math inline">\(Q_3=0.5\cdot(x_q+x_{q+1})\)</span> verwendet. <span class="math inline">\(q\)</span> entspricht <span class="math inline">\(n\cdot0.75=12\cdot 0.75=9\)</span>.</p>
+<p>Daher wird der 9. (<span class="math inline">\(x_q\)</span>) und der 10. Wert (<span class="math inline">\(x_{q+1}\)</span>) gemittelt.</p>
+<p><span class="math inline">\(Q_3=(35+38):2=36.5\)</span></p>
+<ul>
+<li>Schritt 3: <span class="math inline">\(IQR\)</span></li>
+</ul>
+<p><span class="math inline">\(IQR=Q_3-Q_1=36.5-25.5=11\)</span></p>
+<ul>
+<li>Schritt 4:</li>
+</ul>
+<p><em>Whisker unten</em>: <span class="math inline">\(Q_1-1.5\cdot IQR= 25.5-1.5\cdot 11= 9\)</span></p>
+<p>Der untere Wisker beinhalten noch den Wert <span class="math inline">\(10\)</span> und geht daher bis zu diesem Wert.</p>
+<p><em>Whisker oben</em>: <span class="math inline">\(Q_3+1.5\cdot IQR= 36.5 + 1.5\cdot 11= 53\)</span></p>
+<p>Der obere Wisker beinhalten noch den Wert <span class="math inline">\(45\)</span> und geht daher bis zu diesem Wert.</p>
+<p>Die Werte 3 und 70 sind Ausreisser, die auf der Grafik als Kreise eingezeichnet werden.</p>
 <p><br></p>
 <p><img src="img/ue3.6_boxplot.jpg" class="img-fluid"></p>
 </div>

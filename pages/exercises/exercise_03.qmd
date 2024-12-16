@@ -258,26 +258,55 @@ Stellen Sie die Daten mit einem Boxplot grafisch dar. Gehen Sie wie folgt vor:
 
 4.  Zeichnen Sie nun mit den entsprechenden Werten einen Boxplot.
 
+
+
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 3.6
 
 $Md=31$
 
-$Q_1=25$
+__KORRIGIERTE LÖSUNG__
 
-$Q_3=35$
+-   Schritt 1: $Q_1$
 
-$IQR=10$
+Da $n=12:4$ eine ganze Zahl ergibt, wird die Formel $Q_1=0.5\cdot(x_q+x_{q+1})$ verwendet.  $q$ entspricht $n\cdot0.25=12\cdot 0.25=3$.
 
-*Whisker unten*: $Q_1-1.5\cdot IQR=25-1.5\cdot10=10$
+Daher wird der 3. ($x_q$) und der 4. Wert ($x_{q+1}$) gemittelt. 
 
-*Whisker oben*: $Q_3+1.5\cdot IQR=35+1.5\cdot10=50$
+$Q_1=(25+26):2=25.5$
+
+-   Schritt 2: $Q_3$
+
+Da $n=12:4$ eine ganze Zahl ergibt, wird die Formel $Q_3=0.5\cdot(x_q+x_{q+1})$ verwendet.  $q$ entspricht $n\cdot0.75=12\cdot 0.75=9$.
+
+Daher wird der 9. ($x_q$) und der 10. Wert ($x_{q+1}$) gemittelt. 
+
+$Q_3=(35+38):2=36.5$
+
+-   Schritt 3: $IQR$
+
+$IQR=Q_3-Q_1=36.5-25.5=11$
+
+-   Schritt 4: 
+
+*Whisker unten*: 
+$Q_1-1.5\cdot IQR= 25.5-1.5\cdot 11= 9$
+
+Der untere Wisker beinhalten noch den Wert $10$ und geht daher bis zu diesem Wert.
+
+*Whisker oben*: 
+$Q_3+1.5\cdot IQR= 36.5 + 1.5\cdot 11= 53$
+
+Der obere Wisker beinhalten noch den Wert $45$ und geht daher bis zu diesem Wert.
+
+Die Werte 3 und 70 sind Ausreisser, die auf der Grafik als Kreise eingezeichnet werden. 
 
 <br>
 
 ![](img/ue3.6_boxplot.jpg)
 
 :::
+
 
 <br>
 
