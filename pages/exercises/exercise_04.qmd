@@ -95,7 +95,7 @@ d. Wie gross ist die Wahrscheinlichkeit, wenn die Karten nach jedem Zug wieder z
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 4.3d
 
-$P\left(K\right)=(\frac{4}{36})^3=(\frac{64}{46656})^3=0.0014$
+$P\left(K\right)=(\frac{4}{36})^3=\frac{64}{46656}=0.0014$
 
 :::
 
