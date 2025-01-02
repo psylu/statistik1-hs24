@@ -64,7 +64,7 @@ a. Mit einem fairen Würfel dreimal hintereinander eine 5 zu würfeln?
 ::: {.callout-caution collapse="true"}
 ## Lösung Aufgabe 4.3a
 
-$P\left(W\right)=\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}=(\frac{1}{6})^3=\frac{1}{216}=0.046$
+$P\left(W\right)=\frac{1}{6}\cdot\frac{1}{6}\cdot\frac{1}{6}=(\frac{1}{6})^3=\frac{1}{216}=0.0046$
 
 :::
 
