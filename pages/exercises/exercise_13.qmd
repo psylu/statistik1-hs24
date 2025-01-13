@@ -166,7 +166,7 @@ Die Kovarianz entspricht dem Mittelwert der Kreuzproduktsumme $s_{xy}=\frac{25}{
 
 Die Korrelation erhält man, wenn man die Kovarianz durch das Produkt der Streuung teilt ($s_x \cdot s_y=4 \cdot 1.5=6$). Die Korrelation beträgt somit $r=\frac{3.125}{6}=0.52$. 
 
-Es handelt sich hier um einen mittleren positiven Zusammenhang. 
+Es handelt sich hier um einen **starken positiven Zusammenhang**, da der Wert über 0.5 liegt. *(Achtung: In der vorherigen Version war hier fälschlicherweise von einem "mittleren positiven Zusammenhang" die Rede.)*
 
 :::
 
