@@ -172,13 +172,16 @@ e.    $P\left(40\lt x\leq55\right)$
 
 $z_o=P\left(z\leq1\right)=0.8413$
 
-$z_u=P\left(z\leq-2\right)=1-P\left(z\leq2\right)=1-0.9972=0.0028$
+$z_u=P\left(z\leq-2\right)=1-P\left(z\leq2\right)=1-0.9772=0.0228$
 
 Da wir $P\left(z\leq-2\right)$ nicht direkt ablesen können, bestimmen wir $P\left(z\leq2\right)$ und nehmen dann die Gegenwahrscheinlichkeit. 
 
-$z_o-z_u=0.8413-0.0028=0.8385$
+$z_o-z_u=0.8413-0.0228=0.8185$
+
+(_Achtung: In der vorherigen Version wurde hier fälschlicherweise $0.9972$ statt $0.9772$ verwendet._)
 
 :::
+
 
 <br>
 
